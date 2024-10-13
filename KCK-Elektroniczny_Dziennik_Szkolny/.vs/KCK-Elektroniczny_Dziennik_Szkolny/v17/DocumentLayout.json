@@ -1,0 +1,175 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Patryk\\Downloads\\KCK-Electronic_School_Register\\KCK-Elektroniczny_Dziennik_Szkolny\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1FD7EFA9-A3B3-48AD-8D7A-6EFDD6E61040}|KCK-Elektroniczny_Dziennik_Szkolny.csproj|c:\\users\\patryk\\downloads\\kck-electronic_school_register\\kck-elektroniczny_dziennik_szkolny\\views\\consoleview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1FD7EFA9-A3B3-48AD-8D7A-6EFDD6E61040}|KCK-Elektroniczny_Dziennik_Szkolny.csproj|solutionrelative:views\\consoleview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1FD7EFA9-A3B3-48AD-8D7A-6EFDD6E61040}|KCK-Elektroniczny_Dziennik_Szkolny.csproj|c:\\users\\patryk\\downloads\\kck-electronic_school_register\\kck-elektroniczny_dziennik_szkolny\\models\\objects\\subcject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1FD7EFA9-A3B3-48AD-8D7A-6EFDD6E61040}|KCK-Elektroniczny_Dziennik_Szkolny.csproj|solutionrelative:models\\objects\\subcject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1FD7EFA9-A3B3-48AD-8D7A-6EFDD6E61040}|KCK-Elektroniczny_Dziennik_Szkolny.csproj|c:\\users\\patryk\\downloads\\kck-electronic_school_register\\kck-elektroniczny_dziennik_szkolny\\controllers\\schoolcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1FD7EFA9-A3B3-48AD-8D7A-6EFDD6E61040}|KCK-Elektroniczny_Dziennik_Szkolny.csproj|solutionrelative:controllers\\schoolcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1FD7EFA9-A3B3-48AD-8D7A-6EFDD6E61040}|KCK-Elektroniczny_Dziennik_Szkolny.csproj|c:\\users\\patryk\\downloads\\kck-electronic_school_register\\kck-elektroniczny_dziennik_szkolny\\models\\objects\\class.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1FD7EFA9-A3B3-48AD-8D7A-6EFDD6E61040}|KCK-Elektroniczny_Dziennik_Szkolny.csproj|solutionrelative:models\\objects\\class.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1FD7EFA9-A3B3-48AD-8D7A-6EFDD6E61040}|KCK-Elektroniczny_Dziennik_Szkolny.csproj|c:\\users\\patryk\\downloads\\kck-electronic_school_register\\kck-elektroniczny_dziennik_szkolny\\models\\objects\\parent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1FD7EFA9-A3B3-48AD-8D7A-6EFDD6E61040}|KCK-Elektroniczny_Dziennik_Szkolny.csproj|solutionrelative:models\\objects\\parent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1FD7EFA9-A3B3-48AD-8D7A-6EFDD6E61040}|KCK-Elektroniczny_Dziennik_Szkolny.csproj|c:\\users\\patryk\\downloads\\kck-electronic_school_register\\kck-elektroniczny_dziennik_szkolny\\models\\objects\\teacher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1FD7EFA9-A3B3-48AD-8D7A-6EFDD6E61040}|KCK-Elektroniczny_Dziennik_Szkolny.csproj|solutionrelative:models\\objects\\teacher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1FD7EFA9-A3B3-48AD-8D7A-6EFDD6E61040}|KCK-Elektroniczny_Dziennik_Szkolny.csproj|c:\\users\\patryk\\downloads\\kck-electronic_school_register\\kck-elektroniczny_dziennik_szkolny\\models\\objects\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1FD7EFA9-A3B3-48AD-8D7A-6EFDD6E61040}|KCK-Elektroniczny_Dziennik_Szkolny.csproj|solutionrelative:models\\objects\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1FD7EFA9-A3B3-48AD-8D7A-6EFDD6E61040}|KCK-Elektroniczny_Dziennik_Szkolny.csproj|c:\\users\\patryk\\downloads\\kck-electronic_school_register\\kck-elektroniczny_dziennik_szkolny\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1FD7EFA9-A3B3-48AD-8D7A-6EFDD6E61040}|KCK-Elektroniczny_Dziennik_Szkolny.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 12,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Teacher.cs",
+              "DocumentMoniker": "C:\\Users\\Patryk\\Downloads\\KCK-Electronic_School_Register\\KCK-Elektroniczny_Dziennik_Szkolny\\Models\\Objects\\Teacher.cs",
+              "RelativeDocumentMoniker": "Models\\Objects\\Teacher.cs",
+              "ToolTip": "C:\\Users\\Patryk\\Downloads\\KCK-Electronic_School_Register\\KCK-Elektroniczny_Dziennik_Szkolny\\Models\\Objects\\Teacher.cs",
+              "RelativeToolTip": "Models\\Objects\\Teacher.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-13T22:41:09.56Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Subcject.cs",
+              "DocumentMoniker": "C:\\Users\\Patryk\\Downloads\\KCK-Electronic_School_Register\\KCK-Elektroniczny_Dziennik_Szkolny\\Models\\Objects\\Subcject.cs",
+              "RelativeDocumentMoniker": "Models\\Objects\\Subcject.cs",
+              "ToolTip": "C:\\Users\\Patryk\\Downloads\\KCK-Electronic_School_Register\\KCK-Elektroniczny_Dziennik_Szkolny\\Models\\Objects\\Subcject.cs",
+              "RelativeToolTip": "Models\\Objects\\Subcject.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-13T22:40:23.913Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Student.cs",
+              "DocumentMoniker": "C:\\Users\\Patryk\\Downloads\\KCK-Electronic_School_Register\\KCK-Elektroniczny_Dziennik_Szkolny\\Models\\Objects\\Student.cs",
+              "RelativeDocumentMoniker": "Models\\Objects\\Student.cs",
+              "ToolTip": "C:\\Users\\Patryk\\Downloads\\KCK-Electronic_School_Register\\KCK-Elektroniczny_Dziennik_Szkolny\\Models\\Objects\\Student.cs",
+              "RelativeToolTip": "Models\\Objects\\Student.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-13T22:39:01.904Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Parent.cs",
+              "DocumentMoniker": "C:\\Users\\Patryk\\Downloads\\KCK-Electronic_School_Register\\KCK-Elektroniczny_Dziennik_Szkolny\\Models\\Objects\\Parent.cs",
+              "RelativeDocumentMoniker": "Models\\Objects\\Parent.cs",
+              "ToolTip": "C:\\Users\\Patryk\\Downloads\\KCK-Electronic_School_Register\\KCK-Elektroniczny_Dziennik_Szkolny\\Models\\Objects\\Parent.cs",
+              "RelativeToolTip": "Models\\Objects\\Parent.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-13T22:37:03.493Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Class.cs",
+              "DocumentMoniker": "C:\\Users\\Patryk\\Downloads\\KCK-Electronic_School_Register\\KCK-Elektroniczny_Dziennik_Szkolny\\Models\\Objects\\Class.cs",
+              "RelativeDocumentMoniker": "Models\\Objects\\Class.cs",
+              "ToolTip": "C:\\Users\\Patryk\\Downloads\\KCK-Electronic_School_Register\\KCK-Elektroniczny_Dziennik_Szkolny\\Models\\Objects\\Class.cs",
+              "RelativeToolTip": "Models\\Objects\\Class.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-13T22:35:42.824Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Patryk\\Downloads\\KCK-Electronic_School_Register\\KCK-Elektroniczny_Dziennik_Szkolny\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Patryk\\Downloads\\KCK-Electronic_School_Register\\KCK-Elektroniczny_Dziennik_Szkolny\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-13T17:35:51.922Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SchoolController.cs",
+              "DocumentMoniker": "C:\\Users\\Patryk\\Downloads\\KCK-Electronic_School_Register\\KCK-Elektroniczny_Dziennik_Szkolny\\Controllers\\SchoolController.cs",
+              "RelativeDocumentMoniker": "Controllers\\SchoolController.cs",
+              "ToolTip": "C:\\Users\\Patryk\\Downloads\\KCK-Electronic_School_Register\\KCK-Elektroniczny_Dziennik_Szkolny\\Controllers\\SchoolController.cs",
+              "RelativeToolTip": "Controllers\\SchoolController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAYwAwAAAA9AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-13T17:33:55.068Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ConsoleView.cs",
+              "DocumentMoniker": "C:\\Users\\Patryk\\Downloads\\KCK-Electronic_School_Register\\KCK-Elektroniczny_Dziennik_Szkolny\\Views\\ConsoleView.cs",
+              "RelativeDocumentMoniker": "Views\\ConsoleView.cs",
+              "ToolTip": "C:\\Users\\Patryk\\Downloads\\KCK-Electronic_School_Register\\KCK-Elektroniczny_Dziennik_Szkolny\\Views\\ConsoleView.cs",
+              "RelativeToolTip": "Views\\ConsoleView.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-13T17:33:02.643Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

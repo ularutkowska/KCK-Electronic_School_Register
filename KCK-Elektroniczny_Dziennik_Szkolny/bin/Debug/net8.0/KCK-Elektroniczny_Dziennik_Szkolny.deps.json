@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "KCK-Elektroniczny_Dziennik_Szkolny/1.0.0": {
+        "runtime": {
+          "KCK-Elektroniczny_Dziennik_Szkolny.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "KCK-Elektroniczny_Dziennik_Szkolny/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

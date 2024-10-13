@@ -1,0 +1,15 @@
+C:\Users\Patryk\Downloads\KCK-Electronic_School_Register\KCK-Elektroniczny_Dziennik_Szkolny\obj\Debug\net8.0\KCK-Elektroniczny_Dziennik_Szkolny.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Patryk\Downloads\KCK-Electronic_School_Register\KCK-Elektroniczny_Dziennik_Szkolny\obj\Debug\net8.0\KCK-Elektroniczny_Dziennik_Szkolny.AssemblyInfoInputs.cache
+C:\Users\Patryk\Downloads\KCK-Electronic_School_Register\KCK-Elektroniczny_Dziennik_Szkolny\obj\Debug\net8.0\KCK-Elektroniczny_Dziennik_Szkolny.AssemblyInfo.cs
+C:\Users\Patryk\Downloads\KCK-Electronic_School_Register\KCK-Elektroniczny_Dziennik_Szkolny\obj\Debug\net8.0\KCK-Elektroniczny_Dziennik_Szkolny.csproj.CoreCompileInputs.cache
+C:\Users\Patryk\Downloads\KCK-Electronic_School_Register\KCK-Elektroniczny_Dziennik_Szkolny\obj\Debug\net8.0\KCK-Elektroniczny_Dziennik_Szkolny.sourcelink.json
+C:\Users\Patryk\Downloads\KCK-Electronic_School_Register\KCK-Elektroniczny_Dziennik_Szkolny\bin\Debug\net8.0\KCK-Elektroniczny_Dziennik_Szkolny.exe
+C:\Users\Patryk\Downloads\KCK-Electronic_School_Register\KCK-Elektroniczny_Dziennik_Szkolny\bin\Debug\net8.0\KCK-Elektroniczny_Dziennik_Szkolny.deps.json
+C:\Users\Patryk\Downloads\KCK-Electronic_School_Register\KCK-Elektroniczny_Dziennik_Szkolny\bin\Debug\net8.0\KCK-Elektroniczny_Dziennik_Szkolny.runtimeconfig.json
+C:\Users\Patryk\Downloads\KCK-Electronic_School_Register\KCK-Elektroniczny_Dziennik_Szkolny\bin\Debug\net8.0\KCK-Elektroniczny_Dziennik_Szkolny.dll
+C:\Users\Patryk\Downloads\KCK-Electronic_School_Register\KCK-Elektroniczny_Dziennik_Szkolny\bin\Debug\net8.0\KCK-Elektroniczny_Dziennik_Szkolny.pdb
+C:\Users\Patryk\Downloads\KCK-Electronic_School_Register\KCK-Elektroniczny_Dziennik_Szkolny\obj\Debug\net8.0\KCK-Elektroniczny_Dziennik_Szkolny.dll
+C:\Users\Patryk\Downloads\KCK-Electronic_School_Register\KCK-Elektroniczny_Dziennik_Szkolny\obj\Debug\net8.0\refint\KCK-Elektroniczny_Dziennik_Szkolny.dll
+C:\Users\Patryk\Downloads\KCK-Electronic_School_Register\KCK-Elektroniczny_Dziennik_Szkolny\obj\Debug\net8.0\KCK-Elektroniczny_Dziennik_Szkolny.pdb
+C:\Users\Patryk\Downloads\KCK-Electronic_School_Register\KCK-Elektroniczny_Dziennik_Szkolny\obj\Debug\net8.0\KCK-Elektroniczny_Dziennik_Szkolny.genruntimeconfig.cache
+C:\Users\Patryk\Downloads\KCK-Electronic_School_Register\KCK-Elektroniczny_Dziennik_Szkolny\obj\Debug\net8.0\ref\KCK-Elektroniczny_Dziennik_Szkolny.dll
