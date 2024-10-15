@@ -1,42 +1,50 @@
-﻿using System;
+﻿using KCK_Elektroniczny_Dziennik_Szkolny.Models;
+using KCK_Elektroniczny_Dziennik_Szkolny.Models.Objects;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using KCK_Elektroniczny_Dziennik_Szkolny.Models.Objects;
 
 namespace KCK_Elektroniczny_Dziennik_Szkolny.Controllers
 {
     public class SchoolController
     {
-        private List<Class> classes = new List<Class>();
-        private List<Student> students = new List<Student>();
-        private List<Teacher> teachers = new List<Teacher>();
+        private readonly ApplicationDbContext _context;
+
+        public SchoolController(ApplicationDbContext context)
+        {
+            _context = context;
+        }
 
         public void AddClass(Class schoolClass)
         {
-            classes.Add(schoolClass);
+            _context.Classes.Add(schoolClass);
+            _context.SaveChanges();
         }
+
         public void AddStudent(Student student)
         {
-            students.Add(student);
+            _context.Students.Add(student);
+            _context.SaveChanges();
         }
+
         public void AddTeacher(Teacher teacher)
         {
-            teachers.Add(teacher);
+            _context.Teachers.Add(teacher);
+            _context.SaveChanges();
         }
 
         public List<Class> GetClasses()
         {
-            return classes;
+            return _context.Classes.ToList();
         }
+
         public List<Student> GetStudents()
         {
-            return students;
+            return _context.Students.ToList();
         }
-        public List<Teacher> GetTeacher()
+
+        public List<Teacher> GetTeachers()
         {
-            return teachers;
+            return _context.Teachers.ToList();
         }
     }
 }

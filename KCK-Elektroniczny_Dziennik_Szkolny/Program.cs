@@ -1,4 +1,5 @@
 ﻿using KCK_Elektroniczny_Dziennik_Szkolny.Controllers;
+using KCK_Elektroniczny_Dziennik_Szkolny.Models;
 using KCK_Elektroniczny_Dziennik_Szkolny.Views;
 
 namespace KCK_Elektroniczny_Dziennik_Szkolny
@@ -7,28 +8,32 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny
     {
         static void Main(string[] args)
         {
-            UserController userController = new UserController();
-            UserView userView = new UserView(userController);
-            SchoolController schoolController = new SchoolController();
-            ConsoleView consoleView = new ConsoleView(schoolController);
-            bool exitProgram = false;
-
-            while (!exitProgram)
+            using (var context = new ApplicationDbContext())
             {
-                bool loggedIn = userView.LoginScreen();
+                UserController userController = new UserController(context);
+                SchoolController schoolController = new SchoolController(context);
 
-                if (loggedIn)
+                UserView userView = new UserView(userController);
+                ConsoleView consoleView = new ConsoleView(schoolController);
+                bool exitProgram = false;
+
+                while (!exitProgram)
                 {
-                    Console.Clear();
-                    Console.WriteLine("Logged in successfully.");
-                    System.Threading.Thread.Sleep(3000);
-                    consoleView.DisplayMenu();
-                    exitProgram = true;
-                }
-                else
-                {
-                    Console.Clear();
-                    Console.WriteLine("You chose to return to the role selection.");
+                    bool loggedIn = userView.LoginScreen();
+
+                    if (loggedIn)
+                    {
+                        Console.Clear();
+                        Console.WriteLine("Logged in successfully.");
+                        System.Threading.Thread.Sleep(3000);
+                        consoleView.DisplayMenu();
+                        exitProgram = true;
+                    }
+                    else
+                    {
+                        Console.Clear();
+                        Console.WriteLine("You chose to return to the role selection.");
+                    }
                 }
             }
         }

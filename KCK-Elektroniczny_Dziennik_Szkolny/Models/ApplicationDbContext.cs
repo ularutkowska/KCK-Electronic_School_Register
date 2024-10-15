@@ -19,7 +19,7 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Models
         public DbSet<Subject> Subjects { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Server=tcp:patiii.database.windows.net,1433;Initial Catalog=pati;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;Authentication=\"Active Directory Default\";");
+            optionsBuilder.UseSqlServer("Server=tcp:ulcix.database.windows.net,1433;Initial Catalog=ulcix;Persist Security Info=False;User ID=ulcix;Password=Chujwtehaslo@;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
         }
     }
 }

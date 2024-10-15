@@ -3,28 +3,39 @@
   "WorkspaceRootPath": "C:\\Users\\Patryk\\Documents\\GitHub\\KCK-Electronic_School_Register\\KCK-Elektroniczny_Dziennik_Szkolny\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1FD7EFA9-A3B3-48AD-8D7A-6EFDD6E61040}|KCK-Elektroniczny_Dziennik_Szkolny.csproj|c:\\users\\patryk\\documents\\github\\kck-electronic_school_register\\kck-elektroniczny_dziennik_szkolny\\models\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1FD7EFA9-A3B3-48AD-8D7A-6EFDD6E61040}|KCK-Elektroniczny_Dziennik_Szkolny.csproj|solutionrelative:models\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1FD7EFA9-A3B3-48AD-8D7A-6EFDD6E61040}|KCK-Elektroniczny_Dziennik_Szkolny.csproj|c:\\users\\patryk\\documents\\github\\kck-electronic_school_register\\kck-elektroniczny_dziennik_szkolny\\views\\userview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1FD7EFA9-A3B3-48AD-8D7A-6EFDD6E61040}|KCK-Elektroniczny_Dziennik_Szkolny.csproj|solutionrelative:views\\userview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1FD7EFA9-A3B3-48AD-8D7A-6EFDD6E61040}|KCK-Elektroniczny_Dziennik_Szkolny.csproj|c:\\users\\patryk\\documents\\github\\kck-electronic_school_register\\kck-elektroniczny_dziennik_szkolny\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1FD7EFA9-A3B3-48AD-8D7A-6EFDD6E61040}|KCK-Elektroniczny_Dziennik_Szkolny.csproj|solutionrelative:controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1FD7EFA9-A3B3-48AD-8D7A-6EFDD6E61040}|KCK-Elektroniczny_Dziennik_Szkolny.csproj|c:\\users\\patryk\\documents\\github\\kck-electronic_school_register\\kck-elektroniczny_dziennik_szkolny\\models\\objects\\subject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1FD7EFA9-A3B3-48AD-8D7A-6EFDD6E61040}|KCK-Elektroniczny_Dziennik_Szkolny.csproj|solutionrelative:models\\objects\\subject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{1FD7EFA9-A3B3-48AD-8D7A-6EFDD6E61040}|KCK-Elektroniczny_Dziennik_Szkolny.csproj|c:\\users\\patryk\\documents\\github\\kck-electronic_school_register\\kck-elektroniczny_dziennik_szkolny\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1FD7EFA9-A3B3-48AD-8D7A-6EFDD6E61040}|KCK-Elektroniczny_Dziennik_Szkolny.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1FD7EFA9-A3B3-48AD-8D7A-6EFDD6E61040}|KCK-Elektroniczny_Dziennik_Szkolny.csproj|c:\\users\\patryk\\documents\\github\\kck-electronic_school_register\\kck-elektroniczny_dziennik_szkolny\\controllers\\schoolcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1FD7EFA9-A3B3-48AD-8D7A-6EFDD6E61040}|KCK-Elektroniczny_Dziennik_Szkolny.csproj|solutionrelative:controllers\\schoolcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1FD7EFA9-A3B3-48AD-8D7A-6EFDD6E61040}|KCK-Elektroniczny_Dziennik_Szkolny.csproj|c:\\users\\patryk\\documents\\github\\kck-electronic_school_register\\kck-elektroniczny_dziennik_szkolny\\models\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1FD7EFA9-A3B3-48AD-8D7A-6EFDD6E61040}|KCK-Elektroniczny_Dziennik_Szkolny.csproj|solutionrelative:models\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1FD7EFA9-A3B3-48AD-8D7A-6EFDD6E61040}|KCK-Elektroniczny_Dziennik_Szkolny.csproj|c:\\users\\patryk\\documents\\github\\kck-electronic_school_register\\kck-elektroniczny_dziennik_szkolny\\models\\objects\\class.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1FD7EFA9-A3B3-48AD-8D7A-6EFDD6E61040}|KCK-Elektroniczny_Dziennik_Szkolny.csproj|solutionrelative:models\\objects\\class.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1FD7EFA9-A3B3-48AD-8D7A-6EFDD6E61040}|KCK-Elektroniczny_Dziennik_Szkolny.csproj|c:\\users\\patryk\\documents\\github\\kck-electronic_school_register\\kck-elektroniczny_dziennik_szkolny\\appsetings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{1FD7EFA9-A3B3-48AD-8D7A-6EFDD6E61040}|KCK-Elektroniczny_Dziennik_Szkolny.csproj|solutionrelative:appsetings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1FD7EFA9-A3B3-48AD-8D7A-6EFDD6E61040}|KCK-Elektroniczny_Dziennik_Szkolny.csproj|c:\\users\\patryk\\documents\\github\\kck-electronic_school_register\\kck-elektroniczny_dziennik_szkolny\\controllers\\schoolcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1FD7EFA9-A3B3-48AD-8D7A-6EFDD6E61040}|KCK-Elektroniczny_Dziennik_Szkolny.csproj|solutionrelative:controllers\\schoolcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1FD7EFA9-A3B3-48AD-8D7A-6EFDD6E61040}|KCK-Elektroniczny_Dziennik_Szkolny.csproj|c:\\users\\patryk\\documents\\github\\kck-electronic_school_register\\kck-elektroniczny_dziennik_szkolny\\models\\objects\\subject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1FD7EFA9-A3B3-48AD-8D7A-6EFDD6E61040}|KCK-Elektroniczny_Dziennik_Szkolny.csproj|solutionrelative:models\\objects\\subject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1FD7EFA9-A3B3-48AD-8D7A-6EFDD6E61040}|KCK-Elektroniczny_Dziennik_Szkolny.csproj|c:\\users\\patryk\\documents\\github\\kck-electronic_school_register\\kck-elektroniczny_dziennik_szkolny\\controllers\\gradecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -33,14 +44,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{1FD7EFA9-A3B3-48AD-8D7A-6EFDD6E61040}|KCK-Elektroniczny_Dziennik_Szkolny.csproj|c:\\users\\patryk\\documents\\github\\kck-electronic_school_register\\kck-elektroniczny_dziennik_szkolny\\views\\consoleview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1FD7EFA9-A3B3-48AD-8D7A-6EFDD6E61040}|KCK-Elektroniczny_Dziennik_Szkolny.csproj|solutionrelative:views\\consoleview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1FD7EFA9-A3B3-48AD-8D7A-6EFDD6E61040}|KCK-Elektroniczny_Dziennik_Szkolny.csproj|c:\\users\\patryk\\documents\\github\\kck-electronic_school_register\\kck-elektroniczny_dziennik_szkolny\\models\\objects\\class.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1FD7EFA9-A3B3-48AD-8D7A-6EFDD6E61040}|KCK-Elektroniczny_Dziennik_Szkolny.csproj|solutionrelative:models\\objects\\class.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1FD7EFA9-A3B3-48AD-8D7A-6EFDD6E61040}|KCK-Elektroniczny_Dziennik_Szkolny.csproj|c:\\users\\patryk\\documents\\github\\kck-electronic_school_register\\kck-elektroniczny_dziennik_szkolny\\views\\userview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1FD7EFA9-A3B3-48AD-8D7A-6EFDD6E61040}|KCK-Elektroniczny_Dziennik_Szkolny.csproj|solutionrelative:views\\userview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1FD7EFA9-A3B3-48AD-8D7A-6EFDD6E61040}|KCK-Elektroniczny_Dziennik_Szkolny.csproj|c:\\users\\patryk\\documents\\github\\kck-electronic_school_register\\kck-elektroniczny_dziennik_szkolny\\models\\objects\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -70,76 +73,63 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
+              "Title": "Microsoft.Common.CurrentVersion.targets",
+              "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "ToolTip": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "ViewState": "AgIAAO0SAAAAAAAAAAAewPgSAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
+              "WhenOpened": "2024-10-15T17:34:06.514Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "ApplicationDbContext.cs",
               "DocumentMoniker": "C:\\Users\\Patryk\\Documents\\GitHub\\KCK-Electronic_School_Register\\KCK-Elektroniczny_Dziennik_Szkolny\\Models\\ApplicationDbContext.cs",
               "RelativeDocumentMoniker": "Models\\ApplicationDbContext.cs",
               "ToolTip": "C:\\Users\\Patryk\\Documents\\GitHub\\KCK-Electronic_School_Register\\KCK-Elektroniczny_Dziennik_Szkolny\\Models\\ApplicationDbContext.cs",
               "RelativeToolTip": "Models\\ApplicationDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwA0AAAA0AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-15T07:38:24.633Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "appsetings.json",
-              "DocumentMoniker": "C:\\Users\\Patryk\\Documents\\GitHub\\KCK-Electronic_School_Register\\KCK-Elektroniczny_Dziennik_Szkolny\\appsetings.json",
-              "RelativeDocumentMoniker": "appsetings.json",
-              "ToolTip": "C:\\Users\\Patryk\\Documents\\GitHub\\KCK-Electronic_School_Register\\KCK-Elektroniczny_Dziennik_Szkolny\\appsetings.json",
-              "RelativeToolTip": "appsetings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAC2AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-10-15T07:15:57.559Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "GradeController.cs",
-              "DocumentMoniker": "C:\\Users\\Patryk\\Documents\\GitHub\\KCK-Electronic_School_Register\\KCK-Elektroniczny_Dziennik_Szkolny\\Controllers\\GradeController.cs",
-              "RelativeDocumentMoniker": "Controllers\\GradeController.cs",
-              "ToolTip": "C:\\Users\\Patryk\\Documents\\GitHub\\KCK-Electronic_School_Register\\KCK-Elektroniczny_Dziennik_Szkolny\\Controllers\\GradeController.cs",
-              "RelativeToolTip": "Controllers\\GradeController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T07:06:26.768Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Patryk\\Documents\\GitHub\\KCK-Electronic_School_Register\\KCK-Elektroniczny_Dziennik_Szkolny\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\Patryk\\Documents\\GitHub\\KCK-Electronic_School_Register\\KCK-Elektroniczny_Dziennik_Szkolny\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABBAAAAAAAAAA==",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwCIAAABWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-13T17:35:51.922Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
               "Title": "SchoolController.cs",
               "DocumentMoniker": "C:\\Users\\Patryk\\Documents\\GitHub\\KCK-Electronic_School_Register\\KCK-Elektroniczny_Dziennik_Szkolny\\Controllers\\SchoolController.cs",
               "RelativeDocumentMoniker": "Controllers\\SchoolController.cs",
               "ToolTip": "C:\\Users\\Patryk\\Documents\\GitHub\\KCK-Electronic_School_Register\\KCK-Elektroniczny_Dziennik_Szkolny\\Controllers\\SchoolController.cs",
               "RelativeToolTip": "Controllers\\SchoolController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAACIAAAAAAAAAAAAkwDIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-13T17:33:55.068Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 10,
               "Title": "ConsoleView.cs",
               "DocumentMoniker": "C:\\Users\\Patryk\\Documents\\GitHub\\KCK-Electronic_School_Register\\KCK-Elektroniczny_Dziennik_Szkolny\\Views\\ConsoleView.cs",
               "RelativeDocumentMoniker": "Views\\ConsoleView.cs",
@@ -147,21 +137,7 @@
               "RelativeToolTip": "Views\\ConsoleView.cs",
               "ViewState": "AgIAAGQAAAAAAAAAAAAiwG0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-13T17:33:02.643Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Subject.cs",
-              "DocumentMoniker": "C:\\Users\\Patryk\\Documents\\GitHub\\KCK-Electronic_School_Register\\KCK-Elektroniczny_Dziennik_Szkolny\\Models\\Objects\\Subject.cs",
-              "RelativeDocumentMoniker": "Models\\Objects\\Subject.cs",
-              "ToolTip": "C:\\Users\\Patryk\\Documents\\GitHub\\KCK-Electronic_School_Register\\KCK-Elektroniczny_Dziennik_Szkolny\\Models\\Objects\\Subject.cs",
-              "RelativeToolTip": "Models\\Objects\\Subject.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-13T22:40:23.913Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-13T17:33:02.643Z"
             },
             {
               "$type": "Document",
@@ -171,14 +147,64 @@
               "RelativeDocumentMoniker": "Controllers\\UserController.cs",
               "ToolTip": "C:\\Users\\Patryk\\Documents\\GitHub\\KCK-Electronic_School_Register\\KCK-Elektroniczny_Dziennik_Szkolny\\Controllers\\UserController.cs",
               "RelativeToolTip": "Controllers\\UserController.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAAAcwBEAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-14T09:55:44.625Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UserView.cs",
+              "DocumentMoniker": "C:\\Users\\Patryk\\Documents\\GitHub\\KCK-Electronic_School_Register\\KCK-Elektroniczny_Dziennik_Szkolny\\Views\\UserView.cs",
+              "RelativeDocumentMoniker": "Views\\UserView.cs",
+              "ToolTip": "C:\\Users\\Patryk\\Documents\\GitHub\\KCK-Electronic_School_Register\\KCK-Elektroniczny_Dziennik_Szkolny\\Views\\UserView.cs",
+              "RelativeToolTip": "Views\\UserView.cs",
+              "ViewState": "AgIAAIEAAAAAAAAAAAAowLAAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-14T10:08:14.316Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "GradeController.cs",
+              "DocumentMoniker": "C:\\Users\\Patryk\\Documents\\GitHub\\KCK-Electronic_School_Register\\KCK-Elektroniczny_Dziennik_Szkolny\\Controllers\\GradeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\GradeController.cs",
+              "ToolTip": "C:\\Users\\Patryk\\Documents\\GitHub\\KCK-Electronic_School_Register\\KCK-Elektroniczny_Dziennik_Szkolny\\Controllers\\GradeController.cs",
+              "RelativeToolTip": "Controllers\\GradeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-15T07:06:26.768Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "appsetings.json",
+              "DocumentMoniker": "C:\\Users\\Patryk\\Documents\\GitHub\\KCK-Electronic_School_Register\\KCK-Elektroniczny_Dziennik_Szkolny\\appsetings.json",
+              "RelativeDocumentMoniker": "appsetings.json",
+              "ToolTip": "C:\\Users\\Patryk\\Documents\\GitHub\\KCK-Electronic_School_Register\\KCK-Elektroniczny_Dziennik_Szkolny\\appsetings.json",
+              "RelativeToolTip": "appsetings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-10-15T07:15:57.559Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 8,
+              "Title": "Subject.cs",
+              "DocumentMoniker": "C:\\Users\\Patryk\\Documents\\GitHub\\KCK-Electronic_School_Register\\KCK-Elektroniczny_Dziennik_Szkolny\\Models\\Objects\\Subject.cs",
+              "RelativeDocumentMoniker": "Models\\Objects\\Subject.cs",
+              "ToolTip": "C:\\Users\\Patryk\\Documents\\GitHub\\KCK-Electronic_School_Register\\KCK-Elektroniczny_Dziennik_Szkolny\\Models\\Objects\\Subject.cs",
+              "RelativeToolTip": "Models\\Objects\\Subject.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-13T22:40:23.913Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "Class.cs",
               "DocumentMoniker": "C:\\Users\\Patryk\\Documents\\GitHub\\KCK-Electronic_School_Register\\KCK-Elektroniczny_Dziennik_Szkolny\\Models\\Objects\\Class.cs",
               "RelativeDocumentMoniker": "Models\\Objects\\Class.cs",
@@ -191,20 +217,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "UserView.cs",
-              "DocumentMoniker": "C:\\Users\\Patryk\\Documents\\GitHub\\KCK-Electronic_School_Register\\KCK-Elektroniczny_Dziennik_Szkolny\\Views\\UserView.cs",
-              "RelativeDocumentMoniker": "Views\\UserView.cs",
-              "ToolTip": "C:\\Users\\Patryk\\Documents\\GitHub\\KCK-Electronic_School_Register\\KCK-Elektroniczny_Dziennik_Szkolny\\Views\\UserView.cs",
-              "RelativeToolTip": "Views\\UserView.cs",
-              "ViewState": "AgIAAEYAAAAAAAAAAAAmwJsAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-14T10:08:14.316Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "Student.cs",
               "DocumentMoniker": "C:\\Users\\Patryk\\Documents\\GitHub\\KCK-Electronic_School_Register\\KCK-Elektroniczny_Dziennik_Szkolny\\Models\\Objects\\Student.cs",
               "RelativeDocumentMoniker": "Models\\Objects\\Student.cs",
@@ -216,7 +229,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "Teacher.cs",
               "DocumentMoniker": "C:\\Users\\Patryk\\Documents\\GitHub\\KCK-Electronic_School_Register\\KCK-Elektroniczny_Dziennik_Szkolny\\Models\\Objects\\Teacher.cs",
               "RelativeDocumentMoniker": "Models\\Objects\\Teacher.cs",
@@ -228,7 +241,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "Grade.cs",
               "DocumentMoniker": "C:\\Users\\Patryk\\Documents\\GitHub\\KCK-Electronic_School_Register\\KCK-Elektroniczny_Dziennik_Szkolny\\Models\\Objects\\Grade.cs",
               "RelativeDocumentMoniker": "Models\\Objects\\Grade.cs",
@@ -240,7 +253,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "Exam.cs",
               "DocumentMoniker": "C:\\Users\\Patryk\\Documents\\GitHub\\KCK-Electronic_School_Register\\KCK-Elektroniczny_Dziennik_Szkolny\\Models\\Objects\\Exam.cs",
               "RelativeDocumentMoniker": "Models\\Objects\\Exam.cs",
@@ -252,7 +265,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "Parent.cs",
               "DocumentMoniker": "C:\\Users\\Patryk\\Documents\\GitHub\\KCK-Electronic_School_Register\\KCK-Elektroniczny_Dziennik_Szkolny\\Models\\Objects\\Parent.cs",
               "RelativeDocumentMoniker": "Models\\Objects\\Parent.cs",

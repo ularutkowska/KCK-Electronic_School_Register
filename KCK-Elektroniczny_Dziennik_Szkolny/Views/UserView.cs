@@ -38,7 +38,10 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Views
 
                         if (!loggedIn)
                         {
-                            return false;
+                            Console.Clear();
+                            Console.WriteLine("Invalid login or password. Returning to role selection...");
+                            System.Threading.Thread.Sleep(2000); // Krótkie oczekiwanie
+                            // Powrót do menu wyboru roli
                         }
                         break;
                 }
@@ -98,7 +101,7 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Views
                     Console.WriteLine("Enter password:");
                     string password = Console.ReadLine();
 
-                    bool success = userController.studentlogin(studentId, password);
+                    bool success = userController.StudentLogin(studentId, password);
 
                     if (success)
                     {
@@ -109,7 +112,7 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Views
                     else
                     {
                         Console.WriteLine("Invalid ID or password.");
-                        System.Threading.Thread.Sleep(3000);
+                        System.Threading.Thread.Sleep(2000);
                         retryLogin = AskToRetry();
                     }
                 }
@@ -122,7 +125,7 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Views
                     Console.WriteLine("Enter password:");
                     string password = Console.ReadLine();
 
-                    bool success = userController.login(email, password, role);
+                    bool success = userController.Login(email, password, role);
 
                     if (success)
                     {
@@ -133,7 +136,7 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Views
                     else
                     {
                         Console.WriteLine("Invalid login credentials.");
-                        System.Threading.Thread.Sleep(3000);
+                        System.Threading.Thread.Sleep(2000);
                         retryLogin = AskToRetry();
                     }
                 }
@@ -175,15 +178,7 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Views
                         selectedIndex = (selectedIndex == options.Length - 1) ? 0 : selectedIndex + 1;
                         break;
                     case ConsoleKey.Enter:
-                        if (options[selectedIndex] == "Yes")
-                        {
-                            return true;
-                        }
-                        else if (options[selectedIndex] == "No")
-                        {
-                            return false;
-                        }
-                        break;
+                        return options[selectedIndex] == "Yes";
                 }
             }
         }
