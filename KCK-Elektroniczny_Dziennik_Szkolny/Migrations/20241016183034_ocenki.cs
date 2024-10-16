@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace KCK_Elektroniczny_Dziennik_Szkolny.Migrations
 {
     /// <inheritdoc />
-    public partial class ulcix1 : Migration
+    public partial class ocenki : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -65,7 +65,7 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Migrations
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Grade = table.Column<int>(type: "int", nullable: false),
-                    SupervisingTeacherId = table.Column<int>(type: "int", nullable: false)
+                    SupervisingTeacherId = table.Column<int>(type: "int", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -74,8 +74,7 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Migrations
                         name: "FK_Classes_Teachers_SupervisingTeacherId",
                         column: x => x.SupervisingTeacherId,
                         principalTable: "Teachers",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        principalColumn: "Id");
                 });
 
             migrationBuilder.CreateTable(
@@ -135,7 +134,9 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Value = table.Column<int>(type: "int", nullable: false),
                     SubjectId = table.Column<int>(type: "int", nullable: false),
-                    StudentId = table.Column<int>(type: "int", nullable: false)
+                    TeacherId = table.Column<int>(type: "int", nullable: false),
+                    StudentId = table.Column<int>(type: "int", nullable: false),
+                    Date = table.Column<DateTime>(type: "datetime2", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -150,6 +151,12 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Migrations
                         name: "FK_Grades_Subjects_SubjectId",
                         column: x => x.SubjectId,
                         principalTable: "Subjects",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_Grades_Teachers_TeacherId",
+                        column: x => x.TeacherId,
+                        principalTable: "Teachers",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                 });
@@ -168,6 +175,11 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Migrations
                 name: "IX_Grades_SubjectId",
                 table: "Grades",
                 column: "SubjectId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Grades_TeacherId",
+                table: "Grades",
+                column: "TeacherId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Students_ClassId",

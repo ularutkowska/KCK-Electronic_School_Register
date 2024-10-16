@@ -12,9 +12,10 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny
             {
                 UserController userController = new UserController(context);
                 SchoolController schoolController = new SchoolController(context);
+                GradeController gradeController = new GradeController(context);
 
                 UserView userView = new UserView(userController);
-                ConsoleView consoleView = new ConsoleView(schoolController);
+                ConsoleView consoleView = new ConsoleView(schoolController, gradeController);
                 bool exitProgram = false;
 
                 while (!exitProgram)

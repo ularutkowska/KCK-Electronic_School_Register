@@ -1,9 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace KCK_Elektroniczny_Dziennik_Szkolny.Models.Objects
 {
@@ -16,14 +13,25 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Models.Objects
         [Range(1, 6, ErrorMessage = "The grade must be a number between 1 and 6.")]
         public int Value { get; set; }
 
-        public Subject Subject { get; set; }
+        [Required]
+        public int SubjectId { get; set; }
 
-        public Teacher Teacher { get; set; }
+        [ForeignKey("SubjectId")]
+        public Subject? Subject { get; set; }
 
-        public Student Student { get; set; }
+        [Required]
+        public int TeacherId { get; set; }
 
+        [ForeignKey("TeacherId")]
+        public Teacher? Teacher { get; set; }
+
+        [Required]
+        public int StudentId { get; set; }
+
+        [ForeignKey("StudentId")]
+        public Student? Student { get; set; }
+
+        [Required]
         public DateTime Date { get; set; }
-
-
     }
 }

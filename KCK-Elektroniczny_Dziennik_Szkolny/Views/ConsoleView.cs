@@ -1,5 +1,6 @@
 ﻿using KCK_Elektroniczny_Dziennik_Szkolny.Controllers;
 using KCK_Elektroniczny_Dziennik_Szkolny.Models.Objects;
+using KCK_Elektroniczny_Dziennik_Szkolny.Views;
 using System;
 
 namespace KCK_Elektroniczny_Dziennik_Szkolny.Views
@@ -7,6 +8,8 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Views
     public class ConsoleView
     {
         private SchoolController controller;
+        private GradeController gradeController;
+        private GradeView gradeView;
 
         private string[] menuItems = new string[]
         {
@@ -14,13 +17,16 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Views
             "2. Add student",
             "3. Add teacher",
             "4. Add subject",
-            "5. View classes",
-            "6. Exit"
+            "5. Manage grades",
+            "6. View classes",
+            "7. Exit"
         };
 
-        public ConsoleView(SchoolController controller)
+        public ConsoleView(SchoolController controller, GradeController gradeController)
         {
             this.controller = controller;
+            this.gradeController = gradeController;
+            this.gradeView = new GradeView(gradeController);
         }
 
         public void DisplayMenu()
@@ -104,9 +110,12 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Views
                     AddSubject();
                     break;
                 case 4:
-                    DisplayClasses();
+                    gradeView.DisplayGradeMenu();
                     break;
                 case 5:
+                    DisplayClasses();
+                    break;
+                case 6:
                     Console.WriteLine("Program ended.");
                     break;
             }

@@ -67,10 +67,16 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
+                    b.Property<DateTime>("Date")
+                        .HasColumnType("datetime2");
+
                     b.Property<int>("StudentId")
                         .HasColumnType("int");
 
                     b.Property<int>("SubjectId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("TeacherId")
                         .HasColumnType("int");
 
                     b.Property<int>("Value")
@@ -81,6 +87,8 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Migrations
                     b.HasIndex("StudentId");
 
                     b.HasIndex("SubjectId");
+
+                    b.HasIndex("TeacherId");
 
                     b.ToTable("Grades");
                 });
@@ -242,9 +250,17 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
+                    b.HasOne("KCK_Elektroniczny_Dziennik_Szkolny.Models.Objects.Teacher", "Teacher")
+                        .WithMany()
+                        .HasForeignKey("TeacherId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.Navigation("Student");
 
                     b.Navigation("Subject");
+
+                    b.Navigation("Teacher");
                 });
 
             modelBuilder.Entity("KCK_Elektroniczny_Dziennik_Szkolny.Models.Objects.Student", b =>
