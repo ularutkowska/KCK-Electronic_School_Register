@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Patryk\\Downloads\\KCK-Electronic_School_Register\\KCK-Elektroniczny_Dziennik_Szkolny\\KCK-Elektroniczny_Dziennik_Szkolny.csproj": {}
+    "C:\\Users\\ulkar\\Desktop\\tumoznacommitowac\\KCK-Electronic_School_Register\\KCK-Elektroniczny_Dziennik_Szkolny\\KCK-Elektroniczny_Dziennik_Szkolny.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Patryk\\Downloads\\KCK-Electronic_School_Register\\KCK-Elektroniczny_Dziennik_Szkolny\\KCK-Elektroniczny_Dziennik_Szkolny.csproj": {
+    "C:\\Users\\ulkar\\Desktop\\tumoznacommitowac\\KCK-Electronic_School_Register\\KCK-Elektroniczny_Dziennik_Szkolny\\KCK-Elektroniczny_Dziennik_Szkolny.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Patryk\\Downloads\\KCK-Electronic_School_Register\\KCK-Elektroniczny_Dziennik_Szkolny\\KCK-Elektroniczny_Dziennik_Szkolny.csproj",
+        "projectUniqueName": "C:\\Users\\ulkar\\Desktop\\tumoznacommitowac\\KCK-Electronic_School_Register\\KCK-Elektroniczny_Dziennik_Szkolny\\KCK-Elektroniczny_Dziennik_Szkolny.csproj",
         "projectName": "KCK-Elektroniczny_Dziennik_Szkolny",
-        "projectPath": "C:\\Users\\Patryk\\Downloads\\KCK-Electronic_School_Register\\KCK-Elektroniczny_Dziennik_Szkolny\\KCK-Elektroniczny_Dziennik_Szkolny.csproj",
-        "packagesPath": "C:\\Users\\Patryk\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Patryk\\Downloads\\KCK-Electronic_School_Register\\KCK-Elektroniczny_Dziennik_Szkolny\\obj\\",
+        "projectPath": "C:\\Users\\ulkar\\Desktop\\tumoznacommitowac\\KCK-Electronic_School_Register\\KCK-Elektroniczny_Dziennik_Szkolny\\KCK-Elektroniczny_Dziennik_Szkolny.csproj",
+        "packagesPath": "C:\\Users\\ulkar\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ulkar\\Desktop\\tumoznacommitowac\\KCK-Electronic_School_Register\\KCK-Elektroniczny_Dziennik_Szkolny\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Patryk\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ulkar\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,6 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -50,6 +51,20 @@
           "targetAlias": "net8.0",
           "dependencies": {
             "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.Analyzers": {
+              "target": "Package",
+              "version": "[8.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.Relational": {
               "target": "Package",
               "version": "[8.0.10, )"
             },
@@ -80,7 +95,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "c:\\program files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.203/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

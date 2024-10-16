@@ -13,6 +13,11 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Controllers
         {
             _context = context;
         }
+        public void AddGrade(Grade grade)
+        {
+            _context.Grades.Add(grade);
+            _context.SaveChanges();
+        }
 
         public void AddClass(Class schoolClass)
         {
@@ -29,6 +34,12 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Controllers
         public void AddTeacher(Teacher teacher)
         {
             _context.Teachers.Add(teacher);
+            _context.SaveChanges();
+        }
+
+        public void AddSubject(Subject subject)
+        {
+            _context.Subjects.Add(subject);
             _context.SaveChanges();
         }
 

@@ -13,8 +13,9 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Views
             "1. Add class",
             "2. Add student",
             "3. Add teacher",
-            "4. View classes",
-            "5. Exit"
+            "4. Add subject",
+            "5. View classes",
+            "6. Exit"
         };
 
         public ConsoleView(SchoolController controller)
@@ -100,9 +101,12 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Views
                     AddTeacher();
                     break;
                 case 3:
-                    DisplayClasses();
+                    AddSubject();
                     break;
                 case 4:
+                    DisplayClasses();
+                    break;
+                case 5:
                     Console.WriteLine("Program ended.");
                     break;
             }
@@ -175,6 +179,62 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Views
             Console.WriteLine("Student has been added.");
             Console.ReadKey();
         }
+
+        private void AddSubject()
+        {
+            Console.Clear();
+            Console.WriteLine("Enter subject's name:");
+            string name = Console.ReadLine();
+
+            var teachers = controller.GetTeachers();
+            if (teachers.Count == 0)
+            {
+                Console.WriteLine("No teachers added");
+                Console.ReadKey();
+                return;
+            }
+            int selectedIndex = 0;
+            bool selectingTeacher = true;
+
+
+            while (selectingTeacher)
+            {
+                Console.Clear();
+                Console.WriteLine("Select teachers");
+
+                for (int i = 0; i < teachers.Count; i++)
+                {
+                    if (i == selectedIndex)
+                    {
+                        Console.BackgroundColor = ConsoleColor.Gray;
+                        Console.ForegroundColor = ConsoleColor.Black;
+                    }
+                    Console.WriteLine($"{teachers[i].Name} {teachers[i].Surname}");
+                    Console.ResetColor();
+                }
+
+                var key = Console.ReadKey(true).Key;
+                switch (key)
+                {
+                    case ConsoleKey.UpArrow:
+                        selectedIndex = (selectedIndex == 0) ? teachers.Count - 1 : selectedIndex - 1;
+                        break;
+                    case ConsoleKey.DownArrow:
+                        selectedIndex = (selectedIndex == teachers.Count - 1) ? 0 : selectedIndex + 1;
+                        break;
+                    case ConsoleKey.Enter:
+                        selectingTeacher = false;
+                        break;
+                }
+            }
+
+            var selectedTeacher = teachers[selectedIndex];
+
+            Subject newSubject = new Subject { Name = name, Teacher = selectedTeacher };
+            controller.AddSubject(newSubject);
+            Console.WriteLine("Subject has been added.");
+            Console.ReadKey();
+        }       
 
         private void AddTeacher()
         {
