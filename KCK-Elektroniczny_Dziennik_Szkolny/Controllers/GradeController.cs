@@ -1,5 +1,6 @@
 ﻿using KCK_Elektroniczny_Dziennik_Szkolny.Models;
 using KCK_Elektroniczny_Dziennik_Szkolny.Models.Objects;
+using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -34,7 +35,11 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Controllers
         {
             return _context.Grades
                 .Where(g => g.Student.Id == studentId)
+                .Include(g => g.Subject)
+                .Include(g => g.Teacher)
+                .Include(g => g.Student)
                 .ToList();
         }
+
     }
 }

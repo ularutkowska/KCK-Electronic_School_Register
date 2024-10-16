@@ -17,9 +17,10 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Views
             "2. Add student",
             "3. Add teacher",
             "4. Add subject",
-            "5. Manage grades",
-            "6. View classes",
-            "7. Exit"
+            "5. Add parent",
+            "6. Manage grades",
+            "7. View classes",
+            "8. Exit"
         };
 
         public ConsoleView(SchoolController controller, GradeController gradeController)
@@ -110,12 +111,15 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Views
                     AddSubject();
                     break;
                 case 4:
-                    gradeView.DisplayGradeMenu();
+                    AddParent();
                     break;
                 case 5:
-                    DisplayClasses();
+                    gradeView.DisplayGradeMenu();
                     break;
                 case 6:
+                    DisplayClasses();
+                    break;
+                case 7:
                     Console.WriteLine("Program ended.");
                     break;
             }
@@ -131,6 +135,7 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Views
             if (teachers.Count == 0) {
             Console.WriteLine("No teachers added");
                 Console.ReadKey();
+                DisplayMenu();
                 return;
             }
             int selectedIndex = 0;
@@ -174,6 +179,7 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Views
             controller.AddClass(newClass);
             Console.WriteLine("Class has been added.");
             Console.ReadKey();
+            DisplayMenu();
         }
 
         private void AddStudent()
@@ -183,11 +189,98 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Views
             string name = Console.ReadLine();
             Console.WriteLine("Enter student's last name:");
             string surname = Console.ReadLine();
-            Student newStudent = new Student { Name = name, Surname = surname };
+            Console.WriteLine("Enter student's password:");
+            string password = Console.ReadLine();
+            Console.WriteLine("Enter student's BirthDate (yyyy-MM-dd):");
+            DateOnly birthDate;
+            while (!DateOnly.TryParse(Console.ReadLine(), out birthDate))
+            {
+                Console.WriteLine("Invalid date format. Please enter a valid date (yyyy-MM-dd):");
+            }
+
+            Console.WriteLine("Enter parent's ID:");
+            int parentId;
+            while (!int.TryParse(Console.ReadLine(), out parentId))
+            {
+                Console.WriteLine("Invalid parent ID. Please enter a valid parent ID:");
+            }
+
+            var parent = controller.GetParentById(parentId);
+            if (parent == null)
+            {
+                Console.WriteLine("Parent not found.");
+                Console.ReadKey();
+                DisplayMenu();
+                return;
+
+            }
+            Student newStudent = new Student { Name = name, Surname = surname, Password = password,BirthDate = birthDate, Parent = parent };
             controller.AddStudent(newStudent);
             Console.WriteLine("Student has been added.");
             Console.ReadKey();
+            DisplayMenu();
         }
+
+        private void AddParent()
+        {
+            Console.Clear();
+
+            Console.WriteLine("Enter parent's first name:");
+            string name = Console.ReadLine();
+
+            Console.WriteLine("Enter parent's last name:");
+            string surname = Console.ReadLine();
+
+            Console.WriteLine("Enter parent's password:");
+            string password = Console.ReadLine();
+
+            Console.WriteLine("Enter parent's email address:");
+            string email;
+            while (!IsValidEmail(Console.ReadLine(), out email))
+            {
+                Console.WriteLine("Invalid email address. Please enter a valid email:");
+            }
+
+            Console.WriteLine("Enter parent's phone number:");
+            string phoneNumber;
+            while (!IsValidPhoneNumber(Console.ReadLine(), out phoneNumber))
+            {
+                Console.WriteLine("Invalid phone number. The phone number must contain at least 9 digits:");
+            }
+
+            Parent newParent = new Parent
+            {
+                Name = name,
+                Surname = surname,
+                Password = password,
+                Email = email,
+                PhoneNumber = phoneNumber
+            };
+
+            controller.AddParent(newParent);
+
+            Console.WriteLine("Parent has been added.");
+            Console.ReadKey();
+            DisplayMenu();
+        }
+
+        private bool IsValidEmail(string input, out string email)
+        {
+            email = input;
+            var emailCheck = new System.ComponentModel.DataAnnotations.EmailAddressAttribute();
+            return emailCheck.IsValid(input);
+        }
+
+        private bool IsValidPhoneNumber(string input, out string phoneNumber)
+        {
+            phoneNumber = input;
+            if (input.Length >= 9 && input.Length <= 14)
+            {
+                return true;
+            }
+            return false;
+        }
+
 
         private void AddSubject()
         {
@@ -262,6 +355,7 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Views
             controller.AddTeacher(newTeacher);
             Console.WriteLine("Teacher has been added.");
             Console.ReadKey();
+            DisplayMenu();
         }
 
         private void DisplayClasses()
@@ -280,6 +374,7 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Views
                 }
             }
             Console.ReadKey();
+            DisplayMenu();
         }
     }
 }

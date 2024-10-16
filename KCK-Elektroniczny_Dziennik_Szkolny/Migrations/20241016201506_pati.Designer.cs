@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace KCK_Elektroniczny_Dziennik_Szkolny.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20241016183034_ocenki")]
-    partial class ocenki
+    [Migration("20241016201506_pati")]
+    partial class pati
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

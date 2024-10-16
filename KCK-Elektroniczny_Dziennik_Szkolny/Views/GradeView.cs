@@ -96,7 +96,7 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Views
                     Console.Clear();
                     Console.WriteLine("Exiting grade management.");
                     System.Threading.Thread.Sleep(1000);
-                    Environment.Exit(0);  // Exit program or just stop GradeView
+                    DisplayGradeMenu();
                     break;
             }
         }
@@ -126,13 +126,32 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Views
                 var teacher = controller.GetTeacherById(teacherId);
                 var student = controller.GetStudentById(studentId);
 
-                if (subject == null || teacher == null || student == null)
+                if (subject == null)
                 {
-                    Console.WriteLine("Invalid subject, teacher, or student ID.");
+                    Console.WriteLine("Invalid subject ID.");
+                    Console.ReadKey();
+                    DisplayGradeMenu();
                     return;
                 }
 
-                Grade newGrade = new Grade { Value = value, Subject = subject, Teacher = teacher, Student = student, Date = date };
+                if (teacher == null)
+                {
+                    Console.WriteLine("Invalid teacher ID.");
+                    Console.ReadKey();
+                    DisplayGradeMenu();
+                    return;
+                }
+
+                if (student == null)
+                {
+                    Console.WriteLine("Invalid student ID.");
+                    Console.ReadKey();
+                    DisplayGradeMenu();
+                    return;
+                }
+
+                Grade newGrade = new Grade{ Value = value, Subject = subject, Teacher = teacher, Student = student, Date = date};
+
                 controller.AddGrade(newGrade);
 
                 Console.WriteLine("Grade has been added.");
@@ -143,7 +162,9 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Views
             }
 
             Console.ReadKey();
+            DisplayGradeMenu();
         }
+
 
         private void ViewGrades()
         {
@@ -167,6 +188,7 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Views
                 }
             }
             Console.ReadKey();
+            DisplayGradeMenu();
         }
     }
 }

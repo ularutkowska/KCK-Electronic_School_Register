@@ -38,6 +38,12 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Controllers
             _context.SaveChanges();
         }
 
+        public void AddParent(Parent parent)
+        {
+            _context.Parents.Add(parent);
+            _context.SaveChanges();
+        }
+
         public List<Class> GetClasses()
         {
             return _context.Classes.ToList();
@@ -51,6 +57,10 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Controllers
         public List<Teacher> GetTeachers()
         {
             return _context.Teachers.ToList();
+        }
+        public Parent GetParentById(int parentId)
+        {
+            return _context.Parents.Find(parentId);
         }
     }
 }

@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace KCK_Elektroniczny_Dziennik_Szkolny.Migrations
 {
     /// <inheritdoc />
-    public partial class ocenki : Migration
+    public partial class pati : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -127,39 +127,40 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Grades",
-                columns: table => new
-                {
-                    Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    Value = table.Column<int>(type: "int", nullable: false),
-                    SubjectId = table.Column<int>(type: "int", nullable: false),
-                    TeacherId = table.Column<int>(type: "int", nullable: false),
-                    StudentId = table.Column<int>(type: "int", nullable: false),
-                    Date = table.Column<DateTime>(type: "datetime2", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Grades", x => x.Id);
-                    table.ForeignKey(
-                        name: "FK_Grades_Students_StudentId",
-                        column: x => x.StudentId,
-                        principalTable: "Students",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
-                    table.ForeignKey(
-                        name: "FK_Grades_Subjects_SubjectId",
-                        column: x => x.SubjectId,
-                        principalTable: "Subjects",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
-                    table.ForeignKey(
-                        name: "FK_Grades_Teachers_TeacherId",
-                        column: x => x.TeacherId,
-                        principalTable: "Teachers",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
-                });
+    name: "Grades",
+    columns: table => new
+    {
+        Id = table.Column<int>(type: "int", nullable: false)
+            .Annotation("SqlServer:Identity", "1, 1"),
+        Value = table.Column<int>(type: "int", nullable: false),
+        SubjectId = table.Column<int>(type: "int", nullable: false),
+        TeacherId = table.Column<int>(type: "int", nullable: false),
+        StudentId = table.Column<int>(type: "int", nullable: false),
+        Date = table.Column<DateTime>(type: "datetime2", nullable: false)
+    },
+    constraints: table =>
+    {
+        table.PrimaryKey("PK_Grades", x => x.Id);
+        table.ForeignKey(
+            name: "FK_Grades_Students_StudentId",
+            column: x => x.StudentId,
+            principalTable: "Students",
+            principalColumn: "Id",
+            onDelete: ReferentialAction.Cascade);  // Kaskadowe usuwanie tylko dla studentów
+        table.ForeignKey(
+            name: "FK_Grades_Subjects_SubjectId",
+            column: x => x.SubjectId,
+            principalTable: "Subjects",
+            principalColumn: "Id",
+            onDelete: ReferentialAction.Restrict);  // Usuwanie powiązanych przedmiotów z restrykcją
+        table.ForeignKey(
+            name: "FK_Grades_Teachers_TeacherId",
+            column: x => x.TeacherId,
+            principalTable: "Teachers",
+            principalColumn: "Id",
+            onDelete: ReferentialAction.Restrict);  // Usuwanie powiązanych nauczycieli z restrykcją
+    });
+
 
             migrationBuilder.CreateIndex(
                 name: "IX_Classes_SupervisingTeacherId",
