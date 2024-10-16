@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("KCK-Elektroniczny_Dziennik_Szkolny")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b260ad69eb203f7d1895f5c3510cbedbacafa637")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+90fb1b1d4e50027002e3dd8d60f222faf4c151a8")]
 [assembly: System.Reflection.AssemblyProductAttribute("KCK-Elektroniczny_Dziennik_Szkolny")]
 [assembly: System.Reflection.AssemblyTitleAttribute("KCK-Elektroniczny_Dziennik_Szkolny")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

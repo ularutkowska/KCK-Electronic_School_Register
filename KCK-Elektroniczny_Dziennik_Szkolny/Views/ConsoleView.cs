@@ -113,7 +113,51 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Views
             Console.Clear();
             Console.WriteLine("Enter class grade:");
             int grade = int.Parse(Console.ReadLine());
-            Class newClass = new Class { Grade = grade };
+
+            var teachers = controller.GetTeachers();
+            if (teachers.Count == 0) {
+            Console.WriteLine("No teachers added");
+                Console.ReadKey();
+                return;
+            }
+            int selectedIndex = 0;
+            bool selectingTeacher = true;
+
+
+            while (selectingTeacher)
+            {
+                Console.Clear();
+                Console.WriteLine("Select a supervising teacger");
+
+                for (int i = 0; i < teachers.Count; i++)
+                {
+                    if (i == selectedIndex)
+                    {
+                        Console.BackgroundColor = ConsoleColor.Gray;
+                        Console.ForegroundColor = ConsoleColor.Black;
+                    }
+                    Console.WriteLine($"{teachers[i].Name} {teachers[i].Surname}");
+                    Console.ResetColor();
+                }
+
+                var key = Console.ReadKey(true).Key;
+                switch (key)
+                {
+                    case ConsoleKey.UpArrow:
+                        selectedIndex = (selectedIndex == 0) ? teachers.Count - 1 : selectedIndex - 1;
+                        break;
+                    case ConsoleKey.DownArrow:
+                        selectedIndex = (selectedIndex == teachers.Count - 1) ? 0 : selectedIndex + 1;
+                        break;
+                    case ConsoleKey.Enter:
+                        selectingTeacher = false;
+                        break;
+                }
+            }
+
+            var selectedTeacher = teachers[selectedIndex];
+
+            Class newClass = new Class { Grade = grade, SupervisingTeacher=selectedTeacher };
             controller.AddClass(newClass);
             Console.WriteLine("Class has been added.");
             Console.ReadKey();
