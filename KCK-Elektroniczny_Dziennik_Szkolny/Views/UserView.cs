@@ -40,8 +40,7 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Views
                         {
                             Console.Clear();
                             Console.WriteLine("Invalid login or password. Returning to role selection...");
-                            System.Threading.Thread.Sleep(2000); // Krótkie oczekiwanie
-                            // Powrót do menu wyboru roli
+                            System.Threading.Thread.Sleep(2000);
                         }
                         break;
                 }
@@ -106,7 +105,7 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Views
                     if (success)
                     {
                         Console.WriteLine("Logged in as student.");
-                        System.Threading.Thread.Sleep(3000);
+                        System.Threading.Thread.Sleep(1000);
                         return true;
                     }
                     else
@@ -130,7 +129,7 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Views
                     if (success)
                     {
                         Console.WriteLine($"Logged in as {role}.");
-                        System.Threading.Thread.Sleep(3000);
+                        System.Threading.Thread.Sleep(1000);
                         return true;
                     }
                     else

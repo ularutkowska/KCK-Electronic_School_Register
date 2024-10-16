@@ -11,6 +11,6 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Models.Objects
 
         public ICollection<Student> Students { get; set; }
 
-        public Teacher SupervisingTeacher { get; set; }
+        public Teacher? SupervisingTeacher { get; set; }
     }
 }

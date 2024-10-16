@@ -139,7 +139,13 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Views
             string name = Console.ReadLine();
             Console.WriteLine("Enter teacher's last name:");
             string surname = Console.ReadLine();
-            Teacher newTeacher = new Teacher { Name = name, Surname = surname };
+            Console.WriteLine("Enter a new password for the teacher");
+            string password = Console.ReadLine();
+            Console.WriteLine("Enter the teacher's email");
+            string email = Console.ReadLine();
+            Console.WriteLine("Enter the teacher's phone number");
+            string phone = Console.ReadLine();
+            Teacher newTeacher = new Teacher { Name = name, Surname = surname, Password = password, Email = email, PhoneNumber = phone };
             controller.AddTeacher(newTeacher);
             Console.WriteLine("Teacher has been added.");
             Console.ReadKey();
