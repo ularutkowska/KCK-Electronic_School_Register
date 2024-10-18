@@ -10,6 +10,7 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Views
         private SchoolController controller;
         private GradeController gradeController;
         private GradeView gradeView;
+        private Teacher loggedInTeacher;
 
         private string[] menuItems = new string[]
         {
@@ -23,11 +24,12 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Views
             "8. Exit"
         };
 
-        public ConsoleView(SchoolController controller, GradeController gradeController)
+        public ConsoleView(SchoolController controller, GradeController gradeController, Teacher loggedInTeacher)
         {
             this.controller = controller;
             this.gradeController = gradeController;
-            this.gradeView = new GradeView(gradeController);
+            this.gradeView = new GradeView(gradeController, loggedInTeacher);
+            this.loggedInTeacher = loggedInTeacher;
         }
 
         public void DisplayMenu()

@@ -7,6 +7,7 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Views
     public class GradeView
     {
         private GradeController controller;
+        private Teacher loggedInTeacher;
 
         private string[] menuItems = new string[]
         {
@@ -15,9 +16,10 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Views
             "3. Exit"
         };
 
-        public GradeView(GradeController controller)
+        public GradeView(GradeController controller, Teacher loggedInTeacher)
         {
             this.controller = controller;
+            this.loggedInTeacher = loggedInTeacher;
         }
 
         public void DisplayGradeMenu()
@@ -96,7 +98,6 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Views
                     Console.Clear();
                     Console.WriteLine("Exiting grade management.");
                     System.Threading.Thread.Sleep(1000);
-                    DisplayGradeMenu();
                     break;
             }
         }
@@ -113,9 +114,6 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Views
                 Console.WriteLine("Enter subject ID:");
                 int subjectId = int.Parse(Console.ReadLine());
 
-                Console.WriteLine("Enter teacher ID:");
-                int teacherId = int.Parse(Console.ReadLine());
-
                 Console.WriteLine("Enter student ID:");
                 int studentId = int.Parse(Console.ReadLine());
 
@@ -123,22 +121,12 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Views
                 DateTime date = DateTime.Parse(Console.ReadLine());
 
                 var subject = controller.GetSubjectById(subjectId);
-                var teacher = controller.GetTeacherById(teacherId);
                 var student = controller.GetStudentById(studentId);
 
                 if (subject == null)
                 {
                     Console.WriteLine("Invalid subject ID.");
                     Console.ReadKey();
-                    DisplayGradeMenu();
-                    return;
-                }
-
-                if (teacher == null)
-                {
-                    Console.WriteLine("Invalid teacher ID.");
-                    Console.ReadKey();
-                    DisplayGradeMenu();
                     return;
                 }
 
@@ -146,11 +134,17 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Views
                 {
                     Console.WriteLine("Invalid student ID.");
                     Console.ReadKey();
-                    DisplayGradeMenu();
                     return;
                 }
 
-                Grade newGrade = new Grade{ Value = value, Subject = subject, Teacher = teacher, Student = student, Date = date};
+                Grade newGrade = new Grade
+                {
+                    Value = value,
+                    Subject = subject,
+                    Teacher = loggedInTeacher,
+                    Student = student,
+                    Date = date
+                };
 
                 controller.AddGrade(newGrade);
 
@@ -164,7 +158,6 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Views
             Console.ReadKey();
             DisplayGradeMenu();
         }
-
 
         private void ViewGrades()
         {

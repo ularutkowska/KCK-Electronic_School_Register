@@ -7,6 +7,7 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Controllers
     public class UserController
     {
         private readonly ApplicationDbContext _context;
+        private Teacher loggedInTeacher;
 
         public UserController(ApplicationDbContext context)
         {
@@ -18,7 +19,11 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Controllers
             if (role == "Teacher")
             {
                 var teacher = _context.Teachers.FirstOrDefault(t => t.Email == email && t.Password == password);
-                return teacher != null;
+                if (teacher != null)
+                {
+                    loggedInTeacher = teacher;
+                    return true;
+                }
             }
             else if (role == "Parent")
             {
@@ -32,6 +37,11 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Controllers
         {
             var student = _context.Students.FirstOrDefault(s => s.Id == studentId && s.Password == password);
             return student != null;
+        }
+
+        public Teacher GetLoggedInTeacher()
+        {
+            return loggedInTeacher;
         }
     }
 }
