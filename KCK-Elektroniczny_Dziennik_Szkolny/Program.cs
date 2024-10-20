@@ -24,12 +24,14 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny
                     if (loggedIn)
                     {
                         var loggedInTeacher = userController.GetLoggedInTeacher();
+                        var loggedInParent = userController.GetLoggedInParent();
+
 
                         Console.Clear();
                         Console.WriteLine("Logged in successfully.");
                         System.Threading.Thread.Sleep(3000);
 
-                        ConsoleView consoleView = new ConsoleView(schoolController, gradeController, loggedInTeacher);
+                        ConsoleView consoleView = new ConsoleView(schoolController, gradeController, userController, loggedInTeacher, loggedInParent);
                         consoleView.DisplayMenu();
                         exitProgram = true;
                     }

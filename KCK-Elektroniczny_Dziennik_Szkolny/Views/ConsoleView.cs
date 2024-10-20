@@ -24,13 +24,13 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Views
             "8. Exit"
         };
 
-        public ConsoleView(SchoolController controller, GradeController gradeController, Teacher loggedInTeacher)
+        public ConsoleView(SchoolController controller, GradeController gradeController, UserController userController, Teacher loggedInTeacher, Parent loggedInParent)
         {
             this.controller = controller;
             this.gradeController = gradeController;
-            this.gradeView = new GradeView(gradeController, loggedInTeacher);
-            this.loggedInTeacher = loggedInTeacher;
+            this.gradeView = new GradeView(gradeController, userController, loggedInTeacher, loggedInParent);
         }
+
 
         public void DisplayMenu()
         {
@@ -195,10 +195,34 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Views
             string password = Console.ReadLine();
             Console.WriteLine("Enter student's BirthDate (yyyy-MM-dd):");
             DateOnly birthDate;
+
             while (!DateOnly.TryParse(Console.ReadLine(), out birthDate))
             {
                 Console.WriteLine("Invalid date format. Please enter a valid date (yyyy-MM-dd):");
             }
+
+            var classes = controller.GetClasses();
+            if (classes.Count == 0)
+            {
+                Console.WriteLine("No classes available.");
+                Console.ReadKey();
+                DisplayMenu();
+                return;
+            }
+
+            Console.WriteLine("Select a class for the student:");
+            for (int i = 0; i < classes.Count; i++)
+            {
+                Console.WriteLine($"{i + 1}. Class {classes[i].Grade}");
+            }
+
+            int selectedClassIndex;
+            while (!int.TryParse(Console.ReadLine(), out selectedClassIndex) || selectedClassIndex < 1 || selectedClassIndex > classes.Count)
+            {
+                Console.WriteLine("Invalid selection. Please enter a valid class number:");
+            }
+
+            var selectedClass = classes[selectedClassIndex - 1];
 
             Console.WriteLine("Enter parent's ID:");
             int parentId;
@@ -214,14 +238,16 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Views
                 Console.ReadKey();
                 DisplayMenu();
                 return;
-
             }
-            Student newStudent = new Student { Name = name, Surname = surname, Password = password,BirthDate = birthDate, Parent = parent };
+
+            Student newStudent = new Student{Name = name,Surname = surname,Password = password,BirthDate = birthDate,Parent = parent,Class = selectedClass};
+
             controller.AddStudent(newStudent);
             Console.WriteLine("Student has been added.");
             Console.ReadKey();
             DisplayMenu();
         }
+
 
         private void AddParent()
         {

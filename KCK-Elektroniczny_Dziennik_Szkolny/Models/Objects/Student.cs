@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -24,6 +25,12 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Models.Objects
         public DateOnly BirthDate { get; set; }
 
         public Parent Parent { get; set; }
+
+        [Required]
+        public int ClassId { get; set; }
+
+        [ForeignKey("ClassId")]
+        public Class? Class { get; set; }
 
     }
 }

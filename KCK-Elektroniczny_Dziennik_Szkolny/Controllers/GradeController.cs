@@ -40,6 +40,21 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Controllers
                 .Include(g => g.Student)
                 .ToList();
         }
+        public List<Class> GetClasses()
+        {
+            return _context.Classes.ToList();
+        }
+
+        public List<Student> GetStudentsByClassId(int classId)
+        {
+            return _context.Students.Where(s => s.ClassId == classId).ToList();
+        }
+
+        public Student GetStudentByParentId(int parentId)
+        {
+            return _context.Students.FirstOrDefault(s => s.Parent.Id == parentId);
+        }
+
 
     }
 }
