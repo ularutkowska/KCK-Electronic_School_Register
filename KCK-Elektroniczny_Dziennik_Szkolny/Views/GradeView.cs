@@ -1,5 +1,6 @@
 ﻿using KCK_Elektroniczny_Dziennik_Szkolny.Controllers;
 using KCK_Elektroniczny_Dziennik_Szkolny.Models.Objects;
+using Microsoft.Identity.Client;
 using System;
 using System.Collections.Generic;
 
@@ -14,10 +15,13 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Views
 
         private string[] menuItems = new string[]
         {
-            "1. View by Class",
-            "2. View Personal (Parent)",
-            "3. Exit"
+            "1. Add Grade",
+            "2. View by Class",
+            "3. View Personal (Parent)",
+            "4. Exit"
         };
+
+        private bool exitGradeMenu = false;
 
         public GradeView(GradeController controller, UserController userController, Teacher loggedInTeacher, Parent loggedInParent)
         {
@@ -30,9 +34,9 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Views
         public void DisplayGradeMenu()
         {
             int currentSelection = 0;
-            bool running = true;
+            exitGradeMenu = false;
 
-            while (running)
+            while (!exitGradeMenu)
             {
                 DrawMenu(currentSelection);
 
@@ -94,9 +98,12 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Views
             switch (selectedOption)
             {
                 case 0:
-                    ViewGradesByClass();
+                    AddGrade();
                     break;
                 case 1:
+                    ViewGradesByClass();
+                    break;
+                case 2:
                     if (loggedInParent != null)
                     {
                         ViewPersonalGrades(loggedInParent);
@@ -107,12 +114,181 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Views
                         Console.ReadKey();
                     }
                     break;
-                case 2:
+                case 3:
                     Console.Clear();
                     Console.WriteLine("Exiting grade management.");
-                    System.Threading.Thread.Sleep(1000);
+                    Thread.Sleep(1000);
+                    exitGradeMenu = true;
                     return;
             }
+        }
+        private void AddGrade()
+        {
+            Console.Clear();
+
+            if (loggedInTeacher == null)
+            {
+                Console.WriteLine("You are not logged in as a teacher.");
+                Console.ReadKey();
+                return;
+            }
+
+            var classes = controller.GetClasses();
+            if (classes.Count == 0)
+            {
+                Console.WriteLine("No classes available.");
+                Console.ReadKey();
+                return;
+            }
+
+            int selectedClassIndex = 0;
+            bool selectingClass = true;
+
+            while (selectingClass)
+            {
+                Console.Clear();
+                Console.WriteLine("Select a class:");
+
+                for (int i = 0; i < classes.Count; i++)
+                {
+                    if (i == selectedClassIndex)
+                    {
+                        Console.BackgroundColor = ConsoleColor.Gray;
+                        Console.ForegroundColor = ConsoleColor.Black;
+                    }
+                    Console.WriteLine($"Class {classes[i].Grade}");
+                    Console.ResetColor();
+                }
+
+                var key = Console.ReadKey(true).Key;
+                switch (key)
+                {
+                    case ConsoleKey.UpArrow:
+                        selectedClassIndex = (selectedClassIndex == 0) ? classes.Count - 1 : selectedClassIndex - 1;
+                        break;
+                    case ConsoleKey.DownArrow:
+                        selectedClassIndex = (selectedClassIndex == classes.Count - 1) ? 0 : selectedClassIndex + 1;
+                        break;
+                    case ConsoleKey.Enter:
+                        selectingClass = false;
+                        break;
+                }
+            }
+
+            var selectedClass = classes[selectedClassIndex];
+
+            var students = controller.GetStudentsByClassId(selectedClass.Id);
+            if (students.Count == 0)
+            {
+                Console.WriteLine("No students in this class.");
+                Console.ReadKey();
+                return;
+            }
+
+            int selectedStudentIndex = 0;
+            bool selectingStudent = true;
+
+            while (selectingStudent)
+            {
+                Console.Clear();
+                Console.WriteLine($"Class {selectedClass.Grade}: Select a student:");
+
+                for (int i = 0; i < students.Count; i++)
+                {
+                    if (i == selectedStudentIndex)
+                    {
+                        Console.BackgroundColor = ConsoleColor.Gray;
+                        Console.ForegroundColor = ConsoleColor.Black;
+                    }
+                    Console.WriteLine($"{students[i].Name} {students[i].Surname}");
+                    Console.ResetColor();
+                }
+
+                var key = Console.ReadKey(true).Key;
+                switch (key)
+                {
+                    case ConsoleKey.UpArrow:
+                        selectedStudentIndex = (selectedStudentIndex == 0) ? students.Count - 1 : selectedStudentIndex - 1;
+                        break;
+                    case ConsoleKey.DownArrow:
+                        selectedStudentIndex = (selectedStudentIndex == students.Count - 1) ? 0 : selectedStudentIndex + 1;
+                        break;
+                    case ConsoleKey.Enter:
+                        selectingStudent = false;
+                        break;
+                }
+            }
+
+            var selectedStudent = students[selectedStudentIndex];
+
+            var subjects = controller.GetSubjectsByTeacherId(loggedInTeacher.Id);
+            if (subjects.Count == 0)
+            {
+                Console.WriteLine("You have no assigned subjects.");
+                Console.ReadKey();
+                return;
+            }
+
+            int selectedSubjectIndex = 0;
+            bool selectingSubject = true;
+
+            while (selectingSubject)
+            {
+                Console.Clear();
+                Console.WriteLine("Select a subject:");
+
+                for (int i = 0; i < subjects.Count; i++)
+                {
+                    if (i == selectedSubjectIndex)
+                    {
+                        Console.BackgroundColor = ConsoleColor.Gray;
+                        Console.ForegroundColor = ConsoleColor.Black;
+                    }
+                    Console.WriteLine(subjects[i].Name);
+                    Console.ResetColor();
+                }
+
+                var key = Console.ReadKey(true).Key;
+                switch (key)
+                {
+                    case ConsoleKey.UpArrow:
+                        selectedSubjectIndex = (selectedSubjectIndex == 0) ? subjects.Count - 1 : selectedSubjectIndex - 1;
+                        break;
+                    case ConsoleKey.DownArrow:
+                        selectedSubjectIndex = (selectedSubjectIndex == subjects.Count - 1) ? 0 : selectedSubjectIndex + 1;
+                        break;
+                    case ConsoleKey.Enter:
+                        selectingSubject = false;
+                        break;
+                }
+            }
+
+            var selectedSubject = subjects[selectedSubjectIndex];
+
+            Console.Clear();
+            Console.WriteLine($"Adding a grade for {selectedStudent.Name} {selectedStudent.Surname} in {selectedSubject.Name}:");
+            Console.WriteLine("Enter the grade value (1-6):");
+            int gradeValue;
+
+            while (!int.TryParse(Console.ReadLine(), out gradeValue) || gradeValue < 1 || gradeValue > 6)
+            {
+                Console.WriteLine("Invalid grade. Please enter a value between 1 and 6:");
+            }
+
+            Grade newGrade = new Grade
+            {
+                Value = gradeValue,
+                Subject = selectedSubject,
+                Teacher = loggedInTeacher,
+                Student = selectedStudent,
+                Date = DateTime.Now
+            };
+
+            controller.AddGrade(newGrade);
+
+            Console.WriteLine("Grade has been added successfully.");
+            Console.ReadKey();
+            DisplayGradeMenu();
         }
 
         private void ViewGradesByClass()

@@ -23,6 +23,10 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Controllers
         {
             return _context.Subjects.Find(id);
         }
+        public List<Subject> GetSubjectsByTeacherId(int teacherId)
+        {
+            return _context.Subjects.Where(s => s.Teacher.Id == teacherId).ToList();
+        }
         public Teacher GetTeacherById(int id)
         {
             return _context.Teachers.Find(id);

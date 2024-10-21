@@ -31,18 +31,16 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Views
             this.gradeView = new GradeView(gradeController, userController, loggedInTeacher, loggedInParent);
         }
 
-
         public void DisplayMenu()
         {
             int currentSelection = 0;
             bool running = true;
 
-            DrawMenu(currentSelection);
-
             while (running)
             {
-                var key = Console.ReadKey(true).Key;
+                DrawMenu(currentSelection);
 
+                var key = Console.ReadKey(true).Key;
                 int previousSelection = currentSelection;
 
                 switch (key)
@@ -54,8 +52,7 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Views
                         currentSelection = (currentSelection == menuItems.Length - 1) ? 0 : currentSelection + 1;
                         break;
                     case ConsoleKey.Enter:
-                        HandleSelection(currentSelection);
-                        if (currentSelection == menuItems.Length - 1) running = false;
+                        HandleSelection(currentSelection, ref running);
                         break;
                 }
 
@@ -96,7 +93,7 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Views
             Console.ResetColor();
         }
 
-        private void HandleSelection(int selectedOption)
+        private void HandleSelection(int selectedOption, ref bool running)
         {
             switch (selectedOption)
             {
@@ -122,7 +119,10 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Views
                     DisplayClasses();
                     break;
                 case 7:
-                    Console.WriteLine("Program ended.");
+                    Console.Clear();
+                    Console.WriteLine("Exiting program...");
+                    System.Threading.Thread.Sleep(1000);
+                    running = false;
                     break;
             }
         }
@@ -210,19 +210,43 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Views
                 return;
             }
 
-            Console.WriteLine("Select a class for the student:");
-            for (int i = 0; i < classes.Count; i++)
+            int selectedIndex = 0;
+            bool selecting = true;
+
+            while (selecting)
             {
-                Console.WriteLine($"{i + 1}. Class {classes[i].Grade}");
+                Console.Clear();
+                Console.WriteLine("Select a class for the student using arrow keys:");
+
+                for (int i = 0; i < classes.Count; i++)
+                {
+                    if (i == selectedIndex)
+                    {
+                        Console.BackgroundColor = ConsoleColor.Gray;
+                        Console.ForegroundColor = ConsoleColor.Black;
+                    }
+
+                    Console.WriteLine($"{i + 1}. Class {classes[i].Grade}");
+                    Console.ResetColor();
+                }
+
+                var key = Console.ReadKey(true).Key;
+
+                switch (key)
+                {
+                    case ConsoleKey.UpArrow:
+                        selectedIndex = (selectedIndex == 0) ? classes.Count - 1 : selectedIndex - 1;
+                        break;
+                    case ConsoleKey.DownArrow:
+                        selectedIndex = (selectedIndex == classes.Count - 1) ? 0 : selectedIndex + 1;
+                        break;
+                    case ConsoleKey.Enter:
+                        selecting = false;
+                        break;
+                }
             }
 
-            int selectedClassIndex;
-            while (!int.TryParse(Console.ReadLine(), out selectedClassIndex) || selectedClassIndex < 1 || selectedClassIndex > classes.Count)
-            {
-                Console.WriteLine("Invalid selection. Please enter a valid class number:");
-            }
-
-            var selectedClass = classes[selectedClassIndex - 1];
+            var selectedClass = classes[selectedIndex];
 
             Console.WriteLine("Enter parent's ID:");
             int parentId;
@@ -240,13 +264,14 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Views
                 return;
             }
 
-            Student newStudent = new Student{Name = name,Surname = surname,Password = password,BirthDate = birthDate,Parent = parent,Class = selectedClass};
+            Student newStudent = new Student { Name = name, Surname = surname, Password = password, BirthDate = birthDate, Parent = parent, Class = selectedClass };
 
             controller.AddStudent(newStudent);
             Console.WriteLine("Student has been added.");
             Console.ReadKey();
             DisplayMenu();
         }
+
 
 
         private void AddParent()
