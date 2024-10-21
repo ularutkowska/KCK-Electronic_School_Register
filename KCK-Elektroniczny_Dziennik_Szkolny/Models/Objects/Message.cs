@@ -9,27 +9,22 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Models.Objects
 {
     public class Message
     {
-        [Key]
         public int Id { get; set; }
 
-        public string Title { get; set; }
-        
-        public string Text { get; set; }
+        public int SenderId { get; set; }
+
+        public string SenderRole { get; set; }
+
+        public int ReceiverId { get; set; }
+
+        public string ReceiverRole { get; set; }
+
+        public string Subject { get; set; }
+
+        public string Content { get; set; }
 
         public DateTime SentDate { get; set; }
 
-        public Teacher? SenderTeacher { get; set; }
-
-        public Student? SenderStudent { get; set; }
-
-        public Parent? SenderParent { get; set; }
-
-        public Teacher? ReceiverTeacher { get; set; }
-
-        public Student? ReceiverStudent { get; set; }
-
-        public Parent? ReceiverParent { get; set; }
-
-
+        public bool IsRead { get; set; }
     }
 }

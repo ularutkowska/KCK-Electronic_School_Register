@@ -10,6 +10,7 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Models
 {
     public class ApplicationDbContext : DbContext
     {
+        public DbSet<Message> Messages { get; set; }
         public DbSet<Teacher> Teachers { get; set; }
         public DbSet<Student> Students { get; set; }
         public DbSet<Parent> Parents { get; set; }

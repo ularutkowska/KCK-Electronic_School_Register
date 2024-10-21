@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace KCK_Elektroniczny_Dziennik_Szkolny.Models.Objects
 {
-    public class Teacher
+    public class Teacher : IUser
     {
         [Key]
         public int Id { get; set; }
@@ -27,6 +27,16 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Models.Objects
         [Required]
         [StringLength(14, MinimumLength = 9, ErrorMessage = "The phone number must contain at least 9 digits.")]
         public string PhoneNumber { get; set; }
+
+        public string GetDisplayName()
+        {
+            return $"{Name} {Surname}";
+        }
+
+        public int GetId()
+        {
+            return Id;
+        }
 
 
     }

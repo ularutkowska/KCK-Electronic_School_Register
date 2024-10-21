@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace KCK_Elektroniczny_Dziennik_Szkolny.Models.Objects
 {
-    public class Student
+    public class Student : IUser
     {
         [Key]
         public int Id { get; set; }
@@ -31,6 +31,16 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Models.Objects
 
         [ForeignKey("ClassId")]
         public Class? Class { get; set; }
+
+        public string GetDisplayName()
+        {
+            return $"{Name} {Surname}";
+        }
+
+        public int GetId()
+        {
+            return Id;
+        }
 
     }
 }

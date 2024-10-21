@@ -11,6 +11,10 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Views
         private GradeController gradeController;
         private GradeView gradeView;
         private Teacher loggedInTeacher;
+        private int loggedInUserId;
+        private MessageController messageController;
+        private MessageView messageView;
+
 
         private string[] menuItems = new string[]
         {
@@ -21,14 +25,20 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Views
             "5. Add parent",
             "6. Manage grades",
             "7. View classes",
-            "8. Exit"
+            "8. Inbox",
+            "9. Compose Message",
+            "10. Exit"
         };
 
-        public ConsoleView(SchoolController controller, GradeController gradeController, UserController userController, Teacher loggedInTeacher, Parent loggedInParent)
+        public ConsoleView(SchoolController controller, GradeController gradeController, UserController userController, Teacher loggedInTeacher, Parent loggedInParent, int loggedInUserId, MessageController messageController)
         {
             this.controller = controller;
             this.gradeController = gradeController;
             this.gradeView = new GradeView(gradeController, userController, loggedInTeacher, loggedInParent);
+            this.loggedInUserId = loggedInUserId;
+            this.messageController = messageController;
+            this.messageView = new MessageView(messageController, loggedInUserId);
+
         }
 
         public void DisplayMenu()
@@ -119,6 +129,12 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Views
                     DisplayClasses();
                     break;
                 case 7:
+                    messageView.DisplayInbox();
+                    break;
+                case 8:
+                    messageView.ComposeMessage();
+                    break;
+                case 9:
                     Console.Clear();
                     Console.WriteLine("Exiting program...");
                     System.Threading.Thread.Sleep(1000);

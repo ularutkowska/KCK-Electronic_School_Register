@@ -9,6 +9,7 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Controllers
         private readonly ApplicationDbContext _context;
         private Teacher loggedInTeacher;
         private Parent loggedInParent;
+        private Student loggedInStudent;
 
         public UserController(ApplicationDbContext context)
         {
@@ -48,6 +49,11 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Controllers
         public Parent GetLoggedInParent()
         {
             return loggedInParent;
+        }
+
+        public Student GetLoggedInStudent()
+        {
+            return loggedInStudent;
         }
     }
 }

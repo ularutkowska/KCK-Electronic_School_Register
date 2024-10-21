@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace KCK_Elektroniczny_Dziennik_Szkolny.Migrations
 {
     /// <inheritdoc />
-    public partial class pati : Migration
+    public partial class message : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -22,6 +22,24 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Exams", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Messages",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    SenderId = table.Column<int>(type: "int", nullable: false),
+                    ReceiverId = table.Column<int>(type: "int", nullable: false),
+                    Subject = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Content = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    SentDate = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    IsRead = table.Column<bool>(type: "bit", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Messages", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -108,7 +126,7 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Migrations
                     Password = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     BirthDate = table.Column<DateOnly>(type: "date", nullable: false),
                     ParentId = table.Column<int>(type: "int", nullable: false),
-                    ClassId = table.Column<int>(type: "int", nullable: true)
+                    ClassId = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -117,7 +135,8 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Migrations
                         name: "FK_Students_Classes_ClassId",
                         column: x => x.ClassId,
                         principalTable: "Classes",
-                        principalColumn: "Id");
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
                         name: "FK_Students_Parents_ParentId",
                         column: x => x.ParentId,
@@ -146,21 +165,20 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Migrations
             column: x => x.StudentId,
             principalTable: "Students",
             principalColumn: "Id",
-            onDelete: ReferentialAction.Cascade);  // Kaskadowe usuwanie tylko dla studentów
+            onDelete: ReferentialAction.Cascade);
         table.ForeignKey(
             name: "FK_Grades_Subjects_SubjectId",
             column: x => x.SubjectId,
             principalTable: "Subjects",
             principalColumn: "Id",
-            onDelete: ReferentialAction.Restrict);  // Usuwanie powiązanych przedmiotów z restrykcją
+            onDelete: ReferentialAction.Cascade);
         table.ForeignKey(
             name: "FK_Grades_Teachers_TeacherId",
             column: x => x.TeacherId,
             principalTable: "Teachers",
             principalColumn: "Id",
-            onDelete: ReferentialAction.Restrict);  // Usuwanie powiązanych nauczycieli z restrykcją
+            onDelete: ReferentialAction.NoAction);
     });
-
 
             migrationBuilder.CreateIndex(
                 name: "IX_Classes_SupervisingTeacherId",
@@ -206,6 +224,9 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Migrations
 
             migrationBuilder.DropTable(
                 name: "Grades");
+
+            migrationBuilder.DropTable(
+                name: "Messages");
 
             migrationBuilder.DropTable(
                 name: "Students");

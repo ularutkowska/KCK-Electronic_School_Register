@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace KCK_Elektroniczny_Dziennik_Szkolny.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20241016201506_pati")]
-    partial class pati
+    [Migration("20241021220754_message1")]
+    partial class message1
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -96,6 +96,47 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Migrations
                     b.ToTable("Grades");
                 });
 
+            modelBuilder.Entity("KCK_Elektroniczny_Dziennik_Szkolny.Models.Objects.Message", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Content")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("IsRead")
+                        .HasColumnType("bit");
+
+                    b.Property<int>("ReceiverId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("ReceiverRole")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("SenderId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("SenderRole")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("SentDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Subject")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Messages");
+                });
+
             modelBuilder.Entity("KCK_Elektroniczny_Dziennik_Szkolny.Models.Objects.Parent", b =>
                 {
                     b.Property<int>("Id")
@@ -143,7 +184,7 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Migrations
                     b.Property<DateOnly>("BirthDate")
                         .HasColumnType("date");
 
-                    b.Property<int?>("ClassId")
+                    b.Property<int>("ClassId")
                         .HasColumnType("int");
 
                     b.Property<string>("Name")
@@ -268,15 +309,19 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Migrations
 
             modelBuilder.Entity("KCK_Elektroniczny_Dziennik_Szkolny.Models.Objects.Student", b =>
                 {
-                    b.HasOne("KCK_Elektroniczny_Dziennik_Szkolny.Models.Objects.Class", null)
+                    b.HasOne("KCK_Elektroniczny_Dziennik_Szkolny.Models.Objects.Class", "Class")
                         .WithMany("Students")
-                        .HasForeignKey("ClassId");
+                        .HasForeignKey("ClassId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.HasOne("KCK_Elektroniczny_Dziennik_Szkolny.Models.Objects.Parent", "Parent")
                         .WithMany()
                         .HasForeignKey("ParentId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+
+                    b.Navigation("Class");
 
                     b.Navigation("Parent");
                 });

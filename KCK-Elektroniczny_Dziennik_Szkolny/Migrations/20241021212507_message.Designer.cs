@@ -4,6 +4,7 @@ using KCK_Elektroniczny_Dziennik_Szkolny.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace KCK_Elektroniczny_Dziennik_Szkolny.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20241021212507_message")]
+    partial class message
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -111,16 +114,8 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Migrations
                     b.Property<int>("ReceiverId")
                         .HasColumnType("int");
 
-                    b.Property<string>("ReceiverRole")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<int>("SenderId")
                         .HasColumnType("int");
-
-                    b.Property<string>("SenderRole")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("SentDate")
                         .HasColumnType("datetime2");
