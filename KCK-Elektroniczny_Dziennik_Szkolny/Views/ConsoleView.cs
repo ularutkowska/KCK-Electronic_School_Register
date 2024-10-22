@@ -146,28 +146,80 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Views
         private void AddClass()
         {
             Console.Clear();
-            Console.WriteLine("Enter class grade:");
-            int grade = int.Parse(Console.ReadLine());
+            Console.WriteLine("Select class grade (1-8):");
+
+            int[] grades = new int[] { 1, 2, 3, 4, 5, 6, 7, 8 };
+            int selectedGradeIndex = 0;
+            bool selectingGrade = true;
+
+            while (selectingGrade)
+            {
+                Console.Clear();
+                Console.WriteLine("Select class grade (1-8):");
+
+                for (int i = 0; i < grades.Length; i++)
+                {
+                    if (i == selectedGradeIndex)
+                    {
+                        Console.BackgroundColor = ConsoleColor.Gray;
+                        Console.ForegroundColor = ConsoleColor.Black;
+                    }
+                    Console.WriteLine(grades[i]);
+                    Console.ResetColor();
+                }
+
+                var key = Console.ReadKey(true).Key;
+                switch (key)
+                {
+                    case ConsoleKey.UpArrow:
+                        selectedGradeIndex = (selectedGradeIndex == 0) ? grades.Length - 1 : selectedGradeIndex - 1;
+                        break;
+                    case ConsoleKey.DownArrow:
+                        selectedGradeIndex = (selectedGradeIndex == grades.Length - 1) ? 0 : selectedGradeIndex + 1;
+                        break;
+                    case ConsoleKey.Enter:
+                        selectingGrade = false;
+                        break;
+                }
+            }
+
+            int selectedGrade = grades[selectedGradeIndex];
+
+            Console.Clear();
+            Console.WriteLine($"Selected grade: {selectedGrade}");
+            Console.WriteLine("Enter the class letter (A-Z):");
+
+            string className;
+            while (true)
+            {
+                className = Console.ReadLine().ToUpper();
+                if (!string.IsNullOrEmpty(className) && className.Length == 1 && char.IsLetter(className[0]))
+                {
+                    break;
+                }
+                Console.WriteLine("Invalid input. Please enter a single letter (A-Z):");
+            }
 
             var teachers = controller.GetTeachers();
-            if (teachers.Count == 0) {
-            Console.WriteLine("No teachers added");
+            if (teachers.Count == 0)
+            {
+                Console.WriteLine("No teachers added");
                 Console.ReadKey();
                 DisplayMenu();
                 return;
             }
-            int selectedIndex = 0;
-            bool selectingTeacher = true;
 
+            int selectedTeacherIndex = 0;
+            bool selectingTeacher = true;
 
             while (selectingTeacher)
             {
                 Console.Clear();
-                Console.WriteLine("Select a supervising teacger");
+                Console.WriteLine("Select a supervising teacher");
 
                 for (int i = 0; i < teachers.Count; i++)
                 {
-                    if (i == selectedIndex)
+                    if (i == selectedTeacherIndex)
                     {
                         Console.BackgroundColor = ConsoleColor.Gray;
                         Console.ForegroundColor = ConsoleColor.Black;
@@ -180,10 +232,10 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Views
                 switch (key)
                 {
                     case ConsoleKey.UpArrow:
-                        selectedIndex = (selectedIndex == 0) ? teachers.Count - 1 : selectedIndex - 1;
+                        selectedTeacherIndex = (selectedTeacherIndex == 0) ? teachers.Count - 1 : selectedTeacherIndex - 1;
                         break;
                     case ConsoleKey.DownArrow:
-                        selectedIndex = (selectedIndex == teachers.Count - 1) ? 0 : selectedIndex + 1;
+                        selectedTeacherIndex = (selectedTeacherIndex == teachers.Count - 1) ? 0 : selectedTeacherIndex + 1;
                         break;
                     case ConsoleKey.Enter:
                         selectingTeacher = false;
@@ -191,14 +243,15 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Views
                 }
             }
 
-            var selectedTeacher = teachers[selectedIndex];
+            var selectedTeacher = teachers[selectedTeacherIndex];
 
-            Class newClass = new Class { Grade = grade, SupervisingTeacher=selectedTeacher };
+            Class newClass = new Class { Grade = selectedGrade, Name = className, SupervisingTeacher = selectedTeacher };
             controller.AddClass(newClass);
             Console.WriteLine("Class has been added.");
             Console.ReadKey();
             DisplayMenu();
         }
+
 
         private void AddStudent()
         {

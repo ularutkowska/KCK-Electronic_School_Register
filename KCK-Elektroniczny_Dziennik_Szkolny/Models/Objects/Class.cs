@@ -9,6 +9,8 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Models.Objects
 
         public int Grade { get; set; }
 
+        public string Name { get; set; }
+
         public ICollection<Student> Students { get; set; }
 
         public Teacher? SupervisingTeacher { get; set; }

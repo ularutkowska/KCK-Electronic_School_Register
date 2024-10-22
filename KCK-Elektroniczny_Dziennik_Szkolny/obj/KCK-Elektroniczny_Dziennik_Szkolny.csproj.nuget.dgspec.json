@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Patryk\\Downloads\\KCK-Electronic_School_Register\\KCK-Elektroniczny_Dziennik_Szkolny\\KCK-Elektroniczny_Dziennik_Szkolny.csproj": {}
+    "C:\\Users\\Patryk\\Documents\\GitHub\\KCK-Electronic_School_Register\\KCK-Elektroniczny_Dziennik_Szkolny\\KCK-Elektroniczny_Dziennik_Szkolny.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Patryk\\Downloads\\KCK-Electronic_School_Register\\KCK-Elektroniczny_Dziennik_Szkolny\\KCK-Elektroniczny_Dziennik_Szkolny.csproj": {
+    "C:\\Users\\Patryk\\Documents\\GitHub\\KCK-Electronic_School_Register\\KCK-Elektroniczny_Dziennik_Szkolny\\KCK-Elektroniczny_Dziennik_Szkolny.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Patryk\\Downloads\\KCK-Electronic_School_Register\\KCK-Elektroniczny_Dziennik_Szkolny\\KCK-Elektroniczny_Dziennik_Szkolny.csproj",
+        "projectUniqueName": "C:\\Users\\Patryk\\Documents\\GitHub\\KCK-Electronic_School_Register\\KCK-Elektroniczny_Dziennik_Szkolny\\KCK-Elektroniczny_Dziennik_Szkolny.csproj",
         "projectName": "KCK-Elektroniczny_Dziennik_Szkolny",
-        "projectPath": "C:\\Users\\Patryk\\Downloads\\KCK-Electronic_School_Register\\KCK-Elektroniczny_Dziennik_Szkolny\\KCK-Elektroniczny_Dziennik_Szkolny.csproj",
+        "projectPath": "C:\\Users\\Patryk\\Documents\\GitHub\\KCK-Electronic_School_Register\\KCK-Elektroniczny_Dziennik_Szkolny\\KCK-Elektroniczny_Dziennik_Szkolny.csproj",
         "packagesPath": "C:\\Users\\Patryk\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Patryk\\Downloads\\KCK-Electronic_School_Register\\KCK-Elektroniczny_Dziennik_Szkolny\\obj\\",
+        "outputPath": "C:\\Users\\Patryk\\Documents\\GitHub\\KCK-Electronic_School_Register\\KCK-Elektroniczny_Dziennik_Szkolny\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
           "C:\\Users\\Patryk\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,6 +22,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -94,7 +91,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "c:\\program files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
