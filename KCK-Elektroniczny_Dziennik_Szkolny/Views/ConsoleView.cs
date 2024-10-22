@@ -37,9 +37,9 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Views
             this.gradeView = new GradeView(gradeController, userController, loggedInTeacher, loggedInParent);
             this.loggedInUserId = loggedInUserId;
             this.messageController = messageController;
-            this.messageView = new MessageView(messageController, loggedInUserId);
-
+            this.messageView = new MessageView(messageController, userController, loggedInUserId);
         }
+
 
         public void DisplayMenu()
         {
@@ -490,13 +490,62 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Views
             }
             else
             {
-                foreach (var c in classes)
+                Console.WriteLine("Select a class to view its students:");
+                int selectedIndex = 0;
+                bool selectingClass = true;
+
+                while (selectingClass)
                 {
-                    Console.WriteLine($"Class: {c.Grade}");
+                    Console.Clear();
+                    Console.WriteLine("Select a class to view its students:\n");
+
+                    for (int i = 0; i < classes.Count; i++)
+                    {
+                        if (i == selectedIndex)
+                        {
+                            Console.BackgroundColor = ConsoleColor.Gray;
+                            Console.ForegroundColor = ConsoleColor.Black;
+                        }
+                        Console.WriteLine($"Class: {classes[i].Grade} {classes[i].Name}");
+                        Console.ResetColor();
+                    }
+
+                    var key = Console.ReadKey(true).Key;
+
+                    switch (key)
+                    {
+                        case ConsoleKey.UpArrow:
+                            selectedIndex = (selectedIndex == 0) ? classes.Count - 1 : selectedIndex - 1;
+                            break;
+                        case ConsoleKey.DownArrow:
+                            selectedIndex = (selectedIndex == classes.Count - 1) ? 0 : selectedIndex + 1;
+                            break;
+                        case ConsoleKey.Enter:
+                            selectingClass = false;
+                            break;
+                    }
+                }
+                var selectedClass = classes[selectedIndex];
+
+                Console.Clear();
+                Console.WriteLine($"Class {selectedClass.Grade} {selectedClass.Name} - Students:\n");
+
+                if (selectedClass.Students == null || selectedClass.Students.Count == 0)
+                {
+                    Console.WriteLine("No students in this class.");
+                }
+                else
+                {
+                    foreach (var student in selectedClass.Students)
+                    {
+                        Console.WriteLine($"{student.Name} {student.Surname}");
+                    }
                 }
             }
+
             Console.ReadKey();
             DisplayMenu();
         }
+
     }
 }

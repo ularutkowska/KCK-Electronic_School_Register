@@ -10,6 +10,7 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Controllers
         private Teacher loggedInTeacher;
         private Parent loggedInParent;
         private Student loggedInStudent;
+        private string loggedInRole;
 
         public UserController(ApplicationDbContext context)
         {
@@ -24,13 +25,19 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Controllers
                 if (teacher != null)
                 {
                     loggedInTeacher = teacher;
+                    loggedInRole = "Teacher";
                     return true;
                 }
             }
             else if (role == "Parent")
             {
                 var parent = _context.Parents.FirstOrDefault(p => p.Email == email && p.Password == password);
-                return parent != null;
+                if (parent != null)
+                {
+                    loggedInParent = parent;
+                    loggedInRole = "Parent";
+                    return true;
+                }
             }
             return false;
         }
@@ -38,14 +45,25 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Controllers
         public bool StudentLogin(int studentId, string password)
         {
             var student = _context.Students.FirstOrDefault(s => s.Id == studentId && s.Password == password);
-            return student != null;
+            if (student != null)
+            {
+                loggedInStudent = student;
+                loggedInRole = "Student";
+                return true;
+            }
+            return false;
+        }
+
+        public string GetLoggedInRole()
+        {
+            return loggedInRole;
         }
 
         public Teacher GetLoggedInTeacher()
         {
             return loggedInTeacher;
         }
-        
+
         public Parent GetLoggedInParent()
         {
             return loggedInParent;
@@ -54,6 +72,14 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Controllers
         public Student GetLoggedInStudent()
         {
             return loggedInStudent;
+        }
+
+        public object GetLoggedInUser()
+        {
+            if (loggedInRole == "Teacher") return loggedInTeacher;
+            if (loggedInRole == "Parent") return loggedInParent;
+            if (loggedInRole == "Student") return loggedInStudent;
+            return null;
         }
     }
 }

@@ -9,10 +9,11 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Views
     {
         private MessageController messageController;
         private int loggedInUserId;
-
-        public MessageView(MessageController controller, int userId)
+        private UserController userController;
+        public MessageView(MessageController messageController, UserController userController, int userId)
         {
-            messageController = controller;
+            this.messageController = messageController;
+            this.userController = userController;
             loggedInUserId = userId;
         }
 
@@ -21,7 +22,7 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Views
             Console.Clear();
             Console.WriteLine("Inbox\n");
 
-            string userRole = messageController.GetUserRole(loggedInUserId);
+            string userRole = userController.GetLoggedInRole();
 
             List<Message> inbox = messageController.GetInbox(loggedInUserId, userRole);
 
@@ -181,7 +182,7 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Views
             Console.Write("Enter content: ");
             string content = Console.ReadLine();
 
-            string senderRole = GetUserRole(loggedInUserId);
+            string senderRole = userController.GetLoggedInRole();
 
             messageController.SendMessage(loggedInUserId, senderRole, receiverId, receiverRole, subject, content);
 

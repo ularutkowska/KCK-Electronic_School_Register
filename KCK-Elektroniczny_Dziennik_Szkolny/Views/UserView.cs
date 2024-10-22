@@ -7,6 +7,7 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Views
     {
         private UserController userController;
         private string[] roles = new string[] { "Teacher", "Parent", "Student" };
+        private string loggedInRole;
 
         public UserView(UserController controller)
         {
@@ -104,6 +105,7 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Views
 
                     if (success)
                     {
+                        loggedInRole = "Student";
                         Console.WriteLine("Logged in as student.");
                         System.Threading.Thread.Sleep(1000);
                         return true;
@@ -128,7 +130,8 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Views
 
                     if (success)
                     {
-                        Console.WriteLine($"Logged in as {role}.");
+                        loggedInRole = userController.GetLoggedInRole();
+                        Console.WriteLine($"Logged in as {loggedInRole}.");
                         System.Threading.Thread.Sleep(1000);
                         return true;
                     }
@@ -180,6 +183,11 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Views
                         return options[selectedIndex] == "Yes";
                 }
             }
+        }
+
+        public string GetLoggedInRole()
+        {
+            return loggedInRole;
         }
     }
 }
