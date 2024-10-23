@@ -317,23 +317,64 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Views
 
             var selectedClass = classes[selectedIndex];
 
-            Console.WriteLine("Enter parent's ID:");
-            int parentId;
-            while (!int.TryParse(Console.ReadLine(), out parentId))
+            Console.WriteLine("Enter at least 3 letters of parent's last name:");
+            String parentLastNameInput;
+            while (true)
             {
-                Console.WriteLine("Invalid parent ID. Please enter a valid parent ID:");
+                parentLastNameInput= Console.ReadLine();
+                if (parentLastNameInput.Length >= 3)
+                {
+                    break;
+                }
+                Console.WriteLine("Please enter at least 3 letters of the last name:");
             }
 
-            var parent = controller.GetParentById(parentId);
-            if (parent == null)
+            var matchingParents = controller.SearchParentsByLastName(parentLastNameInput);
+            if(matchingParents.Count == 0)
             {
-                Console.WriteLine("Parent not found.");
+                Console.WriteLine("No parents found with the given name.");
                 Console.ReadKey();
                 DisplayMenu();
                 return;
             }
 
-            Student newStudent = new Student { Name = name, Surname = surname, Password = password, BirthDate = birthDate, Parent = parent, Class = selectedClass };
+            selectedIndex = 0;
+            selecting = true;
+
+            while (selecting)
+            {
+                Console.Clear();
+                Console.WriteLine("Select the parrent using arrow keys");
+
+                for(int i = 0; i < matchingParents.Count; i++)
+                {
+                    if (i == selectedIndex)
+                    {
+                        Console.BackgroundColor = ConsoleColor.Gray;
+                        Console.ForegroundColor = ConsoleColor.Black;
+                    }
+                    Console.WriteLine($"{i + 1}. {matchingParents[i].Name} {matchingParents[i].Surname}, Phone: {matchingParents[i].PhoneNumber}");
+                    Console.ResetColor();
+                }
+                var key = Console.ReadKey(true).Key;
+
+                switch (key)
+                {
+                    case ConsoleKey.UpArrow:
+                        selectedIndex = (selectedIndex == 0) ? matchingParents.Count - 1 : selectedIndex - 1;
+                        break;
+                    case ConsoleKey.DownArrow:
+                        selectedIndex = (selectedIndex == matchingParents.Count - 1) ? 0 : selectedIndex + 1;
+                        break;
+                    case ConsoleKey.Enter:
+                        selecting = false;
+                        break;
+                }
+            }
+
+            var selectedParent = matchingParents[selectedIndex];
+
+            Student newStudent = new Student{Name = name, Surname = surname, Password = password,BirthDate = birthDate, Parent = selectedParent, Class = selectedClass};
 
             controller.AddStudent(newStudent);
             Console.WriteLine("Student has been added.");
@@ -370,14 +411,7 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Views
                 Console.WriteLine("Invalid phone number. The phone number must contain at least 9 digits:");
             }
 
-            Parent newParent = new Parent
-            {
-                Name = name,
-                Surname = surname,
-                Password = password,
-                Email = email,
-                PhoneNumber = phoneNumber
-            };
+            Parent newParent = new Parent{Name = name, Surname = surname, Password = password, Email = email, PhoneNumber = phoneNumber};
 
             controller.AddParent(newParent);
 

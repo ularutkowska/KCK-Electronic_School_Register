@@ -1,5 +1,6 @@
 ﻿using KCK_Elektroniczny_Dziennik_Szkolny.Models;
 using KCK_Elektroniczny_Dziennik_Szkolny.Models.Objects;
+using Microsoft.Identity.Client;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -66,5 +67,14 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Controllers
         {
             return _context.Parents.Find(parentId);
         }
+
+        public List<Parent> SearchParentsByLastName(string lastName)
+        {
+            return _context.Parents
+                           .AsEnumerable()
+                           .Where(p => p.Surname.StartsWith(lastName, StringComparison.OrdinalIgnoreCase))
+                           .ToList();
+        }
+
     }
 }
