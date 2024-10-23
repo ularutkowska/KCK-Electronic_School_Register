@@ -527,16 +527,18 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Views
                 }
                 var selectedClass = classes[selectedIndex];
 
+                var students = controller.GetStudentsByClassId(selectedClass.Id);
+
                 Console.Clear();
                 Console.WriteLine($"Class {selectedClass.Grade} {selectedClass.Name} - Students:\n");
 
-                if (selectedClass.Students == null || selectedClass.Students.Count == 0)
+                if (students.Count == 0)
                 {
                     Console.WriteLine("No students in this class.");
                 }
                 else
                 {
-                    foreach (var student in selectedClass.Students)
+                    foreach (var student in students)
                     {
                         Console.WriteLine($"{student.Name} {student.Surname}");
                     }
