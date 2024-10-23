@@ -84,5 +84,12 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Controllers
         {
             return _context.Parents.FirstOrDefault(p => p.Id == id);
         }
+        public List<Message> GetSentMessagesByUser(int userId, string userRole)
+        {
+            return _context.Messages
+                           .Where(m => m.SenderId == userId && m.SenderRole == userRole)
+                           .OrderByDescending(m => m.SentDate)
+                           .ToList();
+        }
     }
 }

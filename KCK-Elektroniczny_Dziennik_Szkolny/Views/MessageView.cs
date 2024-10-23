@@ -56,6 +56,7 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Views
 
             messageController.MarkAsRead(message.Id);
             Console.ReadKey();
+            DisplayInbox();
         }
 
         public void DisplaySentMessages()
@@ -63,7 +64,8 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Views
             Console.Clear();
             Console.WriteLine("Sent Messages\n");
 
-            List<Message> sentMessages = messageController.GetSentMessages(loggedInUserId);
+            string userRole = userController.GetLoggedInRole();
+            List<Message> sentMessages = messageController.GetSentMessagesByUser(loggedInUserId, userRole);
 
             if (sentMessages.Count == 0)
             {

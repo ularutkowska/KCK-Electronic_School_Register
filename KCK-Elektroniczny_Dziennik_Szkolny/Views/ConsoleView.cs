@@ -26,6 +26,7 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Views
             "6. Manage grades",
             "7. View classes",
             "8. Inbox",
+            "9. Sent Messages",
             "9. Compose Message",
             "10. Exit"
         };
@@ -132,9 +133,12 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Views
                     messageView.DisplayInbox();
                     break;
                 case 8:
-                    messageView.ComposeMessage();
+                    messageView.DisplaySentMessages();
                     break;
                 case 9:
+                    messageView.ComposeMessage();
+                    break;
+                case 10:
                     Console.Clear();
                     Console.WriteLine("Exiting program...");
                     System.Threading.Thread.Sleep(1000);
