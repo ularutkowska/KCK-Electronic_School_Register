@@ -73,16 +73,36 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Views
                 return;
             }
 
-            foreach (var message in sentMessages)
+            for (int i = 0; i < sentMessages.Count; i++)
             {
+                var message = sentMessages[i];
                 string receiverName = GetUserNameById(message.ReceiverId, message.ReceiverRole);
-                Console.WriteLine($"To: {receiverName}, Subject: {message.Subject}, Sent: {message.SentDate}");
+                Console.WriteLine($"{i + 1}. To: {receiverName}, Subject: {message.Subject}, Sent: {message.SentDate}");
             }
 
-            Console.ReadKey();
+            Console.WriteLine("\nSelect a message to view details (Enter number):");
+            int selectedMessage;
+            if (int.TryParse(Console.ReadLine(), out selectedMessage) && selectedMessage > 0 && selectedMessage <= sentMessages.Count)
+            {
+                DisplaySentMessageDetails(sentMessages[selectedMessage - 1]);
+            }
         }
 
 
+        private void DisplaySentMessageDetails(Message message)
+        {
+            Console.Clear();
+            string receiverName = GetUserNameById(message.ReceiverId, message.ReceiverRole);
+            Console.WriteLine($"To: {receiverName}");
+            Console.WriteLine($"Subject: {message.Subject}");
+            Console.WriteLine($"Sent: {message.SentDate}");
+            Console.WriteLine("\nMessage content:\n");
+            Console.WriteLine(message.Content);
+
+            Console.WriteLine("\nPress any key to go back to sent messages.");
+            Console.ReadKey();
+            DisplaySentMessages();
+        }
 
         private string GetUserNameById(int userId, string role)
         {
