@@ -14,9 +14,11 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Views
         private int loggedInUserId;
         private MessageController messageController;
         private MessageView messageView;
+        private UserController userController;
+        private string[] menuItems;
 
 
-        private string[] menuItems = new string[]
+        private string[] teacherMenuItems = new string[]
         {
             "1. Add class",
             "2. Add student",
@@ -27,8 +29,25 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Views
             "7. View classes",
             "8. Inbox",
             "9. Sent Messages",
-            "9. Compose Message",
-            "10. Exit"
+            "10. Compose Message",
+            "11. Exit"
+        };
+
+        private string[] parentMenuItems = new string[]
+        {
+            "1. View classes",
+            "2. Inbox",
+            "3. Sent messages",
+            "4. Compose Message",
+            "5. Exit"
+        };
+
+        private string[] studentMenuItems = new string[]
+        {
+            "1. View classes",
+            "2. Inbox",
+            "3. Sent Messages",
+            "4. Exit"
         };
 
         public ConsoleView(SchoolController controller, GradeController gradeController, UserController userController, Teacher loggedInTeacher, Parent loggedInParent, int loggedInUserId, MessageController messageController)
@@ -39,11 +58,29 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Views
             this.loggedInUserId = loggedInUserId;
             this.messageController = messageController;
             this.messageView = new MessageView(messageController, userController, loggedInUserId);
+            this.userController = userController;
         }
 
 
         public void DisplayMenu()
         {
+            string userRole = userController.GetLoggedInRole();
+            switch (userRole)
+            {
+                case "Teacher":
+                    menuItems = teacherMenuItems;
+                    break;
+                case "Parent":
+                    menuItems = parentMenuItems;
+                    break;
+                case "Student":
+                    menuItems = studentMenuItems;
+                    break;
+                default:
+                    Console.WriteLine("Unknown role. Exiting...");
+                    return;
+            }
+
             int currentSelection = 0;
             bool running = true;
 
@@ -66,11 +103,6 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Views
                         HandleSelection(currentSelection, ref running);
                         break;
                 }
-
-                if (previousSelection != currentSelection)
-                {
-                    UpdateMenuRow(previousSelection, currentSelection);
-                }
             }
         }
 
@@ -91,20 +123,23 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Views
             }
         }
 
-        private void UpdateMenuRow(int previousSelection, int currentSelection)
+        private void HandleSelection(int selectedOption, ref bool running)
         {
-            Console.SetCursorPosition(0, previousSelection + 2);
-            Console.ResetColor();
-            Console.WriteLine(menuItems[previousSelection] + " ");
-
-            Console.SetCursorPosition(0, currentSelection + 2);
-            Console.BackgroundColor = ConsoleColor.Gray;
-            Console.ForegroundColor = ConsoleColor.Black;
-            Console.WriteLine(menuItems[currentSelection] + " ");
-            Console.ResetColor();
+            switch (userController.GetLoggedInRole())
+            {
+                case "Teacher":
+                    HandleTeacherSelection(selectedOption, ref running);
+                    break;
+                case "Parent":
+                    HandleParentSelection(selectedOption, ref running);
+                    break;
+                case "Student":
+                    HandleStudentSelection(selectedOption, ref running);
+                    break;
+            }
         }
 
-        private void HandleSelection(int selectedOption, ref bool running)
+        private void HandleTeacherSelection(int selectedOption, ref bool running)
         {
             switch (selectedOption)
             {
@@ -139,13 +174,60 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Views
                     messageView.ComposeMessage();
                     break;
                 case 10:
-                    Console.Clear();
-                    Console.WriteLine("Exiting program...");
-                    System.Threading.Thread.Sleep(1000);
-                    running = false;
+                    ExitProgram(ref running);
                     break;
             }
         }
+
+        private void HandleParentSelection(int selectedOption, ref bool running)
+        {
+            switch (selectedOption)
+            {
+                case 0:
+                    DisplayClasses();
+                    break;
+                case 1:
+                    messageView.DisplayInbox();
+                    break;
+                case 2:
+                    messageView.DisplaySentMessages();
+                    break;
+                case 3:
+                    messageView.ComposeMessage();
+                    break;
+                case 4:
+                    ExitProgram(ref running);
+                    break;
+            }
+        }
+
+        private void HandleStudentSelection(int selectedOption, ref bool running)
+        {
+            switch (selectedOption)
+            {
+                case 0:
+                    DisplayClasses();
+                    break;
+                case 1:
+                    messageView.DisplayInbox();
+                    break;
+                case 2:
+                    messageView.DisplaySentMessages();
+                    break;
+                case 3:
+                    ExitProgram(ref running);
+                    break;
+            }
+        }
+
+        private void ExitProgram(ref bool running)
+        {
+            Console.Clear();
+            Console.WriteLine("Exiting program...");
+            System.Threading.Thread.Sleep(1000);
+            running = false;
+        }
+
 
         private void AddClass()
         {
