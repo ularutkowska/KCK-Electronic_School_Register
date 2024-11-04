@@ -1,4 +1,5 @@
 ﻿using KCK_Elektroniczny_Dziennik_Szkolny.Controllers;
+using KCK_Elektroniczny_Dziennik_Szkolny.Models;
 using System;
 
 namespace KCK_Elektroniczny_Dziennik_Szkolny.Views
@@ -40,7 +41,7 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Views
                         if (!loggedIn)
                         {
                             Console.Clear();
-                            Console.WriteLine("Invalid login or password. Returning to role selection...");
+                            Console.WriteLine(LanguageManager.GetString("InvalidLoginOrPassword"));
                             System.Threading.Thread.Sleep(2000);
                         }
                         break;
@@ -58,7 +59,7 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Views
         private void DrawMenu(int selectedIndex)
         {
             Console.Clear();
-            Console.WriteLine("Choose a role");
+            Console.WriteLine(LanguageManager.GetString("ChooseRole"));
 
             for (int i = 0; i < roles.Length; i++)
             {
@@ -68,7 +69,7 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Views
                     Console.ForegroundColor = ConsoleColor.Black;
                 }
 
-                Console.WriteLine(roles[i]);
+                Console.WriteLine(LanguageManager.GetString(roles[i]));
                 Console.ResetColor();
             }
         }
@@ -95,10 +96,10 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Views
                 if (role == "Student")
                 {
                     Console.Clear();
-                    Console.WriteLine("Enter student ID:");
+                    Console.WriteLine(LanguageManager.GetString("EnterStudentID"));
                     int studentId = int.Parse(Console.ReadLine());
 
-                    Console.WriteLine("Enter password:");
+                    Console.WriteLine(LanguageManager.GetString("EnterPassword"));
                     string password = Console.ReadLine();
 
                     bool success = userController.StudentLogin(studentId, password);
@@ -106,13 +107,13 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Views
                     if (success)
                     {
                         loggedInRole = "Student";
-                        Console.WriteLine("Logged in as student.");
+                        Console.WriteLine(LanguageManager.GetString("LoggedInAsStudent"));
                         System.Threading.Thread.Sleep(1000);
                         return true;
                     }
                     else
                     {
-                        Console.WriteLine("Invalid ID or password.");
+                        Console.WriteLine(LanguageManager.GetString("InvalidIdOrPassword"));
                         System.Threading.Thread.Sleep(2000);
                         retryLogin = AskToRetry();
                     }
@@ -120,10 +121,10 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Views
                 else
                 {
                     Console.Clear();
-                    Console.WriteLine("Enter email address:");
+                    Console.WriteLine(LanguageManager.GetString("EnterEmailAddress"));
                     string email = Console.ReadLine();
 
-                    Console.WriteLine("Enter password:");
+                    Console.WriteLine(LanguageManager.GetString("EnterPassword"));
                     string password = Console.ReadLine();
 
                     bool success = userController.Login(email, password, role);
@@ -131,13 +132,13 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Views
                     if (success)
                     {
                         loggedInRole = userController.GetLoggedInRole();
-                        Console.WriteLine($"Logged in as {loggedInRole}.");
+                        Console.WriteLine(LanguageManager.GetString("LoggedInAs") + LanguageManager.GetString(loggedInRole));
                         System.Threading.Thread.Sleep(1000);
                         return true;
                     }
                     else
                     {
-                        Console.WriteLine("Invalid login credentials.");
+                        Console.WriteLine(LanguageManager.GetString("InvalidLoginCredentials"));
                         System.Threading.Thread.Sleep(2000);
                         retryLogin = AskToRetry();
                     }
@@ -155,7 +156,7 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Views
             while (true)
             {
                 Console.Clear();
-                Console.WriteLine("Do you want to retry?");
+                Console.WriteLine(LanguageManager.GetString("RetryPrompt"));
 
                 for (int i = 0; i < options.Length; i++)
                 {
@@ -165,7 +166,7 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Views
                         Console.ForegroundColor = ConsoleColor.Black;
                     }
 
-                    Console.WriteLine(options[i]);
+                    Console.WriteLine(LanguageManager.GetString(options[i]));
                     Console.ResetColor();
                 }
 

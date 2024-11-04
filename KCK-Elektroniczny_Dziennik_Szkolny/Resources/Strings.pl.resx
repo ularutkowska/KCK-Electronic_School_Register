@@ -1,0 +1,480 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AbortingMessage" xml:space="preserve">
+    <value>Przerwanie wiadomości</value>
+  </data>
+  <data name="AddedClassInfo" xml:space="preserve">
+    <value>Klasa została dodana</value>
+  </data>
+  <data name="App_ExitMessage" xml:space="preserve">
+    <value>Zamykanie programu...</value>
+  </data>
+  <data name="App_Title" xml:space="preserve">
+    <value>Elektroniczny Dziennik Szkolny</value>
+  </data>
+  <data name="ChooseRole" xml:space="preserve">
+    <value>Wybierz rolę</value>
+  </data>
+  <data name="Class" xml:space="preserve">
+    <value>Klasa </value>
+  </data>
+  <data name="ComposeMessage" xml:space="preserve">
+    <value>Napisz wiadomość</value>
+  </data>
+  <data name="Date" xml:space="preserve">
+    <value>Data</value>
+  </data>
+  <data name="EnterContent" xml:space="preserve">
+    <value>Wprowadź treść</value>
+  </data>
+  <data name="EnterEmailAddress" xml:space="preserve">
+    <value>Wprowadź adres e-mail:</value>
+  </data>
+  <data name="EnterPassword" xml:space="preserve">
+    <value>Podaj hasło:</value>
+  </data>
+  <data name="EnterStudentID" xml:space="preserve">
+    <value>Podaj identyfikator ucznia:</value>
+  </data>
+  <data name="EnterSubject" xml:space="preserve">
+    <value>Wprowadź temat</value>
+  </data>
+  <data name="EnterValidOption" xml:space="preserve">
+    <value>Wprowadź poprawną opcję (1-3):</value>
+  </data>
+  <data name="Error_InvalidDateFormat" xml:space="preserve">
+    <value>Nieprawidłowy format daty. Wprowadź poprawną datę (rrrr-mm-dd):</value>
+  </data>
+  <data name="Error_InvalidEmail" xml:space="preserve">
+    <value>Nieprawidłowy adres e-mail. Wprowadź prawidłowy adres e-mail:</value>
+  </data>
+  <data name="Error_InvalidPhoneNumber" xml:space="preserve">
+    <value>Nieprawidłowy numer telefonu. Numer telefonu musi zawierać co najmniej 9 cyfr:</value>
+  </data>
+  <data name="Error_NotLoggedInAsParent" xml:space="preserve">
+    <value>Nie jesteś zalogowany jako rodzic</value>
+  </data>
+  <data name="Error_NotLoggedInAsTeacher" xml:space="preserve">
+    <value>Nie jesteś zalogowany jako nauczyciel</value>
+  </data>
+  <data name="From" xml:space="preserve">
+    <value>Od</value>
+  </data>
+  <data name="Grade" xml:space="preserve">
+    <value>Ocena</value>
+  </data>
+  <data name="Header_GradeManagement" xml:space="preserve">
+    <value>Zarządzanie Ocenami\n</value>
+  </data>
+  <data name="in" xml:space="preserve">
+    <value> dla przedmiotu </value>
+  </data>
+  <data name="Inbox" xml:space="preserve">
+    <value>Skrzynka odbiorcza</value>
+  </data>
+  <data name="InvalidIdOrPassword" xml:space="preserve">
+    <value>Nieprawidłowy identyfikator lub hasło</value>
+  </data>
+  <data name="InvalidInputInfo" xml:space="preserve">
+    <value>Nieprawidłowe dane. Podaj jedną literę od A do Z: </value>
+  </data>
+  <data name="InvalidLoginCredentials" xml:space="preserve">
+    <value>Nieprawidłowe dane logowania</value>
+  </data>
+  <data name="InvalidLoginOrPassword" xml:space="preserve">
+    <value>Nieprawidłowy login lub hasło. Powracam do wyboru roli...</value>
+  </data>
+  <data name="InvalidRecipientSelected" xml:space="preserve">
+    <value>Wybrany odbiorca jest nieprawidłowy</value>
+  </data>
+  <data name="Label_Class" xml:space="preserve">
+    <value>Klasa {0}</value>
+  </data>
+  <data name="LoggedInAs" xml:space="preserve">
+    <value>Zalogowano jako </value>
+  </data>
+  <data name="LoggedInAsStudent" xml:space="preserve">
+    <value>Zalogowano jako uczeń</value>
+  </data>
+  <data name="Menu_AddClass" xml:space="preserve">
+    <value>Dodaj klasę</value>
+  </data>
+  <data name="Menu_AddGrade" xml:space="preserve">
+    <value>Dodaj Ocenę</value>
+  </data>
+  <data name="Menu_AddParent" xml:space="preserve">
+    <value>Dodaj rodzica</value>
+  </data>
+  <data name="Menu_AddStudent" xml:space="preserve">
+    <value>Dodaj ucznia</value>
+  </data>
+  <data name="Menu_AddSubject" xml:space="preserve">
+    <value>Dodaj przedmiot</value>
+  </data>
+  <data name="Menu_AddTeacher" xml:space="preserve">
+    <value>Dodaj nauczyciela</value>
+  </data>
+  <data name="Menu_Class" xml:space="preserve">
+    <value>{0}. Klasa {1}</value>
+  </data>
+  <data name="Menu_ComposeMessage" xml:space="preserve">
+    <value>Napisz wiadomość</value>
+  </data>
+  <data name="Menu_Exit" xml:space="preserve">
+    <value>Wyjdź</value>
+  </data>
+  <data name="Menu_Inbox" xml:space="preserve">
+    <value>Skrzynka odbiorcza</value>
+  </data>
+  <data name="Menu_ManageGrades" xml:space="preserve">
+    <value>Zarządzaj ocenami</value>
+  </data>
+  <data name="Menu_SentMessages" xml:space="preserve">
+    <value>Wysłane wiadomości</value>
+  </data>
+  <data name="Menu_ViewByClass" xml:space="preserve">
+    <value>Przeglądaj według klasy</value>
+  </data>
+  <data name="Menu_ViewClasses" xml:space="preserve">
+    <value>Przeglądaj klasy</value>
+  </data>
+  <data name="Menu_ViewPersonal" xml:space="preserve">
+    <value>Przeglądaj indywidualnie (Rodzic)</value>
+  </data>
+  <data name="MessageContent" xml:space="preserve">
+    <value>Treść wiadomości</value>
+  </data>
+  <data name="MessageSent" xml:space="preserve">
+    <value>Wiadomość została wysłana</value>
+  </data>
+  <data name="Message_AddingGradeFor" xml:space="preserve">
+    <value>Dodawanie oceny dla </value>
+  </data>
+  <data name="Message_EnterGradeValue" xml:space="preserve">
+    <value>Wprowadź ocenę (1-6):</value>
+  </data>
+  <data name="Message_EnterTeacherEmail" xml:space="preserve">
+    <value>Wprowadź email nauczyciela:</value>
+  </data>
+  <data name="Message_EnterTeacherFirstName" xml:space="preserve">
+    <value>Wprowadź imię nauczyciela:</value>
+  </data>
+  <data name="Message_EnterTeacherLastName" xml:space="preserve">
+    <value>Wprowadź nazwisko nauczyciela:</value>
+  </data>
+  <data name="Message_EnterTeacherPassword" xml:space="preserve">
+    <value>Wprowadź nowe hasło dla nauczyciela:</value>
+  </data>
+  <data name="Message_EnterTeacherPhone" xml:space="preserve">
+    <value>Wprowadź numer telefonu nauczyciela:</value>
+  </data>
+  <data name="Message_ExitingGradeManagement" xml:space="preserve">
+    <value>Wychodzenie z zarządzania ocenami</value>
+  </data>
+  <data name="Message_GradeAddedSuccessfully" xml:space="preserve">
+    <value>Ocena została dodana pomyślnie</value>
+  </data>
+  <data name="Message_GradesFor" xml:space="preserve">
+    <value>Oceny dla </value>
+  </data>
+  <data name="Message_InvalidGrade" xml:space="preserve">
+    <value>Nieprawidłowa ocena. Proszę wpisać wartość między 1 a 6:</value>
+  </data>
+  <data name="Message_LoginSuccess" xml:space="preserve">
+    <value>Zalogowano pomyślnie</value>
+  </data>
+  <data name="Message_NoAssignedSubjects" xml:space="preserve">
+    <value>Nie masz przypisanych przedmiotów</value>
+  </data>
+  <data name="Message_NoClassesAvailable" xml:space="preserve">
+    <value>Brak dostępnych klas.</value>
+  </data>
+  <data name="Message_NoGradesFoundFor" xml:space="preserve">
+    <value>Nie znaleziono ocen dla </value>
+  </data>
+  <data name="Message_NoParentsFound" xml:space="preserve">
+    <value>Nie znaleziono rodziców o podanym nazwisku</value>
+  </data>
+  <data name="Message_NoStudentLinkedToParent" xml:space="preserve">
+    <value>Brak ucznia powiązanego z tym rodzicem</value>
+  </data>
+  <data name="Message_NoStudentsInClass" xml:space="preserve">
+    <value>Brak uczniów w tej klasie</value>
+  </data>
+  <data name="Message_ParentAdded" xml:space="preserve">
+    <value>Rodzic został dodany.</value>
+  </data>
+  <data name="Message_ParentInfo" xml:space="preserve">
+    <value>{0}. {1} {2}, Telefon: {3}</value>
+  </data>
+  <data name="Message_Read" xml:space="preserve">
+    <value>[Przeczytana]</value>
+  </data>
+  <data name="Message_ReturnToRoleSelection" xml:space="preserve">
+    <value>Wybrałeś powrót do wyboru roli</value>
+  </data>
+  <data name="Message_SelectClassToView" xml:space="preserve">
+    <value>Wybierz klasę, aby zobaczyć jej uczniów:</value>
+  </data>
+  <data name="Message_SelectParent" xml:space="preserve">
+    <value>Wybierz rodzica za pomocą klawiszy strzałek.</value>
+  </data>
+  <data name="Message_SelectSubject" xml:space="preserve">
+    <value>Wybierz przedmiot:</value>
+  </data>
+  <data name="Message_StudentAdded" xml:space="preserve">
+    <value>Uczeń został dodany</value>
+  </data>
+  <data name="Message_SubjectAdded" xml:space="preserve">
+    <value>Przedmiot został dodany.</value>
+  </data>
+  <data name="Message_TeacherAdded" xml:space="preserve">
+    <value>Nauczyciel został dodany</value>
+  </data>
+  <data name="Message_Unread" xml:space="preserve">
+    <value>[Nieprzeczytana]</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>Nie</value>
+  </data>
+  <data name="NoClassesInfo" xml:space="preserve">
+    <value>Brak dostępnych klas</value>
+  </data>
+  <data name="NoMessages" xml:space="preserve">
+    <value>Brak wiadomości</value>
+  </data>
+  <data name="NoRecipientsFound" xml:space="preserve">
+    <value>Nie znaleziono odbiorców</value>
+  </data>
+  <data name="NoSentMessages" xml:space="preserve">
+    <value>Brak wysłanych wiadomości</value>
+  </data>
+  <data name="NoTeachersInfo" xml:space="preserve">
+    <value>Brak nauczycieli na liście</value>
+  </data>
+  <data name="Parent" xml:space="preserve">
+    <value>Rodzic</value>
+  </data>
+  <data name="PressAnyKeyToGoBack" xml:space="preserve">
+    <value>Naciśnij dowolny klawisz, aby wrócić do wysłanych wiadomości</value>
+  </data>
+  <data name="Prompt_ClassLetter" xml:space="preserve">
+    <value>Podaj literę klasy (A-Z): </value>
+  </data>
+  <data name="Prompt_EnterAtLeast3Letters" xml:space="preserve">
+    <value>Proszę wpisać co najmniej 3 litery nazwiska:</value>
+  </data>
+  <data name="Prompt_EnterParentLastName" xml:space="preserve">
+    <value>Wpisz co najmniej 3 litery nazwiska rodzica:</value>
+  </data>
+  <data name="Prompt_EnterSubjectName" xml:space="preserve">
+    <value>Wprowadź nazwę przedmiotu:</value>
+  </data>
+  <data name="Prompt_ParentEmail" xml:space="preserve">
+    <value>Wprowadź adres e-mail rodzica:</value>
+  </data>
+  <data name="Prompt_ParentFirstName" xml:space="preserve">
+    <value>Wprowadź imię rodzica:</value>
+  </data>
+  <data name="Prompt_ParentLastName" xml:space="preserve">
+    <value>Wprowadź nazwisko rodzica:</value>
+  </data>
+  <data name="Prompt_ParentPassword" xml:space="preserve">
+    <value>Wprowadź hasło rodzica:</value>
+  </data>
+  <data name="Prompt_ParentPhoneNumber" xml:space="preserve">
+    <value>Wprowadź numer telefonu rodzica:</value>
+  </data>
+  <data name="Prompt_SelectClass" xml:space="preserve">
+    <value>Wybierz klasę używając strzałek:</value>
+  </data>
+  <data name="Prompt_SelectClass1" xml:space="preserve">
+    <value>Wybierz klasę: </value>
+  </data>
+  <data name="Prompt_SelectClassGrade" xml:space="preserve">
+    <value>Wybierz poziom klasy (1-8):</value>
+  </data>
+  <data name="Prompt_SelectStudentInClass" xml:space="preserve">
+    <value>Klasa {0}: Wybierz ucznia:</value>
+  </data>
+  <data name="Prompt_SelectTeachers" xml:space="preserve">
+    <value>Wybierz nauczycieli</value>
+  </data>
+  <data name="Prompt_StudentBirthDate" xml:space="preserve">
+    <value>Podaj datę urodzenia ucznia (rrrr-mm-dd):</value>
+  </data>
+  <data name="Prompt_StudentFirstName" xml:space="preserve">
+    <value>Podaj imię ucznia:</value>
+  </data>
+  <data name="Prompt_StudentLastName" xml:space="preserve">
+    <value>Podaj nazwisko ucznia:</value>
+  </data>
+  <data name="Prompt_StudentPassword" xml:space="preserve">
+    <value>Podaj hasło ucznia:</value>
+  </data>
+  <data name="Prompt_SupervisingTeacher" xml:space="preserve">
+    <value>Wybierz wychowawcę klasy</value>
+  </data>
+  <data name="RetryPrompt" xml:space="preserve">
+    <value>Czy chcesz spróbować ponownie?</value>
+  </data>
+  <data name="SelectedGrade" xml:space="preserve">
+    <value>Wybrany poziom: </value>
+  </data>
+  <data name="SelectMessageDetails" xml:space="preserve">
+    <value>Wybierz wiadomość, aby zobaczyć szczegóły (Wprowadź numer):</value>
+  </data>
+  <data name="SelectRecipient" xml:space="preserve">
+    <value>Wybierz odbiorcę (wprowadź numer):</value>
+  </data>
+  <data name="SelectRecipientType" xml:space="preserve">
+    <value>Wybierz typ odbiorcy</value>
+  </data>
+  <data name="Select_Message_To_Read" xml:space="preserve">
+    <value>Wybierz wiadomość do przeczytania (Wpisz numer):</value>
+  </data>
+  <data name="Sent" xml:space="preserve">
+    <value>Wysłano</value>
+  </data>
+  <data name="SentMessages" xml:space="preserve">
+    <value>Wysłane wiadomości</value>
+  </data>
+  <data name="Student" xml:space="preserve">
+    <value>Uczeń</value>
+  </data>
+  <data name="Students_Info" xml:space="preserve">
+    <value> - uczniowie:</value>
+  </data>
+  <data name="Subject" xml:space="preserve">
+    <value>Przedmiot</value>
+  </data>
+  <data name="Subject1" xml:space="preserve">
+    <value>Temat</value>
+  </data>
+  <data name="Teacher" xml:space="preserve">
+    <value>Nauczyciel</value>
+  </data>
+  <data name="To" xml:space="preserve">
+    <value>Do</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>Tak</value>
+  </data>
+</root>

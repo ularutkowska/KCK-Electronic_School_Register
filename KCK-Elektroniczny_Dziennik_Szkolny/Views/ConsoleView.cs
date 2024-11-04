@@ -1,4 +1,5 @@
 ﻿using KCK_Elektroniczny_Dziennik_Szkolny.Controllers;
+using KCK_Elektroniczny_Dziennik_Szkolny.Models;
 using KCK_Elektroniczny_Dziennik_Szkolny.Models.Objects;
 using KCK_Elektroniczny_Dziennik_Szkolny.Views;
 using System;
@@ -20,34 +21,34 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Views
 
         private string[] teacherMenuItems = new string[]
         {
-            "1. Add class",
-            "2. Add student",
-            "3. Add teacher",
-            "4. Add subject",
-            "5. Add parent",
-            "6. Manage grades",
-            "7. View classes",
-            "8. Inbox",
-            "9. Sent Messages",
-            "10. Compose Message",
-            "11. Exit"
+            LanguageManager.GetString("Menu_AddClass"),
+            LanguageManager.GetString("Menu_AddStudent"),
+            LanguageManager.GetString("Menu_AddTeacher"),
+            LanguageManager.GetString("Menu_AddSubject"),
+            LanguageManager.GetString("Menu_AddParent"),
+            LanguageManager.GetString("Menu_ManageGrades"),
+            LanguageManager.GetString("Menu_ViewClasses"),
+            LanguageManager.GetString("Menu_Inbox"),
+            LanguageManager.GetString("Menu_SentMessages"),
+            LanguageManager.GetString("Menu_ComposeMessage"),
+            LanguageManager.GetString("Menu_Exit")
         };
 
         private string[] parentMenuItems = new string[]
         {
-            "1. View classes",
-            "2. Inbox",
-            "3. Sent messages",
-            "4. Compose Message",
-            "5. Exit"
+            LanguageManager.GetString("Menu_ViewClasses"),
+            LanguageManager.GetString("Menu_Inbox"),
+            LanguageManager.GetString("Menu_SentMessages"),
+            LanguageManager.GetString("Menu_ComposeMessage"),
+            LanguageManager.GetString("Menu_Exit")
         };
 
         private string[] studentMenuItems = new string[]
         {
-            "1. View classes",
-            "2. Inbox",
-            "3. Sent Messages",
-            "4. Exit"
+            LanguageManager.GetString("Menu_ViewClasses"),
+            LanguageManager.GetString("Menu_Inbox"),
+            LanguageManager.GetString("Menu_SentMessages"),
+            LanguageManager.GetString("Menu_Exit")
         };
 
         public ConsoleView(SchoolController controller, GradeController gradeController, UserController userController, Teacher loggedInTeacher, Parent loggedInParent, int loggedInUserId, MessageController messageController)
@@ -109,7 +110,7 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Views
         private void DrawMenu(int currentSelection)
         {
             Console.Clear();
-            Console.WriteLine("Electronic School Diary\n");
+            Console.WriteLine(LanguageManager.GetString("App_Title"));
 
             for (int i = 0; i < menuItems.Length; i++)
             {
@@ -223,7 +224,7 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Views
         private void ExitProgram(ref bool running)
         {
             Console.Clear();
-            Console.WriteLine("Exiting program...");
+            Console.WriteLine(LanguageManager.GetString("App_ExitMessage"));
             System.Threading.Thread.Sleep(1000);
             running = false;
         }
@@ -232,7 +233,7 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Views
         private void AddClass()
         {
             Console.Clear();
-            Console.WriteLine("Select class grade (1-8):");
+            Console.WriteLine(LanguageManager.GetString("Prompt_SelectClassGrade"));
 
             int[] grades = new int[] { 1, 2, 3, 4, 5, 6, 7, 8 };
             int selectedGradeIndex = 0;
@@ -241,7 +242,7 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Views
             while (selectingGrade)
             {
                 Console.Clear();
-                Console.WriteLine("Select class grade (1-8):");
+                Console.WriteLine(LanguageManager.GetString("Prompt_SelectClassGrade"));
 
                 for (int i = 0; i < grades.Length; i++)
                 {
@@ -272,8 +273,9 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Views
             int selectedGrade = grades[selectedGradeIndex];
 
             Console.Clear();
-            Console.WriteLine($"Selected grade: {selectedGrade}");
-            Console.WriteLine("Enter the class letter (A-Z):");
+            Console.Write(LanguageManager.GetString("SelectedGrade"));
+            Console.WriteLine(selectedGrade);
+            Console.WriteLine(LanguageManager.GetString("Prompt_ClassLetter"));
 
             string className;
             while (true)
@@ -283,13 +285,13 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Views
                 {
                     break;
                 }
-                Console.WriteLine("Invalid input. Please enter a single letter (A-Z):");
+                Console.WriteLine(LanguageManager.GetString("InvalidInputInfo"));
             }
 
             var teachers = controller.GetTeachers();
             if (teachers.Count == 0)
             {
-                Console.WriteLine("No teachers added");
+                Console.WriteLine(LanguageManager.GetString("NoTeachersInfo"));
                 Console.ReadKey();
                 DisplayMenu();
                 return;
@@ -301,7 +303,7 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Views
             while (selectingTeacher)
             {
                 Console.Clear();
-                Console.WriteLine("Select a supervising teacher");
+                Console.WriteLine(LanguageManager.GetString("Prompt_SupervisingTeacher"));
 
                 for (int i = 0; i < teachers.Count; i++)
                 {
@@ -333,7 +335,7 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Views
 
             Class newClass = new Class { Grade = selectedGrade, Name = className, SupervisingTeacher = selectedTeacher };
             controller.AddClass(newClass);
-            Console.WriteLine("Class has been added.");
+            Console.WriteLine(LanguageManager.GetString("AddedClassInfo"));
             Console.ReadKey();
             DisplayMenu();
         }
@@ -342,24 +344,24 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Views
         private void AddStudent()
         {
             Console.Clear();
-            Console.WriteLine("Enter student's first name:");
+            Console.WriteLine(LanguageManager.GetString("Prompt_StudentFirstName"));
             string name = Console.ReadLine();
-            Console.WriteLine("Enter student's last name:");
+            Console.WriteLine(LanguageManager.GetString("Prompt_StudentLastName"));
             string surname = Console.ReadLine();
-            Console.WriteLine("Enter student's password:");
+            Console.WriteLine(LanguageManager.GetString("Prompt_StudentPassword"));
             string password = Console.ReadLine();
-            Console.WriteLine("Enter student's BirthDate (yyyy-MM-dd):");
+            Console.WriteLine(LanguageManager.GetString("Prompt_StudentBirthDate"));
             DateOnly birthDate;
 
             while (!DateOnly.TryParse(Console.ReadLine(), out birthDate))
             {
-                Console.WriteLine("Invalid date format. Please enter a valid date (yyyy-MM-dd):");
+                Console.WriteLine(LanguageManager.GetString("Error_InvalidDateFormat"));
             }
 
             var classes = controller.GetClasses();
             if (classes.Count == 0)
             {
-                Console.WriteLine("No classes available.");
+                Console.WriteLine(LanguageManager.GetString("NoClassesInfo"));
                 Console.ReadKey();
                 DisplayMenu();
                 return;
@@ -371,7 +373,7 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Views
             while (selecting)
             {
                 Console.Clear();
-                Console.WriteLine("Select a class for the student using arrow keys:");
+                Console.WriteLine(LanguageManager.GetString("Prompt_SelectClass"));
 
                 for (int i = 0; i < classes.Count; i++)
                 {
@@ -381,7 +383,7 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Views
                         Console.ForegroundColor = ConsoleColor.Black;
                     }
 
-                    Console.WriteLine($"{i + 1}. Class {classes[i].Grade}");
+                    Console.WriteLine(string.Format(LanguageManager.GetString("Menu_Class"), i + 1, classes[i].Grade));
                     Console.ResetColor();
                 }
 
@@ -403,7 +405,7 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Views
 
             var selectedClass = classes[selectedIndex];
 
-            Console.WriteLine("Enter at least 3 letters of parent's last name:");
+            Console.WriteLine(LanguageManager.GetString("Prompt_EnterParentLastName"));
             String parentLastNameInput;
             while (true)
             {
@@ -412,13 +414,13 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Views
                 {
                     break;
                 }
-                Console.WriteLine("Please enter at least 3 letters of the last name:");
+                Console.WriteLine(LanguageManager.GetString("Prompt_EnterAtLeast3Letters"));
             }
 
             var matchingParents = controller.SearchParentsByLastName(parentLastNameInput);
             if(matchingParents.Count == 0)
             {
-                Console.WriteLine("No parents found with the given name.");
+                Console.WriteLine(LanguageManager.GetString("Message_NoParentsFound"));
                 Console.ReadKey();
                 DisplayMenu();
                 return;
@@ -430,16 +432,16 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Views
             while (selecting)
             {
                 Console.Clear();
-                Console.WriteLine("Select the parrent using arrow keys");
+                Console.WriteLine(LanguageManager.GetString("Message_SelectParent"));
 
-                for(int i = 0; i < matchingParents.Count; i++)
+                for (int i = 0; i < matchingParents.Count; i++)
                 {
                     if (i == selectedIndex)
                     {
                         Console.BackgroundColor = ConsoleColor.Gray;
                         Console.ForegroundColor = ConsoleColor.Black;
                     }
-                    Console.WriteLine($"{i + 1}. {matchingParents[i].Name} {matchingParents[i].Surname}, Phone: {matchingParents[i].PhoneNumber}");
+                    Console.WriteLine(string.Format(LanguageManager.GetString("Message_ParentInfo"), i + 1, matchingParents[i].Name, matchingParents[i].Surname, matchingParents[i].PhoneNumber));
                     Console.ResetColor();
                 }
                 var key = Console.ReadKey(true).Key;
@@ -463,7 +465,7 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Views
             Student newStudent = new Student{Name = name, Surname = surname, Password = password,BirthDate = birthDate, Parent = selectedParent, Class = selectedClass};
 
             controller.AddStudent(newStudent);
-            Console.WriteLine("Student has been added.");
+            Console.WriteLine(LanguageManager.GetString("Message_StudentAdded"));
             Console.ReadKey();
             DisplayMenu();
         }
@@ -474,34 +476,34 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Views
         {
             Console.Clear();
 
-            Console.WriteLine("Enter parent's first name:");
+            Console.WriteLine(LanguageManager.GetString("Prompt_ParentFirstName"));
             string name = Console.ReadLine();
 
-            Console.WriteLine("Enter parent's last name:");
+            Console.WriteLine(LanguageManager.GetString("Prompt_ParentLastName"));
             string surname = Console.ReadLine();
 
-            Console.WriteLine("Enter parent's password:");
+            Console.WriteLine(LanguageManager.GetString("Prompt_ParentPassword"));
             string password = Console.ReadLine();
 
-            Console.WriteLine("Enter parent's email address:");
+            Console.WriteLine(LanguageManager.GetString("Prompt_ParentEmail"));
             string email;
             while (!IsValidEmail(Console.ReadLine(), out email))
             {
-                Console.WriteLine("Invalid email address. Please enter a valid email:");
+                Console.WriteLine(LanguageManager.GetString("Error_InvalidEmail"));
             }
 
-            Console.WriteLine("Enter parent's phone number:");
+            Console.WriteLine(LanguageManager.GetString("Prompt_ParentPhoneNumber"));
             string phoneNumber;
             while (!IsValidPhoneNumber(Console.ReadLine(), out phoneNumber))
             {
-                Console.WriteLine("Invalid phone number. The phone number must contain at least 9 digits:");
+                Console.WriteLine(LanguageManager.GetString("Error_InvalidPhoneNumber"));
             }
 
             Parent newParent = new Parent{Name = name, Surname = surname, Password = password, Email = email, PhoneNumber = phoneNumber};
 
             controller.AddParent(newParent);
 
-            Console.WriteLine("Parent has been added.");
+            Console.WriteLine(LanguageManager.GetString("Message_ParentAdded"));
             Console.ReadKey();
             DisplayMenu();
         }
@@ -527,13 +529,13 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Views
         private void AddSubject()
         {
             Console.Clear();
-            Console.WriteLine("Enter subject's name:");
+            Console.WriteLine(LanguageManager.GetString("Prompt_EnterSubjectName"));
             string name = Console.ReadLine();
 
             var teachers = controller.GetTeachers();
             if (teachers.Count == 0)
             {
-                Console.WriteLine("No teachers added");
+                Console.WriteLine(LanguageManager.GetString("NoTeachersInfo"));
                 Console.ReadKey();
                 return;
             }
@@ -544,7 +546,7 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Views
             while (selectingTeacher)
             {
                 Console.Clear();
-                Console.WriteLine("Select teachers");
+                Console.WriteLine(LanguageManager.GetString("Prompt_SelectTeachers"));
 
                 for (int i = 0; i < teachers.Count; i++)
                 {
@@ -576,26 +578,26 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Views
 
             Subject newSubject = new Subject { Name = name, Teacher = selectedTeacher };
             controller.AddSubject(newSubject);
-            Console.WriteLine("Subject has been added.");
+            Console.WriteLine(LanguageManager.GetString("Message_SubjectAdded"));
             Console.ReadKey();
         }       
 
         private void AddTeacher()
         {
             Console.Clear();
-            Console.WriteLine("Enter teacher's first name:");
+            Console.WriteLine(LanguageManager.GetString("Message_EnterTeacherFirstName"));
             string name = Console.ReadLine();
-            Console.WriteLine("Enter teacher's last name:");
+            Console.WriteLine(LanguageManager.GetString("Message_EnterTeacherLastName"));
             string surname = Console.ReadLine();
-            Console.WriteLine("Enter a new password for the teacher");
+            Console.WriteLine(LanguageManager.GetString("Message_EnterTeacherPassword"));
             string password = Console.ReadLine();
-            Console.WriteLine("Enter the teacher's email");
+            Console.WriteLine(LanguageManager.GetString("Message_EnterTeacherEmail"));
             string email = Console.ReadLine();
-            Console.WriteLine("Enter the teacher's phone number");
+            Console.WriteLine(LanguageManager.GetString("Message_EnterTeacherPhone"));
             string phone = Console.ReadLine();
             Teacher newTeacher = new Teacher { Name = name, Surname = surname, Password = password, Email = email, PhoneNumber = phone };
             controller.AddTeacher(newTeacher);
-            Console.WriteLine("Teacher has been added.");
+            Console.WriteLine(LanguageManager.GetString("Message_TeacherAdded"));
             Console.ReadKey();
             DisplayMenu();
         }
@@ -606,18 +608,18 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Views
             var classes = controller.GetClasses();
             if (classes.Count == 0)
             {
-                Console.WriteLine("No classes available.");
+                Console.WriteLine(LanguageManager.GetString("Message_NoClassesAvailable"));
             }
             else
             {
-                Console.WriteLine("Select a class to view its students:");
+                Console.WriteLine(LanguageManager.GetString("Message_SelectClassToView"));
                 int selectedIndex = 0;
                 bool selectingClass = true;
 
                 while (selectingClass)
                 {
                     Console.Clear();
-                    Console.WriteLine("Select a class to view its students:\n");
+                    Console.WriteLine(LanguageManager.GetString("Message_SelectClassToView"));
 
                     for (int i = 0; i < classes.Count; i++)
                     {
@@ -626,7 +628,8 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Views
                             Console.BackgroundColor = ConsoleColor.Gray;
                             Console.ForegroundColor = ConsoleColor.Black;
                         }
-                        Console.WriteLine($"Class: {classes[i].Grade} {classes[i].Name}");
+                        Console.Write(LanguageManager.GetString("Class"));
+                        Console.WriteLine(classes[i].Grade + classes[i].Name);
                         Console.ResetColor();
                     }
 
@@ -650,11 +653,13 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Views
                 var students = controller.GetStudentsByClassId(selectedClass.Id);
 
                 Console.Clear();
-                Console.WriteLine($"Class {selectedClass.Grade} {selectedClass.Name} - Students:\n");
+                Console.Write(LanguageManager.GetString("Class"));
+                Console.Write(selectedClass.Grade + selectedClass.Name);
+                Console.WriteLine(LanguageManager.GetString("Students_Info"));
 
                 if (students.Count == 0)
                 {
-                    Console.WriteLine("No students in this class.");
+                    Console.WriteLine(LanguageManager.GetString("Message_NoStudentsInClass"));
                 }
                 else
                 {

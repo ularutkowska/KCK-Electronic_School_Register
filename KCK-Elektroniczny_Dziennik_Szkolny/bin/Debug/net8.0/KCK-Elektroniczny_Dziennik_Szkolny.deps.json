@@ -17,6 +17,14 @@
         },
         "runtime": {
           "KCK-Elektroniczny_Dziennik_Szkolny.dll": {}
+        },
+        "resources": {
+          "en/KCK-Elektroniczny_Dziennik_Szkolny.resources.dll": {
+            "locale": "en"
+          },
+          "pl/KCK-Elektroniczny_Dziennik_Szkolny.resources.dll": {
+            "locale": "pl"
+          }
         }
       },
       "Azure.Core/1.35.0": {

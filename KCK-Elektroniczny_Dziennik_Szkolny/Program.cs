@@ -10,6 +10,31 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny
         {
             using (var context = new ApplicationDbContext())
             {
+                /*
+                while (true) // Pętla, aby pozwolić na powtórne wywołanie
+                {
+                    Console.Clear();
+                    Console.WriteLine("Select Language / Wybierz język");
+                    Console.WriteLine("1. English");
+                    Console.WriteLine("2. Polski");
+
+                    var key = Console.ReadKey(true).Key;
+
+                    switch (key)
+                    {
+                        case ConsoleKey.D1:
+                            LanguageManager.SetLanguage("en");
+                            return; // Zakończ pętlę
+                        case ConsoleKey.D2:
+                            LanguageManager.SetLanguage("pl");
+                            return; // Zakończ pętlę
+                        default:
+                            Console.WriteLine(LanguageManager.GetString("InvalidChoice")); // Użyj lokalizowanego komunikatu
+                            Console.ReadKey(); // Czekaj na naciśnięcie klawisza, aby użytkownik mógł zobaczyć komunikat
+                            break;
+                    }
+                } */
+
                 UserController userController = new UserController(context);
                 SchoolController schoolController = new SchoolController(context);
                 GradeController gradeController = new GradeController(context);
@@ -43,7 +68,7 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny
                         }
 
                         Console.Clear();
-                        Console.WriteLine("Logged in successfully.");
+                        Console.WriteLine(LanguageManager.GetString("Message_LoginSuccess"));
                         System.Threading.Thread.Sleep(3000);
 
                         ConsoleView consoleView = new ConsoleView(schoolController, gradeController, userController, loggedInTeacher, loggedInParent, loggedInUserId, messageController);
@@ -53,7 +78,7 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny
                     else
                     {
                         Console.Clear();
-                        Console.WriteLine("You chose to return to the role selection.");
+                        Console.WriteLine(LanguageManager.GetString("Message_ReturnToRoleSelection"));
                     }
                 }
             }

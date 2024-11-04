@@ -1,4 +1,5 @@
 ﻿using KCK_Elektroniczny_Dziennik_Szkolny.Controllers;
+using KCK_Elektroniczny_Dziennik_Szkolny.Models;
 using KCK_Elektroniczny_Dziennik_Szkolny.Models.Objects;
 using Microsoft.Identity.Client;
 using System;
@@ -15,10 +16,10 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Views
 
         private string[] menuItems = new string[]
         {
-            "1. Add Grade",
-            "2. View by Class",
-            "3. View Personal (Parent)",
-            "4. Exit"
+            LanguageManager.GetString("Menu_AddGrade"),
+            LanguageManager.GetString("Menu_ViewByClass"),
+            LanguageManager.GetString("Menu_ViewPersonal"),
+            LanguageManager.GetString("Menu_Exit")
         };
 
         private bool exitGradeMenu = false;
@@ -66,7 +67,7 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Views
         private void DrawMenu(int currentSelection)
         {
             Console.Clear();
-            Console.WriteLine("Grade Management\n");
+            Console.WriteLine(LanguageManager.GetString("Header_GradeManagement"));
 
             for (int i = 0; i < menuItems.Length; i++)
             {
@@ -110,13 +111,13 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Views
                     }
                     else
                     {
-                        Console.WriteLine("You are not logged in as a parent.");
+                        Console.WriteLine(LanguageManager.GetString("Error_NotLoggedInAsParent"));
                         Console.ReadKey();
                     }
                     break;
                 case 3:
                     Console.Clear();
-                    Console.WriteLine("Exiting grade management.");
+                    Console.WriteLine(LanguageManager.GetString("Message_ExitingGradeManagement"));
                     Thread.Sleep(1000);
                     exitGradeMenu = true;
                     return;
@@ -128,7 +129,7 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Views
 
             if (loggedInTeacher == null)
             {
-                Console.WriteLine("You are not logged in as a teacher.");
+                Console.WriteLine(LanguageManager.GetString("Error_NotLoggedInAsTeacher"));
                 Console.ReadKey();
                 return;
             }
@@ -136,7 +137,7 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Views
             var classes = controller.GetClasses();
             if (classes.Count == 0)
             {
-                Console.WriteLine("No classes available.");
+                Console.WriteLine(LanguageManager.GetString("NoClassesInfo"));
                 Console.ReadKey();
                 return;
             }
@@ -147,7 +148,7 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Views
             while (selectingClass)
             {
                 Console.Clear();
-                Console.WriteLine("Select a class:");
+                Console.WriteLine(LanguageManager.GetString("Prompt_SelectClass1"));
 
                 for (int i = 0; i < classes.Count; i++)
                 {
@@ -156,7 +157,7 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Views
                         Console.BackgroundColor = ConsoleColor.Gray;
                         Console.ForegroundColor = ConsoleColor.Black;
                     }
-                    Console.WriteLine($"Class {classes[i].Grade}");
+                    Console.WriteLine(string.Format(LanguageManager.GetString("Label_Class"), classes[i].Grade));
                     Console.ResetColor();
                 }
 
@@ -180,7 +181,7 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Views
             var students = controller.GetStudentsByClassId(selectedClass.Id);
             if (students.Count == 0)
             {
-                Console.WriteLine("No students in this class.");
+                Console.WriteLine(LanguageManager.GetString("Message_NoStudentsInClass"));
                 Console.ReadKey();
                 return;
             }
@@ -191,7 +192,7 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Views
             while (selectingStudent)
             {
                 Console.Clear();
-                Console.WriteLine($"Class {selectedClass.Grade}: Select a student:");
+                Console.WriteLine(string.Format(LanguageManager.GetString("Prompt_SelectStudentInClass"), selectedClass.Grade));
 
                 for (int i = 0; i < students.Count; i++)
                 {
@@ -224,7 +225,7 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Views
             var subjects = controller.GetSubjectsByTeacherId(loggedInTeacher.Id);
             if (subjects.Count == 0)
             {
-                Console.WriteLine("You have no assigned subjects.");
+                Console.WriteLine(LanguageManager.GetString("Message_NoAssignedSubjects"));
                 Console.ReadKey();
                 return;
             }
@@ -235,7 +236,7 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Views
             while (selectingSubject)
             {
                 Console.Clear();
-                Console.WriteLine("Select a subject:");
+                Console.WriteLine(LanguageManager.GetString("Message_SelectSubject"));
 
                 for (int i = 0; i < subjects.Count; i++)
                 {
@@ -266,13 +267,16 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Views
             var selectedSubject = subjects[selectedSubjectIndex];
 
             Console.Clear();
-            Console.WriteLine($"Adding a grade for {selectedStudent.Name} {selectedStudent.Surname} in {selectedSubject.Name}:");
-            Console.WriteLine("Enter the grade value (1-6):");
+            Console.Write(LanguageManager.GetString("Message_AddingGradeFor"));
+            Console.Write(selectedStudent.Name + " " + selectedStudent.Surname);
+            Console.Write(LanguageManager.GetString("in"));
+            Console.WriteLine(selectedSubject.Name);
+            Console.WriteLine(LanguageManager.GetString("Message_EnterGradeValue"));
             int gradeValue;
 
             while (!int.TryParse(Console.ReadLine(), out gradeValue) || gradeValue < 1 || gradeValue > 6)
             {
-                Console.WriteLine("Invalid grade. Please enter a value between 1 and 6:");
+                Console.WriteLine(LanguageManager.GetString("Message_InvalidGrade"));
             }
 
             Grade newGrade = new Grade
@@ -286,7 +290,7 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Views
 
             controller.AddGrade(newGrade);
 
-            Console.WriteLine("Grade has been added successfully.");
+            Console.WriteLine(LanguageManager.GetString("Message_GradeAddedSuccessfully"));
             Console.ReadKey();
             DisplayGradeMenu();
         }
@@ -298,7 +302,7 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Views
             var classes = controller.GetClasses();
             if (classes.Count == 0)
             {
-                Console.WriteLine("No classes available.");
+                Console.WriteLine(LanguageManager.GetString("Message_NoClassesAvailable"));
                 Console.ReadKey();
                 return;
             }
@@ -309,7 +313,7 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Views
             while (selectingClass)
             {
                 Console.Clear();
-                Console.WriteLine("Select a class:");
+                Console.WriteLine(LanguageManager.GetString("Prompt_SelectClass1"));
 
                 for (int i = 0; i < classes.Count; i++)
                 {
@@ -318,7 +322,7 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Views
                         Console.BackgroundColor = ConsoleColor.Gray;
                         Console.ForegroundColor = ConsoleColor.Black;
                     }
-                    Console.WriteLine($"Class: {classes[i].Grade}");
+                    Console.WriteLine(string.Format(LanguageManager.GetString("Label_Class"), classes[i].Grade));
                     Console.ResetColor();
                 }
 
@@ -347,7 +351,7 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Views
 
             if (students.Count == 0)
             {
-                Console.WriteLine("No students in this class.");
+                Console.WriteLine(LanguageManager.GetString("Message_NoStudentsInClass"));
                 Console.ReadKey();
                 return;
             }
@@ -358,7 +362,7 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Views
             while (selectingStudent)
             {
                 Console.Clear();
-                Console.WriteLine($"Class {selectedClass.Grade}: Select a student:");
+                Console.WriteLine(string.Format(LanguageManager.GetString("Prompt_SelectStudentInClass"), selectedClass.Grade));
 
                 for (int i = 0; i < students.Count; i++)
                 {
@@ -399,7 +403,7 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Views
             }
             else
             {
-                Console.WriteLine("No student linked to this parent.");
+                Console.WriteLine(LanguageManager.GetString("Message_NoStudentLinkedToParent"));
                 Console.ReadKey();
             }
         }
@@ -410,15 +414,20 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Views
 
             if (grades.Count == 0)
             {
-                Console.WriteLine($"No grades found for {student.Name} {student.Surname}.");
+                Console.Write(LanguageManager.GetString("Message_NoGradesFoundFor"));
+                Console.WriteLine(student.Name + " " +student.Surname);
             }
             else
             {
-                Console.WriteLine($"Grades for {student.Name} {student.Surname}:");
+                Console.WriteLine(LanguageManager.GetString("Message_GradesFor"));
+                Console.WriteLine(student.Name+" "+student.Surname);
 
                 foreach (var grade in grades)
                 {
-                    Console.WriteLine($"Subject: {grade.Subject.Name}, Grade: {grade.Value}, Teacher: {grade.Teacher.Name}, Date: {grade.Date.ToShortDateString()}");
+                    Console.Write(LanguageManager.GetString("Subject") + ": " + grade.Subject.Name);
+                    Console.Write(", " + LanguageManager.GetString("Grade") + ": " + grade.Value);
+                    Console.Write(", " + LanguageManager.GetString("Teacher") + ": " + grade.Teacher.Name);
+                    Console.WriteLine(", " + LanguageManager.GetString("Date") + ": " + grade.Date.ToShortDateString());
                 }
             }
             Console.ReadKey();
