@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "0kOxcN54ekHMOXs6t35Q7v97mEBHqNhr2x21Km6B/jGAVni9Xh0AU1TQNjA/Asq/wGo9hAlii7NPlPml7ZXbwA==",
+  "dgSpecHash": "phzXOJs4bZWH3ZsS2AaXvesi8jJgfv6iKTql/P1Crw80jkJmztvkvfCxNoF2uax+NWUpiHJsg6gwj5UNV22z4w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ulkar\\Desktop\\probajezykow\\KCK-Elektroniczny_Dziennik_Szkolny\\KCK-Elektroniczny_Dziennik_Szkolny.csproj",
+  "projectFilePath": "C:\\Users\\ulkar\\Desktop\\finalnekck\\KCK-Elektroniczny_Dziennik_Szkolny\\KCK-Elektroniczny_Dziennik_Szkolny.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ulkar\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\ulkar\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

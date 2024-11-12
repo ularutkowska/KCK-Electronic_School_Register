@@ -1,109 +1,109 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\ulkar\\Desktop\\probajezykow\\KCK-Elektroniczny_Dziennik_Szkolny\\",
+  "WorkspaceRootPath": "C:\\Users\\ulkar\\Desktop\\finalnekck\\KCK-Elektroniczny_Dziennik_Szkolny\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1FD7EFA9-A3B3-48AD-8D7A-6EFDD6E61040}|KCK-Elektroniczny_Dziennik_Szkolny.csproj|c:\\users\\ulkar\\desktop\\probajezykow\\kck-elektroniczny_dziennik_szkolny\\views\\userview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1FD7EFA9-A3B3-48AD-8D7A-6EFDD6E61040}|KCK-Elektroniczny_Dziennik_Szkolny.csproj|c:\\users\\ulkar\\desktop\\finalnekck\\kck-elektroniczny_dziennik_szkolny\\views\\userview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1FD7EFA9-A3B3-48AD-8D7A-6EFDD6E61040}|KCK-Elektroniczny_Dziennik_Szkolny.csproj|solutionrelative:views\\userview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1FD7EFA9-A3B3-48AD-8D7A-6EFDD6E61040}|KCK-Elektroniczny_Dziennik_Szkolny.csproj|c:\\users\\ulkar\\desktop\\probajezykow\\kck-elektroniczny_dziennik_szkolny\\views\\messageview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1FD7EFA9-A3B3-48AD-8D7A-6EFDD6E61040}|KCK-Elektroniczny_Dziennik_Szkolny.csproj|c:\\users\\ulkar\\desktop\\finalnekck\\kck-elektroniczny_dziennik_szkolny\\views\\messageview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1FD7EFA9-A3B3-48AD-8D7A-6EFDD6E61040}|KCK-Elektroniczny_Dziennik_Szkolny.csproj|solutionrelative:views\\messageview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1FD7EFA9-A3B3-48AD-8D7A-6EFDD6E61040}|KCK-Elektroniczny_Dziennik_Szkolny.csproj|C:\\Users\\ulkar\\Desktop\\probajezykow\\KCK-Elektroniczny_Dziennik_Szkolny\\resources\\strings.pl.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}",
+      "AbsoluteMoniker": "D:0:0:{1FD7EFA9-A3B3-48AD-8D7A-6EFDD6E61040}|KCK-Elektroniczny_Dziennik_Szkolny.csproj|C:\\Users\\ulkar\\Desktop\\finalnekck\\KCK-Elektroniczny_Dziennik_Szkolny\\resources\\strings.pl.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}",
       "RelativeMoniker": "D:0:0:{1FD7EFA9-A3B3-48AD-8D7A-6EFDD6E61040}|KCK-Elektroniczny_Dziennik_Szkolny.csproj|solutionrelative:resources\\strings.pl.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1FD7EFA9-A3B3-48AD-8D7A-6EFDD6E61040}|KCK-Elektroniczny_Dziennik_Szkolny.csproj|C:\\Users\\ulkar\\Desktop\\probajezykow\\KCK-Elektroniczny_Dziennik_Szkolny\\resources\\strings.en.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}",
+      "AbsoluteMoniker": "D:0:0:{1FD7EFA9-A3B3-48AD-8D7A-6EFDD6E61040}|KCK-Elektroniczny_Dziennik_Szkolny.csproj|C:\\Users\\ulkar\\Desktop\\finalnekck\\KCK-Elektroniczny_Dziennik_Szkolny\\resources\\strings.en.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}",
       "RelativeMoniker": "D:0:0:{1FD7EFA9-A3B3-48AD-8D7A-6EFDD6E61040}|KCK-Elektroniczny_Dziennik_Szkolny.csproj|solutionrelative:resources\\strings.en.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1FD7EFA9-A3B3-48AD-8D7A-6EFDD6E61040}|KCK-Elektroniczny_Dziennik_Szkolny.csproj|c:\\users\\ulkar\\desktop\\probajezykow\\kck-elektroniczny_dziennik_szkolny\\models\\languagemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1FD7EFA9-A3B3-48AD-8D7A-6EFDD6E61040}|KCK-Elektroniczny_Dziennik_Szkolny.csproj|c:\\users\\ulkar\\desktop\\finalnekck\\kck-elektroniczny_dziennik_szkolny\\models\\languagemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1FD7EFA9-A3B3-48AD-8D7A-6EFDD6E61040}|KCK-Elektroniczny_Dziennik_Szkolny.csproj|solutionrelative:models\\languagemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1FD7EFA9-A3B3-48AD-8D7A-6EFDD6E61040}|KCK-Elektroniczny_Dziennik_Szkolny.csproj|c:\\users\\ulkar\\desktop\\probajezykow\\kck-elektroniczny_dziennik_szkolny\\views\\gradeview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1FD7EFA9-A3B3-48AD-8D7A-6EFDD6E61040}|KCK-Elektroniczny_Dziennik_Szkolny.csproj|c:\\users\\ulkar\\desktop\\finalnekck\\kck-elektroniczny_dziennik_szkolny\\views\\gradeview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1FD7EFA9-A3B3-48AD-8D7A-6EFDD6E61040}|KCK-Elektroniczny_Dziennik_Szkolny.csproj|solutionrelative:views\\gradeview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1FD7EFA9-A3B3-48AD-8D7A-6EFDD6E61040}|KCK-Elektroniczny_Dziennik_Szkolny.csproj|c:\\users\\ulkar\\desktop\\probajezykow\\kck-elektroniczny_dziennik_szkolny\\views\\consoleview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1FD7EFA9-A3B3-48AD-8D7A-6EFDD6E61040}|KCK-Elektroniczny_Dziennik_Szkolny.csproj|c:\\users\\ulkar\\desktop\\finalnekck\\kck-elektroniczny_dziennik_szkolny\\views\\consoleview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1FD7EFA9-A3B3-48AD-8D7A-6EFDD6E61040}|KCK-Elektroniczny_Dziennik_Szkolny.csproj|solutionrelative:views\\consoleview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1FD7EFA9-A3B3-48AD-8D7A-6EFDD6E61040}|KCK-Elektroniczny_Dziennik_Szkolny.csproj|c:\\users\\ulkar\\desktop\\probajezykow\\kck-elektroniczny_dziennik_szkolny\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1FD7EFA9-A3B3-48AD-8D7A-6EFDD6E61040}|KCK-Elektroniczny_Dziennik_Szkolny.csproj|c:\\users\\ulkar\\desktop\\finalnekck\\kck-elektroniczny_dziennik_szkolny\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1FD7EFA9-A3B3-48AD-8D7A-6EFDD6E61040}|KCK-Elektroniczny_Dziennik_Szkolny.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1FD7EFA9-A3B3-48AD-8D7A-6EFDD6E61040}|KCK-Elektroniczny_Dziennik_Szkolny.csproj|c:\\users\\ulkar\\desktop\\probajezykow\\kck-elektroniczny_dziennik_szkolny\\models\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1FD7EFA9-A3B3-48AD-8D7A-6EFDD6E61040}|KCK-Elektroniczny_Dziennik_Szkolny.csproj|c:\\users\\ulkar\\desktop\\finalnekck\\kck-elektroniczny_dziennik_szkolny\\models\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1FD7EFA9-A3B3-48AD-8D7A-6EFDD6E61040}|KCK-Elektroniczny_Dziennik_Szkolny.csproj|solutionrelative:models\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1FD7EFA9-A3B3-48AD-8D7A-6EFDD6E61040}|KCK-Elektroniczny_Dziennik_Szkolny.csproj|c:\\users\\ulkar\\desktop\\probajezykow\\kck-elektroniczny_dziennik_szkolny\\resources\\strings.pl.resx||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "AbsoluteMoniker": "D:0:0:{1FD7EFA9-A3B3-48AD-8D7A-6EFDD6E61040}|KCK-Elektroniczny_Dziennik_Szkolny.csproj|c:\\users\\ulkar\\desktop\\finalnekck\\kck-elektroniczny_dziennik_szkolny\\resources\\strings.pl.resx||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
       "RelativeMoniker": "D:0:0:{1FD7EFA9-A3B3-48AD-8D7A-6EFDD6E61040}|KCK-Elektroniczny_Dziennik_Szkolny.csproj|solutionrelative:resources\\strings.pl.resx||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1FD7EFA9-A3B3-48AD-8D7A-6EFDD6E61040}|KCK-Elektroniczny_Dziennik_Szkolny.csproj|c:\\users\\ulkar\\desktop\\probajezykow\\kck-elektroniczny_dziennik_szkolny\\resources\\strings.en.resx||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "AbsoluteMoniker": "D:0:0:{1FD7EFA9-A3B3-48AD-8D7A-6EFDD6E61040}|KCK-Elektroniczny_Dziennik_Szkolny.csproj|c:\\users\\ulkar\\desktop\\finalnekck\\kck-elektroniczny_dziennik_szkolny\\resources\\strings.en.resx||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
       "RelativeMoniker": "D:0:0:{1FD7EFA9-A3B3-48AD-8D7A-6EFDD6E61040}|KCK-Elektroniczny_Dziennik_Szkolny.csproj|solutionrelative:resources\\strings.en.resx||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1FD7EFA9-A3B3-48AD-8D7A-6EFDD6E61040}|KCK-Elektroniczny_Dziennik_Szkolny.csproj|c:\\users\\ulkar\\desktop\\probajezykow\\kck-elektroniczny_dziennik_szkolny\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1FD7EFA9-A3B3-48AD-8D7A-6EFDD6E61040}|KCK-Elektroniczny_Dziennik_Szkolny.csproj|c:\\users\\ulkar\\desktop\\finalnekck\\kck-elektroniczny_dziennik_szkolny\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1FD7EFA9-A3B3-48AD-8D7A-6EFDD6E61040}|KCK-Elektroniczny_Dziennik_Szkolny.csproj|solutionrelative:controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1FD7EFA9-A3B3-48AD-8D7A-6EFDD6E61040}|KCK-Elektroniczny_Dziennik_Szkolny.csproj|c:\\users\\ulkar\\desktop\\probajezykow\\kck-elektroniczny_dziennik_szkolny\\appsetings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{1FD7EFA9-A3B3-48AD-8D7A-6EFDD6E61040}|KCK-Elektroniczny_Dziennik_Szkolny.csproj|c:\\users\\ulkar\\desktop\\finalnekck\\kck-elektroniczny_dziennik_szkolny\\appsetings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{1FD7EFA9-A3B3-48AD-8D7A-6EFDD6E61040}|KCK-Elektroniczny_Dziennik_Szkolny.csproj|solutionrelative:appsetings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1FD7EFA9-A3B3-48AD-8D7A-6EFDD6E61040}|KCK-Elektroniczny_Dziennik_Szkolny.csproj|c:\\users\\ulkar\\desktop\\probajezykow\\kck-elektroniczny_dziennik_szkolny\\models\\objects\\message.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1FD7EFA9-A3B3-48AD-8D7A-6EFDD6E61040}|KCK-Elektroniczny_Dziennik_Szkolny.csproj|c:\\users\\ulkar\\desktop\\finalnekck\\kck-elektroniczny_dziennik_szkolny\\models\\objects\\message.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1FD7EFA9-A3B3-48AD-8D7A-6EFDD6E61040}|KCK-Elektroniczny_Dziennik_Szkolny.csproj|solutionrelative:models\\objects\\message.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1FD7EFA9-A3B3-48AD-8D7A-6EFDD6E61040}|KCK-Elektroniczny_Dziennik_Szkolny.csproj|c:\\users\\ulkar\\desktop\\probajezykow\\kck-elektroniczny_dziennik_szkolny\\models\\objects\\grade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1FD7EFA9-A3B3-48AD-8D7A-6EFDD6E61040}|KCK-Elektroniczny_Dziennik_Szkolny.csproj|c:\\users\\ulkar\\desktop\\finalnekck\\kck-elektroniczny_dziennik_szkolny\\models\\objects\\grade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1FD7EFA9-A3B3-48AD-8D7A-6EFDD6E61040}|KCK-Elektroniczny_Dziennik_Szkolny.csproj|solutionrelative:models\\objects\\grade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1FD7EFA9-A3B3-48AD-8D7A-6EFDD6E61040}|KCK-Elektroniczny_Dziennik_Szkolny.csproj|c:\\users\\ulkar\\desktop\\probajezykow\\kck-elektroniczny_dziennik_szkolny\\models\\objects\\iuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1FD7EFA9-A3B3-48AD-8D7A-6EFDD6E61040}|KCK-Elektroniczny_Dziennik_Szkolny.csproj|c:\\users\\ulkar\\desktop\\finalnekck\\kck-elektroniczny_dziennik_szkolny\\models\\objects\\iuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1FD7EFA9-A3B3-48AD-8D7A-6EFDD6E61040}|KCK-Elektroniczny_Dziennik_Szkolny.csproj|solutionrelative:models\\objects\\iuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1FD7EFA9-A3B3-48AD-8D7A-6EFDD6E61040}|KCK-Elektroniczny_Dziennik_Szkolny.csproj|c:\\users\\ulkar\\desktop\\probajezykow\\kck-elektroniczny_dziennik_szkolny\\models\\objects\\exam.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1FD7EFA9-A3B3-48AD-8D7A-6EFDD6E61040}|KCK-Elektroniczny_Dziennik_Szkolny.csproj|c:\\users\\ulkar\\desktop\\finalnekck\\kck-elektroniczny_dziennik_szkolny\\models\\objects\\exam.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1FD7EFA9-A3B3-48AD-8D7A-6EFDD6E61040}|KCK-Elektroniczny_Dziennik_Szkolny.csproj|solutionrelative:models\\objects\\exam.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1FD7EFA9-A3B3-48AD-8D7A-6EFDD6E61040}|KCK-Elektroniczny_Dziennik_Szkolny.csproj|c:\\users\\ulkar\\desktop\\probajezykow\\kck-elektroniczny_dziennik_szkolny\\models\\objects\\class.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1FD7EFA9-A3B3-48AD-8D7A-6EFDD6E61040}|KCK-Elektroniczny_Dziennik_Szkolny.csproj|c:\\users\\ulkar\\desktop\\finalnekck\\kck-elektroniczny_dziennik_szkolny\\models\\objects\\class.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1FD7EFA9-A3B3-48AD-8D7A-6EFDD6E61040}|KCK-Elektroniczny_Dziennik_Szkolny.csproj|solutionrelative:models\\objects\\class.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1FD7EFA9-A3B3-48AD-8D7A-6EFDD6E61040}|KCK-Elektroniczny_Dziennik_Szkolny.csproj|c:\\users\\ulkar\\desktop\\probajezykow\\kck-elektroniczny_dziennik_szkolny\\controllers\\messagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1FD7EFA9-A3B3-48AD-8D7A-6EFDD6E61040}|KCK-Elektroniczny_Dziennik_Szkolny.csproj|c:\\users\\ulkar\\desktop\\finalnekck\\kck-elektroniczny_dziennik_szkolny\\controllers\\messagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1FD7EFA9-A3B3-48AD-8D7A-6EFDD6E61040}|KCK-Elektroniczny_Dziennik_Szkolny.csproj|solutionrelative:controllers\\messagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1FD7EFA9-A3B3-48AD-8D7A-6EFDD6E61040}|KCK-Elektroniczny_Dziennik_Szkolny.csproj|c:\\users\\ulkar\\desktop\\probajezykow\\kck-elektroniczny_dziennik_szkolny\\controllers\\schoolcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1FD7EFA9-A3B3-48AD-8D7A-6EFDD6E61040}|KCK-Elektroniczny_Dziennik_Szkolny.csproj|c:\\users\\ulkar\\desktop\\finalnekck\\kck-elektroniczny_dziennik_szkolny\\controllers\\schoolcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1FD7EFA9-A3B3-48AD-8D7A-6EFDD6E61040}|KCK-Elektroniczny_Dziennik_Szkolny.csproj|solutionrelative:controllers\\schoolcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1FD7EFA9-A3B3-48AD-8D7A-6EFDD6E61040}|KCK-Elektroniczny_Dziennik_Szkolny.csproj|c:\\users\\ulkar\\desktop\\probajezykow\\kck-elektroniczny_dziennik_szkolny\\models\\objects\\parent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1FD7EFA9-A3B3-48AD-8D7A-6EFDD6E61040}|KCK-Elektroniczny_Dziennik_Szkolny.csproj|c:\\users\\ulkar\\desktop\\finalnekck\\kck-elektroniczny_dziennik_szkolny\\models\\objects\\parent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1FD7EFA9-A3B3-48AD-8D7A-6EFDD6E61040}|KCK-Elektroniczny_Dziennik_Szkolny.csproj|solutionrelative:models\\objects\\parent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1FD7EFA9-A3B3-48AD-8D7A-6EFDD6E61040}|KCK-Elektroniczny_Dziennik_Szkolny.csproj|c:\\users\\ulkar\\desktop\\probajezykow\\kck-elektroniczny_dziennik_szkolny\\models\\objects\\teacher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1FD7EFA9-A3B3-48AD-8D7A-6EFDD6E61040}|KCK-Elektroniczny_Dziennik_Szkolny.csproj|c:\\users\\ulkar\\desktop\\finalnekck\\kck-elektroniczny_dziennik_szkolny\\models\\objects\\teacher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1FD7EFA9-A3B3-48AD-8D7A-6EFDD6E61040}|KCK-Elektroniczny_Dziennik_Szkolny.csproj|solutionrelative:models\\objects\\teacher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1FD7EFA9-A3B3-48AD-8D7A-6EFDD6E61040}|KCK-Elektroniczny_Dziennik_Szkolny.csproj|c:\\users\\ulkar\\desktop\\probajezykow\\kck-elektroniczny_dziennik_szkolny\\models\\objects\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1FD7EFA9-A3B3-48AD-8D7A-6EFDD6E61040}|KCK-Elektroniczny_Dziennik_Szkolny.csproj|c:\\users\\ulkar\\desktop\\finalnekck\\kck-elektroniczny_dziennik_szkolny\\models\\objects\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1FD7EFA9-A3B3-48AD-8D7A-6EFDD6E61040}|KCK-Elektroniczny_Dziennik_Szkolny.csproj|solutionrelative:models\\objects\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1FD7EFA9-A3B3-48AD-8D7A-6EFDD6E61040}|KCK-Elektroniczny_Dziennik_Szkolny.csproj|c:\\users\\ulkar\\desktop\\probajezykow\\kck-elektroniczny_dziennik_szkolny\\controllers\\gradecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1FD7EFA9-A3B3-48AD-8D7A-6EFDD6E61040}|KCK-Elektroniczny_Dziennik_Szkolny.csproj|c:\\users\\ulkar\\desktop\\finalnekck\\kck-elektroniczny_dziennik_szkolny\\controllers\\gradecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1FD7EFA9-A3B3-48AD-8D7A-6EFDD6E61040}|KCK-Elektroniczny_Dziennik_Szkolny.csproj|solutionrelative:controllers\\gradecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1FD7EFA9-A3B3-48AD-8D7A-6EFDD6E61040}|KCK-Elektroniczny_Dziennik_Szkolny.csproj|c:\\users\\ulkar\\desktop\\probajezykow\\kck-elektroniczny_dziennik_szkolny\\migrations\\20241021212507_message.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1FD7EFA9-A3B3-48AD-8D7A-6EFDD6E61040}|KCK-Elektroniczny_Dziennik_Szkolny.csproj|c:\\users\\ulkar\\desktop\\finalnekck\\kck-elektroniczny_dziennik_szkolny\\migrations\\20241021212507_message.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1FD7EFA9-A3B3-48AD-8D7A-6EFDD6E61040}|KCK-Elektroniczny_Dziennik_Szkolny.csproj|solutionrelative:migrations\\20241021212507_message.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1FD7EFA9-A3B3-48AD-8D7A-6EFDD6E61040}|KCK-Elektroniczny_Dziennik_Szkolny.csproj|c:\\users\\ulkar\\desktop\\probajezykow\\kck-elektroniczny_dziennik_szkolny\\migrations\\applicationdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1FD7EFA9-A3B3-48AD-8D7A-6EFDD6E61040}|KCK-Elektroniczny_Dziennik_Szkolny.csproj|c:\\users\\ulkar\\desktop\\finalnekck\\kck-elektroniczny_dziennik_szkolny\\migrations\\applicationdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1FD7EFA9-A3B3-48AD-8D7A-6EFDD6E61040}|KCK-Elektroniczny_Dziennik_Szkolny.csproj|solutionrelative:migrations\\applicationdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -116,7 +116,7 @@
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Patryk\\Downloads\\KCK-Electronic_School_Register\\KCK-Elektroniczny_Dziennik_Szkolny\\Migrations\\20241021212047_message.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1FD7EFA9-A3B3-48AD-8D7A-6EFDD6E61040}|KCK-Elektroniczny_Dziennik_Szkolny.csproj|c:\\users\\ulkar\\desktop\\probajezykow\\kck-elektroniczny_dziennik_szkolny\\models\\objects\\subject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1FD7EFA9-A3B3-48AD-8D7A-6EFDD6E61040}|KCK-Elektroniczny_Dziennik_Szkolny.csproj|c:\\users\\ulkar\\desktop\\finalnekck\\kck-elektroniczny_dziennik_szkolny\\models\\objects\\subject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1FD7EFA9-A3B3-48AD-8D7A-6EFDD6E61040}|KCK-Elektroniczny_Dziennik_Szkolny.csproj|solutionrelative:models\\objects\\subject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -135,11 +135,11 @@
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1FD7EFA9-A3B3-48AD-8D7A-6EFDD6E61040}|KCK-Elektroniczny_Dziennik_Szkolny.csproj|c:\\users\\ulkar\\desktop\\probajezykow\\kck-elektroniczny_dziennik_szkolny\\migrations\\20241021220754_message1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1FD7EFA9-A3B3-48AD-8D7A-6EFDD6E61040}|KCK-Elektroniczny_Dziennik_Szkolny.csproj|c:\\users\\ulkar\\desktop\\finalnekck\\kck-elektroniczny_dziennik_szkolny\\migrations\\20241021220754_message1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1FD7EFA9-A3B3-48AD-8D7A-6EFDD6E61040}|KCK-Elektroniczny_Dziennik_Szkolny.csproj|solutionrelative:migrations\\20241021220754_message1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1FD7EFA9-A3B3-48AD-8D7A-6EFDD6E61040}|KCK-Elektroniczny_Dziennik_Szkolny.csproj|c:\\users\\ulkar\\desktop\\probajezykow\\kck-elektroniczny_dziennik_szkolny\\migrations\\20241022143135_class.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1FD7EFA9-A3B3-48AD-8D7A-6EFDD6E61040}|KCK-Elektroniczny_Dziennik_Szkolny.csproj|c:\\users\\ulkar\\desktop\\finalnekck\\kck-elektroniczny_dziennik_szkolny\\migrations\\20241022143135_class.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1FD7EFA9-A3B3-48AD-8D7A-6EFDD6E61040}|KCK-Elektroniczny_Dziennik_Szkolny.csproj|solutionrelative:migrations\\20241022143135_class.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -150,7 +150,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -170,23 +170,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Strings.pl.resx",
-              "DocumentMoniker": "C:\\Users\\ulkar\\Desktop\\probajezykow\\KCK-Elektroniczny_Dziennik_Szkolny\\Resources\\Strings.pl.resx",
-              "RelativeDocumentMoniker": "Resources\\Strings.pl.resx",
-              "ToolTip": "C:\\Users\\ulkar\\Desktop\\probajezykow\\KCK-Elektroniczny_Dziennik_Szkolny\\Resources\\Strings.pl.resx",
-              "RelativeToolTip": "Resources\\Strings.pl.resx",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
-              "WhenOpened": "2024-11-02T16:40:28.581Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "UserView.cs",
-              "DocumentMoniker": "C:\\Users\\ulkar\\Desktop\\probajezykow\\KCK-Elektroniczny_Dziennik_Szkolny\\Views\\UserView.cs",
+              "DocumentMoniker": "C:\\Users\\ulkar\\Desktop\\finalnekck\\KCK-Elektroniczny_Dziennik_Szkolny\\Views\\UserView.cs",
               "RelativeDocumentMoniker": "Views\\UserView.cs",
-              "ToolTip": "C:\\Users\\ulkar\\Desktop\\probajezykow\\KCK-Elektroniczny_Dziennik_Szkolny\\Views\\UserView.cs",
+              "ToolTip": "C:\\Users\\ulkar\\Desktop\\finalnekck\\KCK-Elektroniczny_Dziennik_Szkolny\\Views\\UserView.cs",
               "RelativeToolTip": "Views\\UserView.cs",
               "ViewState": "AQIAAHMAAAAAAAAAAAAawH4AAABSAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -195,75 +183,59 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Strings.en.resx",
-              "DocumentMoniker": "C:\\Users\\ulkar\\Desktop\\probajezykow\\KCK-Elektroniczny_Dziennik_Szkolny\\Resources\\Strings.en.resx",
-              "RelativeDocumentMoniker": "Resources\\Strings.en.resx",
-              "ToolTip": "C:\\Users\\ulkar\\Desktop\\probajezykow\\KCK-Elektroniczny_Dziennik_Szkolny\\Resources\\Strings.en.resx",
-              "RelativeToolTip": "Resources\\Strings.en.resx",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
-              "WhenOpened": "2024-11-02T16:37:28.965Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "MessageView.cs",
-              "DocumentMoniker": "C:\\Users\\ulkar\\Desktop\\probajezykow\\KCK-Elektroniczny_Dziennik_Szkolny\\Views\\MessageView.cs",
-              "RelativeDocumentMoniker": "Views\\MessageView.cs",
-              "ToolTip": "C:\\Users\\ulkar\\Desktop\\probajezykow\\KCK-Elektroniczny_Dziennik_Szkolny\\Views\\MessageView.cs",
-              "RelativeToolTip": "Views\\MessageView.cs",
-              "ViewState": "AQIAAI8AAAAAAAAAAAAAAJkAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-21T21:08:14.098Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 5,
               "Title": "GradeView.cs",
-              "DocumentMoniker": "C:\\Users\\ulkar\\Desktop\\probajezykow\\KCK-Elektroniczny_Dziennik_Szkolny\\Views\\GradeView.cs",
+              "DocumentMoniker": "C:\\Users\\ulkar\\Desktop\\finalnekck\\KCK-Elektroniczny_Dziennik_Szkolny\\Views\\GradeView.cs",
               "RelativeDocumentMoniker": "Views\\GradeView.cs",
-              "ToolTip": "C:\\Users\\ulkar\\Desktop\\probajezykow\\KCK-Elektroniczny_Dziennik_Szkolny\\Views\\GradeView.cs",
+              "ToolTip": "C:\\Users\\ulkar\\Desktop\\finalnekck\\KCK-Elektroniczny_Dziennik_Szkolny\\Views\\GradeView.cs",
               "RelativeToolTip": "Views\\GradeView.cs",
               "ViewState": "AQIAAJoBAAAAAAAAAAApwK0BAAB4AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T17:20:39.326Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-16T17:20:39.326Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
               "Title": "ConsoleView.cs",
-              "DocumentMoniker": "C:\\Users\\ulkar\\Desktop\\probajezykow\\KCK-Elektroniczny_Dziennik_Szkolny\\Views\\ConsoleView.cs",
+              "DocumentMoniker": "C:\\Users\\ulkar\\Desktop\\finalnekck\\KCK-Elektroniczny_Dziennik_Szkolny\\Views\\ConsoleView.cs",
               "RelativeDocumentMoniker": "Views\\ConsoleView.cs",
-              "ToolTip": "C:\\Users\\ulkar\\Desktop\\probajezykow\\KCK-Elektroniczny_Dziennik_Szkolny\\Views\\ConsoleView.cs",
+              "ToolTip": "C:\\Users\\ulkar\\Desktop\\finalnekck\\KCK-Elektroniczny_Dziennik_Szkolny\\Views\\ConsoleView.cs",
               "RelativeToolTip": "Views\\ConsoleView.cs",
               "ViewState": "AQIAAJAAAAAAAAAAAAAAAGICAABXAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-13T17:33:02.643Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-13T17:33:02.643Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\ulkar\\Desktop\\probajezykow\\KCK-Elektroniczny_Dziennik_Szkolny\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\ulkar\\Desktop\\finalnekck\\KCK-Elektroniczny_Dziennik_Szkolny\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\ulkar\\Desktop\\probajezykow\\KCK-Elektroniczny_Dziennik_Szkolny\\Program.cs",
+              "ToolTip": "C:\\Users\\ulkar\\Desktop\\finalnekck\\KCK-Elektroniczny_Dziennik_Szkolny\\Program.cs",
               "RelativeToolTip": "Program.cs",
               "ViewState": "AQIAAEUAAAAAAAAAAAAAAFEAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-13T17:35:51.922Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-13T17:35:51.922Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MessageView.cs",
+              "DocumentMoniker": "C:\\Users\\ulkar\\Desktop\\finalnekck\\KCK-Elektroniczny_Dziennik_Szkolny\\Views\\MessageView.cs",
+              "RelativeDocumentMoniker": "Views\\MessageView.cs",
+              "ToolTip": "C:\\Users\\ulkar\\Desktop\\finalnekck\\KCK-Elektroniczny_Dziennik_Szkolny\\Views\\MessageView.cs",
+              "RelativeToolTip": "Views\\MessageView.cs",
+              "ViewState": "AQIAAI8AAAAAAAAAAAAAAJkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-21T21:08:14.098Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 10,
               "Title": "Strings.en.resx",
-              "DocumentMoniker": "C:\\Users\\ulkar\\Desktop\\probajezykow\\KCK-Elektroniczny_Dziennik_Szkolny\\Resources\\Strings.en.resx",
+              "DocumentMoniker": "C:\\Users\\ulkar\\Desktop\\finalnekck\\KCK-Elektroniczny_Dziennik_Szkolny\\Resources\\Strings.en.resx",
               "RelativeDocumentMoniker": "Resources\\Strings.en.resx",
-              "ToolTip": "C:\\Users\\ulkar\\Desktop\\probajezykow\\KCK-Elektroniczny_Dziennik_Szkolny\\Resources\\Strings.en.resx",
+              "ToolTip": "C:\\Users\\ulkar\\Desktop\\finalnekck\\KCK-Elektroniczny_Dziennik_Szkolny\\Resources\\Strings.en.resx",
               "RelativeToolTip": "Resources\\Strings.en.resx",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAB8BAAAHAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
@@ -273,9 +245,9 @@
               "$type": "Document",
               "DocumentIndex": 8,
               "Title": "ApplicationDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\ulkar\\Desktop\\probajezykow\\KCK-Elektroniczny_Dziennik_Szkolny\\Models\\ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\ulkar\\Desktop\\finalnekck\\KCK-Elektroniczny_Dziennik_Szkolny\\Models\\ApplicationDbContext.cs",
               "RelativeDocumentMoniker": "Models\\ApplicationDbContext.cs",
-              "ToolTip": "C:\\Users\\ulkar\\Desktop\\probajezykow\\KCK-Elektroniczny_Dziennik_Szkolny\\Models\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\ulkar\\Desktop\\finalnekck\\KCK-Elektroniczny_Dziennik_Szkolny\\Models\\ApplicationDbContext.cs",
               "RelativeToolTip": "Models\\ApplicationDbContext.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAA0AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -285,9 +257,9 @@
               "$type": "Document",
               "DocumentIndex": 9,
               "Title": "Strings.pl.resx",
-              "DocumentMoniker": "C:\\Users\\ulkar\\Desktop\\probajezykow\\KCK-Elektroniczny_Dziennik_Szkolny\\Resources\\Strings.pl.resx",
+              "DocumentMoniker": "C:\\Users\\ulkar\\Desktop\\finalnekck\\KCK-Elektroniczny_Dziennik_Szkolny\\Resources\\Strings.pl.resx",
               "RelativeDocumentMoniker": "Resources\\Strings.pl.resx",
-              "ToolTip": "C:\\Users\\ulkar\\Desktop\\probajezykow\\KCK-Elektroniczny_Dziennik_Szkolny\\Resources\\Strings.pl.resx",
+              "ToolTip": "C:\\Users\\ulkar\\Desktop\\finalnekck\\KCK-Elektroniczny_Dziennik_Szkolny\\Resources\\Strings.pl.resx",
               "RelativeToolTip": "Resources\\Strings.pl.resx",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAB8BAAAHAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
@@ -297,22 +269,21 @@
               "$type": "Document",
               "DocumentIndex": 4,
               "Title": "LanguageManager.cs",
-              "DocumentMoniker": "C:\\Users\\ulkar\\Desktop\\probajezykow\\KCK-Elektroniczny_Dziennik_Szkolny\\Models\\LanguageManager.cs",
+              "DocumentMoniker": "C:\\Users\\ulkar\\Desktop\\finalnekck\\KCK-Elektroniczny_Dziennik_Szkolny\\Models\\LanguageManager.cs",
               "RelativeDocumentMoniker": "Models\\LanguageManager.cs",
-              "ToolTip": "C:\\Users\\ulkar\\Desktop\\probajezykow\\KCK-Elektroniczny_Dziennik_Szkolny\\Models\\LanguageManager.cs",
+              "ToolTip": "C:\\Users\\ulkar\\Desktop\\finalnekck\\KCK-Elektroniczny_Dziennik_Szkolny\\Models\\LanguageManager.cs",
               "RelativeToolTip": "Models\\LanguageManager.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-02T16:15:36.332Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-02T16:15:36.332Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 12,
               "Title": "appsetings.json",
-              "DocumentMoniker": "C:\\Users\\ulkar\\Desktop\\probajezykow\\KCK-Elektroniczny_Dziennik_Szkolny\\appsetings.json",
+              "DocumentMoniker": "C:\\Users\\ulkar\\Desktop\\finalnekck\\KCK-Elektroniczny_Dziennik_Szkolny\\appsetings.json",
               "RelativeDocumentMoniker": "appsetings.json",
-              "ToolTip": "C:\\Users\\ulkar\\Desktop\\probajezykow\\KCK-Elektroniczny_Dziennik_Szkolny\\appsetings.json",
+              "ToolTip": "C:\\Users\\ulkar\\Desktop\\finalnekck\\KCK-Elektroniczny_Dziennik_Szkolny\\appsetings.json",
               "RelativeToolTip": "appsetings.json",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
@@ -322,9 +293,9 @@
               "$type": "Document",
               "DocumentIndex": 11,
               "Title": "UserController.cs",
-              "DocumentMoniker": "C:\\Users\\ulkar\\Desktop\\probajezykow\\KCK-Elektroniczny_Dziennik_Szkolny\\Controllers\\UserController.cs",
+              "DocumentMoniker": "C:\\Users\\ulkar\\Desktop\\finalnekck\\KCK-Elektroniczny_Dziennik_Szkolny\\Controllers\\UserController.cs",
               "RelativeDocumentMoniker": "Controllers\\UserController.cs",
-              "ToolTip": "C:\\Users\\ulkar\\Desktop\\probajezykow\\KCK-Elektroniczny_Dziennik_Szkolny\\Controllers\\UserController.cs",
+              "ToolTip": "C:\\Users\\ulkar\\Desktop\\finalnekck\\KCK-Elektroniczny_Dziennik_Szkolny\\Controllers\\UserController.cs",
               "RelativeToolTip": "Controllers\\UserController.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -334,9 +305,9 @@
               "$type": "Document",
               "DocumentIndex": 18,
               "Title": "MessageController.cs",
-              "DocumentMoniker": "C:\\Users\\ulkar\\Desktop\\probajezykow\\KCK-Elektroniczny_Dziennik_Szkolny\\Controllers\\MessageController.cs",
+              "DocumentMoniker": "C:\\Users\\ulkar\\Desktop\\finalnekck\\KCK-Elektroniczny_Dziennik_Szkolny\\Controllers\\MessageController.cs",
               "RelativeDocumentMoniker": "Controllers\\MessageController.cs",
-              "ToolTip": "C:\\Users\\ulkar\\Desktop\\probajezykow\\KCK-Elektroniczny_Dziennik_Szkolny\\Controllers\\MessageController.cs",
+              "ToolTip": "C:\\Users\\ulkar\\Desktop\\finalnekck\\KCK-Elektroniczny_Dziennik_Szkolny\\Controllers\\MessageController.cs",
               "RelativeToolTip": "Controllers\\MessageController.cs",
               "ViewState": "AgIAAEwAAAAAAAAAAAAQwFYAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -346,9 +317,9 @@
               "$type": "Document",
               "DocumentIndex": 15,
               "Title": "IUser.cs",
-              "DocumentMoniker": "C:\\Users\\ulkar\\Desktop\\probajezykow\\KCK-Elektroniczny_Dziennik_Szkolny\\Models\\Objects\\IUser.cs",
+              "DocumentMoniker": "C:\\Users\\ulkar\\Desktop\\finalnekck\\KCK-Elektroniczny_Dziennik_Szkolny\\Models\\Objects\\IUser.cs",
               "RelativeDocumentMoniker": "Models\\Objects\\IUser.cs",
-              "ToolTip": "C:\\Users\\ulkar\\Desktop\\probajezykow\\KCK-Elektroniczny_Dziennik_Szkolny\\Models\\Objects\\IUser.cs",
+              "ToolTip": "C:\\Users\\ulkar\\Desktop\\finalnekck\\KCK-Elektroniczny_Dziennik_Szkolny\\Models\\Objects\\IUser.cs",
               "RelativeToolTip": "Models\\Objects\\IUser.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -358,9 +329,9 @@
               "$type": "Document",
               "DocumentIndex": 19,
               "Title": "SchoolController.cs",
-              "DocumentMoniker": "C:\\Users\\ulkar\\Desktop\\probajezykow\\KCK-Elektroniczny_Dziennik_Szkolny\\Controllers\\SchoolController.cs",
+              "DocumentMoniker": "C:\\Users\\ulkar\\Desktop\\finalnekck\\KCK-Elektroniczny_Dziennik_Szkolny\\Controllers\\SchoolController.cs",
               "RelativeDocumentMoniker": "Controllers\\SchoolController.cs",
-              "ToolTip": "C:\\Users\\ulkar\\Desktop\\probajezykow\\KCK-Elektroniczny_Dziennik_Szkolny\\Controllers\\SchoolController.cs",
+              "ToolTip": "C:\\Users\\ulkar\\Desktop\\finalnekck\\KCK-Elektroniczny_Dziennik_Szkolny\\Controllers\\SchoolController.cs",
               "RelativeToolTip": "Controllers\\SchoolController.cs",
               "ViewState": "AgIAADkAAAAAAAAAAAAgwEkAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -370,9 +341,9 @@
               "$type": "Document",
               "DocumentIndex": 17,
               "Title": "Class.cs",
-              "DocumentMoniker": "C:\\Users\\ulkar\\Desktop\\probajezykow\\KCK-Elektroniczny_Dziennik_Szkolny\\Models\\Objects\\Class.cs",
+              "DocumentMoniker": "C:\\Users\\ulkar\\Desktop\\finalnekck\\KCK-Elektroniczny_Dziennik_Szkolny\\Models\\Objects\\Class.cs",
               "RelativeDocumentMoniker": "Models\\Objects\\Class.cs",
-              "ToolTip": "C:\\Users\\ulkar\\Desktop\\probajezykow\\KCK-Elektroniczny_Dziennik_Szkolny\\Models\\Objects\\Class.cs",
+              "ToolTip": "C:\\Users\\ulkar\\Desktop\\finalnekck\\KCK-Elektroniczny_Dziennik_Szkolny\\Models\\Objects\\Class.cs",
               "RelativeToolTip": "Models\\Objects\\Class.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -382,9 +353,9 @@
               "$type": "Document",
               "DocumentIndex": 16,
               "Title": "Exam.cs",
-              "DocumentMoniker": "C:\\Users\\ulkar\\Desktop\\probajezykow\\KCK-Elektroniczny_Dziennik_Szkolny\\Models\\Objects\\Exam.cs",
+              "DocumentMoniker": "C:\\Users\\ulkar\\Desktop\\finalnekck\\KCK-Elektroniczny_Dziennik_Szkolny\\Models\\Objects\\Exam.cs",
               "RelativeDocumentMoniker": "Models\\Objects\\Exam.cs",
-              "ToolTip": "C:\\Users\\ulkar\\Desktop\\probajezykow\\KCK-Elektroniczny_Dziennik_Szkolny\\Models\\Objects\\Exam.cs",
+              "ToolTip": "C:\\Users\\ulkar\\Desktop\\finalnekck\\KCK-Elektroniczny_Dziennik_Szkolny\\Models\\Objects\\Exam.cs",
               "RelativeToolTip": "Models\\Objects\\Exam.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -394,9 +365,9 @@
               "$type": "Document",
               "DocumentIndex": 14,
               "Title": "Grade.cs",
-              "DocumentMoniker": "C:\\Users\\ulkar\\Desktop\\probajezykow\\KCK-Elektroniczny_Dziennik_Szkolny\\Models\\Objects\\Grade.cs",
+              "DocumentMoniker": "C:\\Users\\ulkar\\Desktop\\finalnekck\\KCK-Elektroniczny_Dziennik_Szkolny\\Models\\Objects\\Grade.cs",
               "RelativeDocumentMoniker": "Models\\Objects\\Grade.cs",
-              "ToolTip": "C:\\Users\\ulkar\\Desktop\\probajezykow\\KCK-Elektroniczny_Dziennik_Szkolny\\Models\\Objects\\Grade.cs",
+              "ToolTip": "C:\\Users\\ulkar\\Desktop\\finalnekck\\KCK-Elektroniczny_Dziennik_Szkolny\\Models\\Objects\\Grade.cs",
               "RelativeToolTip": "Models\\Objects\\Grade.cs",
               "ViewState": "AgIAAAgAAAAAAAAAAAAkwCUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -406,9 +377,9 @@
               "$type": "Document",
               "DocumentIndex": 13,
               "Title": "Message.cs",
-              "DocumentMoniker": "C:\\Users\\ulkar\\Desktop\\probajezykow\\KCK-Elektroniczny_Dziennik_Szkolny\\Models\\Objects\\Message.cs",
+              "DocumentMoniker": "C:\\Users\\ulkar\\Desktop\\finalnekck\\KCK-Elektroniczny_Dziennik_Szkolny\\Models\\Objects\\Message.cs",
               "RelativeDocumentMoniker": "Models\\Objects\\Message.cs",
-              "ToolTip": "C:\\Users\\ulkar\\Desktop\\probajezykow\\KCK-Elektroniczny_Dziennik_Szkolny\\Models\\Objects\\Message.cs",
+              "ToolTip": "C:\\Users\\ulkar\\Desktop\\finalnekck\\KCK-Elektroniczny_Dziennik_Szkolny\\Models\\Objects\\Message.cs",
               "RelativeToolTip": "Models\\Objects\\Message.cs",
               "ViewState": "AgIAAAIAAAAAAAAAAAAIwBoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -418,9 +389,9 @@
               "$type": "Document",
               "DocumentIndex": 22,
               "Title": "Student.cs",
-              "DocumentMoniker": "C:\\Users\\ulkar\\Desktop\\probajezykow\\KCK-Elektroniczny_Dziennik_Szkolny\\Models\\Objects\\Student.cs",
+              "DocumentMoniker": "C:\\Users\\ulkar\\Desktop\\finalnekck\\KCK-Elektroniczny_Dziennik_Szkolny\\Models\\Objects\\Student.cs",
               "RelativeDocumentMoniker": "Models\\Objects\\Student.cs",
-              "ToolTip": "C:\\Users\\ulkar\\Desktop\\probajezykow\\KCK-Elektroniczny_Dziennik_Szkolny\\Models\\Objects\\Student.cs",
+              "ToolTip": "C:\\Users\\ulkar\\Desktop\\finalnekck\\KCK-Elektroniczny_Dziennik_Szkolny\\Models\\Objects\\Student.cs",
               "RelativeToolTip": "Models\\Objects\\Student.cs",
               "ViewState": "AgIAABoAAAAAAAAAAAA9wCoAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -430,9 +401,9 @@
               "$type": "Document",
               "DocumentIndex": 36,
               "Title": "20241022143135_class.cs",
-              "DocumentMoniker": "C:\\Users\\ulkar\\Desktop\\probajezykow\\KCK-Elektroniczny_Dziennik_Szkolny\\Migrations\\20241022143135_class.cs",
+              "DocumentMoniker": "C:\\Users\\ulkar\\Desktop\\finalnekck\\KCK-Elektroniczny_Dziennik_Szkolny\\Migrations\\20241022143135_class.cs",
               "RelativeDocumentMoniker": "Migrations\\20241022143135_class.cs",
-              "ToolTip": "C:\\Users\\ulkar\\Desktop\\probajezykow\\KCK-Elektroniczny_Dziennik_Szkolny\\Migrations\\20241022143135_class.cs",
+              "ToolTip": "C:\\Users\\ulkar\\Desktop\\finalnekck\\KCK-Elektroniczny_Dziennik_Szkolny\\Migrations\\20241022143135_class.cs",
               "RelativeToolTip": "Migrations\\20241022143135_class.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -442,9 +413,9 @@
               "$type": "Document",
               "DocumentIndex": 23,
               "Title": "GradeController.cs",
-              "DocumentMoniker": "C:\\Users\\ulkar\\Desktop\\probajezykow\\KCK-Elektroniczny_Dziennik_Szkolny\\Controllers\\GradeController.cs",
+              "DocumentMoniker": "C:\\Users\\ulkar\\Desktop\\finalnekck\\KCK-Elektroniczny_Dziennik_Szkolny\\Controllers\\GradeController.cs",
               "RelativeDocumentMoniker": "Controllers\\GradeController.cs",
-              "ToolTip": "C:\\Users\\ulkar\\Desktop\\probajezykow\\KCK-Elektroniczny_Dziennik_Szkolny\\Controllers\\GradeController.cs",
+              "ToolTip": "C:\\Users\\ulkar\\Desktop\\finalnekck\\KCK-Elektroniczny_Dziennik_Szkolny\\Controllers\\GradeController.cs",
               "RelativeToolTip": "Controllers\\GradeController.cs",
               "ViewState": "AQIAAAYAAAAAAAAAAAAAABwAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -454,9 +425,9 @@
               "$type": "Document",
               "DocumentIndex": 21,
               "Title": "Teacher.cs",
-              "DocumentMoniker": "C:\\Users\\ulkar\\Desktop\\probajezykow\\KCK-Elektroniczny_Dziennik_Szkolny\\Models\\Objects\\Teacher.cs",
+              "DocumentMoniker": "C:\\Users\\ulkar\\Desktop\\finalnekck\\KCK-Elektroniczny_Dziennik_Szkolny\\Models\\Objects\\Teacher.cs",
               "RelativeDocumentMoniker": "Models\\Objects\\Teacher.cs",
-              "ToolTip": "C:\\Users\\ulkar\\Desktop\\probajezykow\\KCK-Elektroniczny_Dziennik_Szkolny\\Models\\Objects\\Teacher.cs",
+              "ToolTip": "C:\\Users\\ulkar\\Desktop\\finalnekck\\KCK-Elektroniczny_Dziennik_Szkolny\\Models\\Objects\\Teacher.cs",
               "RelativeToolTip": "Models\\Objects\\Teacher.cs",
               "ViewState": "AgIAABIAAAAAAAAAAAA+wCsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -466,9 +437,9 @@
               "$type": "Document",
               "DocumentIndex": 20,
               "Title": "Parent.cs",
-              "DocumentMoniker": "C:\\Users\\ulkar\\Desktop\\probajezykow\\KCK-Elektroniczny_Dziennik_Szkolny\\Models\\Objects\\Parent.cs",
+              "DocumentMoniker": "C:\\Users\\ulkar\\Desktop\\finalnekck\\KCK-Elektroniczny_Dziennik_Szkolny\\Models\\Objects\\Parent.cs",
               "RelativeDocumentMoniker": "Models\\Objects\\Parent.cs",
-              "ToolTip": "C:\\Users\\ulkar\\Desktop\\probajezykow\\KCK-Elektroniczny_Dziennik_Szkolny\\Models\\Objects\\Parent.cs",
+              "ToolTip": "C:\\Users\\ulkar\\Desktop\\finalnekck\\KCK-Elektroniczny_Dziennik_Szkolny\\Models\\Objects\\Parent.cs",
               "RelativeToolTip": "Models\\Objects\\Parent.cs",
               "ViewState": "AgIAABIAAAAAAAAAAAAqwCoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -478,9 +449,9 @@
               "$type": "Document",
               "DocumentIndex": 25,
               "Title": "ApplicationDbContextModelSnapshot.cs",
-              "DocumentMoniker": "C:\\Users\\ulkar\\Desktop\\probajezykow\\KCK-Elektroniczny_Dziennik_Szkolny\\Migrations\\ApplicationDbContextModelSnapshot.cs",
+              "DocumentMoniker": "C:\\Users\\ulkar\\Desktop\\finalnekck\\KCK-Elektroniczny_Dziennik_Szkolny\\Migrations\\ApplicationDbContextModelSnapshot.cs",
               "RelativeDocumentMoniker": "Migrations\\ApplicationDbContextModelSnapshot.cs",
-              "ToolTip": "C:\\Users\\ulkar\\Desktop\\probajezykow\\KCK-Elektroniczny_Dziennik_Szkolny\\Migrations\\ApplicationDbContextModelSnapshot.cs",
+              "ToolTip": "C:\\Users\\ulkar\\Desktop\\finalnekck\\KCK-Elektroniczny_Dziennik_Szkolny\\Migrations\\ApplicationDbContextModelSnapshot.cs",
               "RelativeToolTip": "Migrations\\ApplicationDbContextModelSnapshot.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -490,9 +461,9 @@
               "$type": "Document",
               "DocumentIndex": 35,
               "Title": "20241021220754_message1.cs",
-              "DocumentMoniker": "C:\\Users\\ulkar\\Desktop\\probajezykow\\KCK-Elektroniczny_Dziennik_Szkolny\\Migrations\\20241021220754_message1.cs",
+              "DocumentMoniker": "C:\\Users\\ulkar\\Desktop\\finalnekck\\KCK-Elektroniczny_Dziennik_Szkolny\\Migrations\\20241021220754_message1.cs",
               "RelativeDocumentMoniker": "Migrations\\20241021220754_message1.cs",
-              "ToolTip": "C:\\Users\\ulkar\\Desktop\\probajezykow\\KCK-Elektroniczny_Dziennik_Szkolny\\Migrations\\20241021220754_message1.cs",
+              "ToolTip": "C:\\Users\\ulkar\\Desktop\\finalnekck\\KCK-Elektroniczny_Dziennik_Szkolny\\Migrations\\20241021220754_message1.cs",
               "RelativeToolTip": "Migrations\\20241021220754_message1.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -538,9 +509,9 @@
               "$type": "Document",
               "DocumentIndex": 24,
               "Title": "20241021212507_message.cs",
-              "DocumentMoniker": "C:\\Users\\ulkar\\Desktop\\probajezykow\\KCK-Elektroniczny_Dziennik_Szkolny\\Migrations\\20241021212507_message.cs",
+              "DocumentMoniker": "C:\\Users\\ulkar\\Desktop\\finalnekck\\KCK-Elektroniczny_Dziennik_Szkolny\\Migrations\\20241021212507_message.cs",
               "RelativeDocumentMoniker": "Migrations\\20241021212507_message.cs",
-              "ToolTip": "C:\\Users\\ulkar\\Desktop\\probajezykow\\KCK-Elektroniczny_Dziennik_Szkolny\\Migrations\\20241021212507_message.cs",
+              "ToolTip": "C:\\Users\\ulkar\\Desktop\\finalnekck\\KCK-Elektroniczny_Dziennik_Szkolny\\Migrations\\20241021212507_message.cs",
               "RelativeToolTip": "Migrations\\20241021212507_message.cs",
               "ViewState": "AQIAAI0AAAAAAAAAAAAIwJgAAAA2AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -550,9 +521,9 @@
               "$type": "Document",
               "DocumentIndex": 29,
               "Title": "Subject.cs",
-              "DocumentMoniker": "C:\\Users\\ulkar\\Desktop\\probajezykow\\KCK-Elektroniczny_Dziennik_Szkolny\\Models\\Objects\\Subject.cs",
+              "DocumentMoniker": "C:\\Users\\ulkar\\Desktop\\finalnekck\\KCK-Elektroniczny_Dziennik_Szkolny\\Models\\Objects\\Subject.cs",
               "RelativeDocumentMoniker": "Models\\Objects\\Subject.cs",
-              "ToolTip": "C:\\Users\\ulkar\\Desktop\\probajezykow\\KCK-Elektroniczny_Dziennik_Szkolny\\Models\\Objects\\Subject.cs",
+              "ToolTip": "C:\\Users\\ulkar\\Desktop\\finalnekck\\KCK-Elektroniczny_Dziennik_Szkolny\\Models\\Objects\\Subject.cs",
               "RelativeToolTip": "Models\\Objects\\Subject.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -617,6 +588,28 @@
               "ViewState": "AgIAAO0SAAAAAAAAAAAewPgSAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
               "WhenOpened": "2024-10-15T17:34:06.514Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Strings.pl.resx",
+              "DocumentMoniker": "C:\\Users\\ulkar\\Desktop\\finalnekck\\KCK-Elektroniczny_Dziennik_Szkolny\\Resources\\Strings.pl.resx",
+              "RelativeDocumentMoniker": "Resources\\Strings.pl.resx",
+              "ToolTip": "C:\\Users\\ulkar\\Desktop\\finalnekck\\KCK-Elektroniczny_Dziennik_Szkolny\\Resources\\Strings.pl.resx",
+              "RelativeToolTip": "Resources\\Strings.pl.resx",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2024-11-02T16:40:28.581Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Strings.en.resx",
+              "DocumentMoniker": "C:\\Users\\ulkar\\Desktop\\finalnekck\\KCK-Elektroniczny_Dziennik_Szkolny\\Resources\\Strings.en.resx",
+              "RelativeDocumentMoniker": "Resources\\Strings.en.resx",
+              "ToolTip": "C:\\Users\\ulkar\\Desktop\\finalnekck\\KCK-Elektroniczny_Dziennik_Szkolny\\Resources\\Strings.en.resx",
+              "RelativeToolTip": "Resources\\Strings.en.resx",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2024-11-02T16:37:28.965Z"
             }
           ]
         }
