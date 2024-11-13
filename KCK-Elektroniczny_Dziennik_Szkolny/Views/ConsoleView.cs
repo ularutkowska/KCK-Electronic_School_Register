@@ -40,6 +40,7 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Views
             LanguageManager.GetString("Menu_Inbox"),
             LanguageManager.GetString("Menu_SentMessages"),
             LanguageManager.GetString("Menu_ComposeMessage"),
+            LanguageManager.GetString("Menu_ManageGrades"),
             LanguageManager.GetString("Menu_Exit")
         };
 
@@ -197,6 +198,9 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Views
                     messageView.ComposeMessage();
                     break;
                 case 4:
+                    gradeView.DisplayGradeMenu();
+                    break;
+                case 5:
                     ExitProgram(ref running);
                     break;
             }

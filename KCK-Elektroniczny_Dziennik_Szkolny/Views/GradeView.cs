@@ -22,6 +22,13 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Views
             LanguageManager.GetString("Menu_Exit")
         };
 
+
+        private string[] menuItemsParent = new string[]
+        {
+            LanguageManager.GetString("Menu_ViewPersonal"),
+            LanguageManager.GetString("Menu_Exit")
+        };
+
         private bool exitGradeMenu = false;
 
         public GradeView(GradeController controller, UserController userController, Teacher loggedInTeacher, Parent loggedInParent)
@@ -69,15 +76,35 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Views
             Console.Clear();
             Console.WriteLine(LanguageManager.GetString("Header_GradeManagement"));
 
-            for (int i = 0; i < menuItems.Length; i++)
+            if (loggedInParent != null)
             {
-                if (i == currentSelection)
+                for (int i = 0; i < menuItemsParent.Length; i++)
                 {
-                    Console.BackgroundColor = ConsoleColor.Gray;
-                    Console.ForegroundColor = ConsoleColor.Black;
+                    if (i == currentSelection)
+                    {
+                        Console.BackgroundColor = ConsoleColor.Gray;
+                        Console.ForegroundColor = ConsoleColor.Black;
+                    }
+
+                    Console.WriteLine(menuItemsParent[i]);
+
+                    Console.ResetColor();
                 }
-                Console.WriteLine(menuItems[i]);
-                Console.ResetColor();
+            }
+            else
+            {
+                for (int i = 0; i < menuItems.Length; i++)
+                {
+                    if (i == currentSelection)
+                    {
+                        Console.BackgroundColor = ConsoleColor.Gray;
+                        Console.ForegroundColor = ConsoleColor.Black;
+                    }
+
+                    Console.WriteLine(menuItems[i]);
+
+                    Console.ResetColor();
+                }
             }
         }
 
@@ -96,31 +123,55 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Views
 
         private void HandleSelection(int selectedOption)
         {
-            switch (selectedOption)
+
+
+            if (loggedInParent != null)
             {
-                case 0:
-                    AddGrade();
-                    break;
-                case 1:
-                    ViewGradesByClass();
-                    break;
-                case 2:
-                    if (loggedInParent != null)
-                    {
+                switch (selectedOption)
+                {
+                    case 0:
+                        Console.Clear();
                         ViewPersonalGrades(loggedInParent);
-                    }
-                    else
-                    {
-                        Console.WriteLine(LanguageManager.GetString("Error_NotLoggedInAsParent"));
-                        Console.ReadKey();
-                    }
-                    break;
-                case 3:
-                    Console.Clear();
-                    Console.WriteLine(LanguageManager.GetString("Message_ExitingGradeManagement"));
-                    Thread.Sleep(1000);
-                    exitGradeMenu = true;
-                    return;
+                        break;
+                    case 1:
+                        Console.Clear();
+                        Console.WriteLine(LanguageManager.GetString("Message_ExitingGradeManagement"));
+                        Thread.Sleep(1000);
+                        exitGradeMenu = true;
+                        return;
+
+                }
+
+            }
+            else
+            {
+                switch (selectedOption)
+                {
+                    case 0:
+                        AddGrade();
+                        break;
+                    case 1:
+                        ViewGradesByClass();
+                        break;
+                    case 2:
+                        if (loggedInParent != null)
+                        {
+                            Console.Clear();
+                            ViewPersonalGrades(loggedInParent);
+                        }
+                        else
+                        {
+                            Console.WriteLine(LanguageManager.GetString("Error_NotLoggedInAsParent"));
+                            Console.ReadKey();
+                        }
+                        break;
+                    case 3:
+                        Console.Clear();
+                        Console.WriteLine(LanguageManager.GetString("Message_ExitingGradeManagement"));
+                        Thread.Sleep(1000);
+                        exitGradeMenu = true;
+                        return;
+                }
             }
         }
         private void AddGrade()
@@ -394,7 +445,7 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Views
             DisplayGradesForStudent(selectedStudent);
         }
 
-        private void ViewPersonalGrades(Parent loggedInParent)
+        public void ViewPersonalGrades(Parent loggedInParent)
         {
             var student = controller.GetStudentByParentId(loggedInParent.Id);
             if (student != null)

@@ -127,7 +127,7 @@
     <value>Exiting program...</value>
   </data>
   <data name="App_Title" xml:space="preserve">
-    <value>Electronic School Diary/n</value>
+    <value>Electronic School Diary</value>
   </data>
   <data name="ChooseRole" xml:space="preserve">
     <value>Choose a role</value>
@@ -181,7 +181,7 @@
     <value>Grade</value>
   </data>
   <data name="Header_GradeManagement" xml:space="preserve">
-    <value>Grade Management\n</value>
+    <value>Grade Management</value>
   </data>
   <data name="in" xml:space="preserve">
     <value> in </value>
