@@ -183,6 +183,9 @@
   <data name="Header_GradeManagement" xml:space="preserve">
     <value>Grade Management</value>
   </data>
+  <data name="Header_PersonalGrades" xml:space="preserve">
+    <value>Student's grades: </value>
+  </data>
   <data name="in" xml:space="preserve">
     <value> in </value>
   </data>
@@ -256,7 +259,7 @@
     <value>View Classes</value>
   </data>
   <data name="Menu_ViewPersonal" xml:space="preserve">
-    <value>View Personal (Parent)</value>
+    <value>View Personal</value>
   </data>
   <data name="MessageContent" xml:space="preserve">
     <value>Message content</value>
@@ -319,7 +322,7 @@
     <value>No students in this class</value>
   </data>
   <data name="Message_ParentAdded" xml:space="preserve">
-    <value>Parent has been added.Parent has been added</value>
+    <value>Parent has been added</value>
   </data>
   <data name="Message_ParentInfo" xml:space="preserve">
     <value>{0}. {1} {2}, Phone: {3}</value>
@@ -357,6 +360,9 @@
   <data name="NoClassesInfo" xml:space="preserve">
     <value>No classes available</value>
   </data>
+  <data name="NoGrades" xml:space="preserve">
+    <value>No grades to view.</value>
+  </data>
   <data name="NoMessages" xml:space="preserve">
     <value>No messages</value>
   </data>
@@ -371,6 +377,9 @@
   </data>
   <data name="Parent" xml:space="preserve">
     <value>Parent</value>
+  </data>
+  <data name="PersonalGradesInfo" xml:space="preserve">
+    <value>Subject | Grade | Teacher | Date</value>
   </data>
   <data name="PressAnyKeyToGoBack" xml:space="preserve">
     <value>Press any key to go back to sent messages</value>
@@ -458,6 +467,9 @@
   </data>
   <data name="Student" xml:space="preserve">
     <value>Student</value>
+  </data>
+  <data name="StudentGradesError" xml:space="preserve">
+    <value>Couldn't find logged student.</value>
   </data>
   <data name="Students_Info" xml:space="preserve">
     <value> - students:</value>

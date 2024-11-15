@@ -23,7 +23,7 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Views
         };
 
 
-        private string[] menuItemsParent = new string[]
+        private string[] menuItemsParentStudent = new string[]
         {
             LanguageManager.GetString("Menu_ViewPersonal"),
             LanguageManager.GetString("Menu_Exit")
@@ -78,7 +78,7 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Views
 
             if (loggedInParent != null)
             {
-                for (int i = 0; i < menuItemsParent.Length; i++)
+                for (int i = 0; i < menuItemsParentStudent.Length; i++)
                 {
                     if (i == currentSelection)
                     {
@@ -86,12 +86,12 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Views
                         Console.ForegroundColor = ConsoleColor.Black;
                     }
 
-                    Console.WriteLine(menuItemsParent[i]);
+                    Console.WriteLine(menuItemsParentStudent[i]);
 
                     Console.ResetColor();
                 }
             }
-            else
+            else if(loggedInTeacher != null)
             {
                 for (int i = 0; i < menuItems.Length; i++)
                 {
@@ -102,6 +102,21 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Views
                     }
 
                     Console.WriteLine(menuItems[i]);
+
+                    Console.ResetColor();
+                }
+            }
+            else
+            {
+                for (int i = 0; i < menuItemsParentStudent.Length; i++)
+                {
+                    if (i == currentSelection)
+                    {
+                        Console.BackgroundColor = ConsoleColor.Gray;
+                        Console.ForegroundColor = ConsoleColor.Black;
+                    }
+
+                    Console.WriteLine(menuItemsParentStudent[i]);
 
                     Console.ResetColor();
                 }
@@ -143,7 +158,7 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Views
                 }
 
             }
-            else
+            else if (loggedInTeacher != null)
             {
                 switch (selectedOption)
                 {
@@ -173,7 +188,41 @@ namespace KCK_Elektroniczny_Dziennik_Szkolny.Views
                         return;
                 }
             }
+            else
+            {
+                switch (selectedOption)
+                {
+                    case 0:
+                        Console.Clear();
+                        DisplayPersonalGrades();
+                        break;
+                    case 1:
+                        Console.Clear();
+                        Console.WriteLine(LanguageManager.GetString("Message_ExitingGradeManagement"));
+                        Thread.Sleep(1000);
+                        exitGradeMenu = true;
+                        return;
+                }
+            }
         }
+
+        private void DisplayPersonalGrades()
+        {
+            Console.Clear();
+           
+                var student = userController.GetLoggedInStudent();
+                if (student != null)
+                {
+                    DisplayGradesForStudent(student);
+                }
+                else
+                {
+                    Console.WriteLine(LanguageManager.GetString("StudentGradesError"));
+                }
+            Console.ReadKey();
+        }
+
+
         private void AddGrade()
         {
             Console.Clear();

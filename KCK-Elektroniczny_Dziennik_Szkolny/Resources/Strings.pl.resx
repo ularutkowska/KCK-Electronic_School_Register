@@ -183,6 +183,9 @@
   <data name="Header_GradeManagement" xml:space="preserve">
     <value>Zarządzanie Ocenami\n</value>
   </data>
+  <data name="Header_PersonalGrades" xml:space="preserve">
+    <value>Oceny ucznia:</value>
+  </data>
   <data name="in" xml:space="preserve">
     <value> dla przedmiotu </value>
   </data>
@@ -256,7 +259,7 @@
     <value>Przeglądaj klasy</value>
   </data>
   <data name="Menu_ViewPersonal" xml:space="preserve">
-    <value>Przeglądaj indywidualnie (Rodzic)</value>
+    <value>Przeglądaj indywidualnie</value>
   </data>
   <data name="MessageContent" xml:space="preserve">
     <value>Treść wiadomości</value>
@@ -357,6 +360,9 @@
   <data name="NoClassesInfo" xml:space="preserve">
     <value>Brak dostępnych klas</value>
   </data>
+  <data name="NoGrades" xml:space="preserve">
+    <value>Brak ocen do wyświetlenia.</value>
+  </data>
   <data name="NoMessages" xml:space="preserve">
     <value>Brak wiadomości</value>
   </data>
@@ -371,6 +377,9 @@
   </data>
   <data name="Parent" xml:space="preserve">
     <value>Rodzic</value>
+  </data>
+  <data name="PersonalGradesInfo" xml:space="preserve">
+    <value>Przedmiot | Ocena | Nauczyciel | Data</value>
   </data>
   <data name="PressAnyKeyToGoBack" xml:space="preserve">
     <value>Naciśnij dowolny klawisz, aby wrócić do wysłanych wiadomości</value>
@@ -458,6 +467,9 @@
   </data>
   <data name="Student" xml:space="preserve">
     <value>Uczeń</value>
+  </data>
+  <data name="StudentGradesError" xml:space="preserve">
+    <value>Nie udało się znaleźć zalogowanego ucznia.</value>
   </data>
   <data name="Students_Info" xml:space="preserve">
     <value> - uczniowie:</value>
